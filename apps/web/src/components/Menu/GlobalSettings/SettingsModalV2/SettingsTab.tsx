@@ -1,46 +1,32 @@
 import { ChainId } from '@pancakeswap/chains'
 import { useTranslation } from '@pancakeswap/localization'
-import { Flex, PancakeToggle, PreTitle } from '@pancakeswap/uikit'
-import { useAudioPlay } from '@pancakeswap/utils/user'
+import { Flex, PreTitle } from '@pancakeswap/uikit'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import { memo } from 'react'
-import { useSwapActionHandlers } from 'state/swap/useSwapActionHandlers'
 import GasSettings from '../GasSettings'
 import TransactionSettings from '../TransactionSettings'
 import { TabContent } from './TabContent'
 
 interface SettingsTabProps {
-  onCustomizeRoutingClick?: () => void
-  showExpertModeAcknowledgement: boolean
-  setShowConfirmExpertModal: (show: boolean) => void
-  expertMode: boolean
-  setExpertMode: (expertMode: any) => void
-
+  _onCustomizeRoutingClick?: () => void
+  _showExpertModeAcknowledgement: boolean
+  _setShowConfirmExpertModal: (show: boolean) => void
+  _expertMode: boolean
+  _setExpertMode: (expertMode: any) => void
   ariaId?: string
 }
 
 export const SettingsTab = memo(
   ({
-    onCustomizeRoutingClick,
-    showExpertModeAcknowledgement,
-    setShowConfirmExpertModal,
-    expertMode,
-    setExpertMode,
+    _onCustomizeRoutingClick,
+    _showExpertModeAcknowledgement,
+    _setShowConfirmExpertModal,
+    _expertMode,
+    _setExpertMode,
     ariaId,
   }: SettingsTabProps) => {
     const { t } = useTranslation()
     const { chainId } = useActiveChainId()
-    const { onChangeRecipient } = useSwapActionHandlers()
-    const [audioPlay, setAudioMode] = useAudioPlay()
-
-    const handleExpertModeToggle = () => {
-      if (expertMode || !showExpertModeAcknowledgement) {
-        onChangeRecipient(null)
-        setExpertMode((s) => !s)
-      } else {
-        setShowConfirmExpertModal(true)
-      }
-    }
 
     return (
       <TabContent
@@ -57,15 +43,6 @@ export const SettingsTab = memo(
             </Flex>
           )}
           <TransactionSettings />
-
-          <Flex justifyContent="space-between" alignItems="center" mt="8px">
-            <PancakeToggle
-              id="toggle-audio-play"
-              checked={audioPlay}
-              onChange={() => setAudioMode((s) => !s)}
-              scale="md"
-            />
-          </Flex>
         </Flex>
       </TabContent>
     )

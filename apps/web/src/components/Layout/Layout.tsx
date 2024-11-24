@@ -1,5 +1,5 @@
 import React from 'react'
-import Menu from '../Menu/Menu'
+import Menu from '../Menu'
 
 const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return (

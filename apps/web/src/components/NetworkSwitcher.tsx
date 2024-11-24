@@ -19,7 +19,6 @@ import { useActiveChainId, useLocalNetworkChain } from 'hooks/useActiveChainId'
 import { useNetworkConnectorUpdater } from 'hooks/useActiveWeb3React'
 import { useHover } from 'hooks/useHover'
 import { useSwitchNetwork } from 'hooks/useSwitchNetwork'
-import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useMemo } from 'react'
 import { useUserShowTestnet } from 'state/user/hooks/useUserShowTestnet'
@@ -30,7 +29,7 @@ import { ChainLogo } from './Logo/ChainLogo'
 
 const AptosChain = {
   id: 1,
-  name: 'Aptos',
+  name: 'Solana',
 }
 
 const NetworkSelect = ({ switchNetwork, chainId, isWrongNetwork }) => {
@@ -72,13 +71,12 @@ const NetworkSelect = ({ switchNetwork, chainId, isWrongNetwork }) => {
         style={{ justifyContent: 'flex-start' }}
         as="a"
         target="_blank"
-        href="https://aptos.pancakeswap.finance/swap"
+        href="https://dogeswap.co/solana/"
       >
-        <Image
-          src="https://aptos.pancakeswap.finance/images/apt.png"
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/6001/6001527.png"
           width={24}
           height={24}
-          unoptimized
           alt={`chain-aptos-${AptosChain.id}`}
         />{' '}
         <Text color="text" pl="12px">

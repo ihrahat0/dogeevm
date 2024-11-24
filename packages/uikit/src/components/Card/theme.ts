@@ -13,7 +13,7 @@ export const light: CardTheme = {
     blue: lightColors.gradientBlue,
     bubblegum: lightColors.gradientBubblegum,
     violet: lightColors.gradientViolet,
-    pale: lightColors.card,
+    pale: lightColors.backgroundAlt,
   },
   dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
 };

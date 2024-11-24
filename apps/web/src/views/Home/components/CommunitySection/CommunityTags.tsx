@@ -1,12 +1,4 @@
-import {
-  DiscordIcon,
-  InstagramIcon,
-  Link,
-  RedditIcon,
-  TelegramIcon,
-  TwitterIcon,
-  YoutubeIcon,
-} from '@pancakeswap/uikit'
+import { InstagramIcon, Link, TelegramIcon, TwitterIcon } from '@pancakeswap/uikit'
 import { cloneElement } from 'react'
 import { styled } from 'styled-components'
 
@@ -41,12 +33,14 @@ const CommunityTag = styled.div`
   }
 `
 const communityData = [
-  { icon: <TwitterIcon />, href: 'https://twitter.com/pancakeswap', alt: 'TwitterIcon' },
-  { icon: <TelegramIcon />, href: 'https://t.me/pancakeswap', alt: 'TelegramIcon' },
-  { icon: <DiscordIcon />, href: 'https://discord.gg/pancakeswap', alt: 'DiscordIcon' },
-  { icon: <InstagramIcon />, href: 'https://www.instagram.com/pancakeswap_official/', alt: 'InstagramIcon' },
-  { icon: <RedditIcon />, href: 'https://www.reddit.com/r/pancakeswap/', alt: 'RedditIcon' },
-  { icon: <YoutubeIcon />, href: 'https://www.youtube.com/@pancakeswap_official', alt: 'YoutubeIcon' },
+  { icon: <TwitterIcon />, href: 'https://twitter.com/dogeswap_', alt: 'TwitterIcon' },
+  { icon: <TelegramIcon />, href: 'https://t.me/DogeSwap_Ann', alt: 'TelegramIcon' },
+  {
+    icon: <img src="https://img.icons8.com/?size=96&id=118640&format=png" width={18} height={18} alt="TikTok" />,
+    href: 'https://www.tiktok.com/@dogeswap_?_t=8ra4zsyJzVG&_r=1',
+    alt: 'TiktokIcon',
+  },
+  { icon: <InstagramIcon />, href: 'https://www.instagram.com/dogeswap_/', alt: 'InstagramIcon' },
 ]
 
 export const CommunityTags: React.FC = () => {

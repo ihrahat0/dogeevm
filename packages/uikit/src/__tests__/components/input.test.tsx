@@ -12,7 +12,7 @@ it("renders correctly", () => {
       background-color: var(--colors-input);
       border-radius: 16px;
       box-shadow: var(--shadows-inset);
-      color: var(--colors-text);
+      color: #fff;;
       display: block;
       font-size: 16px;
       height: 40px;

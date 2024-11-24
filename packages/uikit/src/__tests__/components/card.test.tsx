@@ -15,7 +15,7 @@ it("renders correctly", () => {
       .c0 {
       background: var(--colors-cardBorder);
       border-radius: var(--radii-card);
-      color: var(--colors-text);
+      color: #fff;;
       overflow: hidden;
       position: relative;
       padding: 1px 1px 3px 1px;

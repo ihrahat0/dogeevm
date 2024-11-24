@@ -31,6 +31,9 @@ const GlobalStyle = createGlobalStyle`
   .Box-sc-3fcdcbc5-1.CardLayouts__StaticContainer-sc-b860bc5f-1.kcXNTu.cbKtSh {
   display: none !important;
   }
+  .Text-sc-1e14ff52-0.Link__StyledLink-sc-e718cb8-0.kA-DvpM.dbBuiW{
+  margin-right: 24px;
+  }
 `
 
 export default GlobalStyle

@@ -18,7 +18,7 @@ it("renders correctly", () => {
     }
 
     .c6 {
-      color: var(--colors-text);
+      color: #fff;;
       font-weight: 600;
       line-height: 1.5;
       font-size: 16px;

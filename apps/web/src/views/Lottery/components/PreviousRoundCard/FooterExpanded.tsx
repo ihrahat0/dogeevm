@@ -85,7 +85,7 @@ const PreviousRoundCardFooter: React.FC<
 
   return (
     <NextDrawWrapper>
-      <Flex mr="24px" flexDirection="column" justifyContent="space-between">
+      <Flex flexDirection="column" justifyContent="space-between">
         <Box>
           <Heading>{t('Prize pot')}</Heading>
           {getPrizeBalances()}

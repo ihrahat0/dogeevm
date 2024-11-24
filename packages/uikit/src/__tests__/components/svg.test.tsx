@@ -12,8 +12,8 @@ it("renders correctly", () => {
     <DocumentFragment>
       .c0 {
       align-self: center;
-      fill: var(--colors-text);
-      color: var(--colors-text);
+      fill: #fff;;
+      color: #fff;;
       flex-shrink: 0;
     }
 

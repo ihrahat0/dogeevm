@@ -40,7 +40,7 @@ it("renders correctly", () => {
       background-color: var(--colors-input);
       border-radius: 16px;
       box-shadow: var(--shadows-inset);
-      color: var(--colors-text);
+      color: #fff;;
       display: block;
       font-size: 16px;
       height: 40px;
@@ -153,7 +153,7 @@ it("renders correctly with unit prop", () => {
     }
 
     .c7 {
-      color: var(--colors-text);
+      color: #fff;;
       font-weight: 400;
       line-height: 1.5;
       font-size: 16px;
@@ -171,7 +171,7 @@ it("renders correctly with unit prop", () => {
       background-color: var(--colors-input);
       border-radius: 16px;
       box-shadow: var(--shadows-inset);
-      color: var(--colors-text);
+      color: #fff;;
       display: block;
       font-size: 16px;
       height: 40px;
@@ -313,7 +313,7 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
     }
 
     .c7 {
-      color: var(--colors-text);
+      color: #fff;;
       font-weight: 400;
       line-height: 1.5;
       font-size: 16px;
@@ -331,7 +331,7 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
       background-color: var(--colors-input);
       border-radius: 16px;
       box-shadow: var(--shadows-inset);
-      color: var(--colors-text);
+      color: #fff;;
       display: block;
       font-size: 16px;
       height: 40px;

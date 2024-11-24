@@ -1,13 +1,12 @@
-import { Language } from "../LangSelector/types";
 import { FlexProps } from "../Box";
-
-export type FooterLinkType = {
-  label: string;
-  items: { label: string; href?: string; isHighlighted?: boolean }[];
-};
+import { Language } from "../LangSelector/types";
 
 export type FooterProps = {
-  items: FooterLinkType[];
+  items?: Array<{
+    label: string;
+    href?: string;
+    target?: string;
+  }>;
   buyCakeLabel: string;
   buyCakeLink: string;
   isDark: boolean;
@@ -18,3 +17,13 @@ export type FooterProps = {
   chainId: number;
   setLang: (lang: Language) => void;
 } & FlexProps;
+
+export interface FooterLinkType {
+  label: string;
+  items: {
+    label: string;
+    href?: string;
+    target?: string;
+    isHighlighted?: boolean;
+  }[];
+}

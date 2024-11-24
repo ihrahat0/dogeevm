@@ -1,4 +1,4 @@
-import { languageList, useTranslation } from '@pancakeswap/localization'
+import { useTranslation } from '@pancakeswap/localization'
 import { Flex, Text, Menu as UikitMenu } from '@pancakeswap/uikit'
 import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 import { NetworkSwitcher } from 'components/NetworkSwitcher'
@@ -17,8 +17,8 @@ const LinkComponent = (linkProps) => {
 }
 
 const Menu = (props) => {
-  const { chainId } = useActiveChainId()
-  const { isDark, setTheme } = useTheme()
+  const { _chainId } = useActiveChainId()
+  const { _isDark } = useTheme()
   const { currentLanguage, t } = useTranslation()
   const { pathname } = useRouter()
   const dogePrice = useDogePrice()
@@ -26,22 +26,12 @@ const Menu = (props) => {
   const menuItems = useMemo(
     () => [
       {
-        label: t('Trade'),
+        label: t('Swap'),
         href: '/swap',
-        items: [
-          {
-            label: t('Swap'),
-            href: '/swap',
-          },
-          {
-            label: t('Liquidity'),
-            href: '/liquidity',
-          },
-        ],
       },
       {
-        label: t('Farm'),
-        href: '/farms',
+        label: t('Pools'),
+        href: '/liquidity',
       },
     ],
     [t],
@@ -52,10 +42,6 @@ const Menu = (props) => {
     () => getActiveSubMenuItem({ menuItem: activeMenuItem, pathname }),
     [pathname, activeMenuItem],
   )
-
-  const toggleTheme = useMemo(() => {
-    return () => setTheme(isDark ? 'light' : 'dark')
-  }, [setTheme, isDark])
 
   return (
     <UikitMenu
@@ -79,10 +65,9 @@ const Menu = (props) => {
           <UserMenu />
         </>
       }
-      isDark={isDark}
-      toggleTheme={toggleTheme}
+      isDark={_isDark}
       currentLang={currentLanguage.code}
-      langs={languageList}
+      langs={[]}
       links={menuItems}
       subLinks={activeMenuItem?.items}
       activeItem={activeMenuItem?.href}
