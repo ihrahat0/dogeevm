@@ -120,9 +120,7 @@ export default function V4Swap() {
           mt={isChartExpanded && !isMobile ? '42px' : undefined}
         >
           <StyledSwapContainer
-            justifyContent="center"
-            width="100%"
-            style={{ height: '100%' }}
+            style={{ height: '100%', justifyContent: 'center', width: '100%' }}
             $isChartExpanded={isChartExpanded}
           >
             <Wrapper height="100%">
