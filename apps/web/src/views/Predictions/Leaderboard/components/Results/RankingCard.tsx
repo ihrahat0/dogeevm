@@ -43,14 +43,14 @@ const RotatedLaurelRightIcon = styled(LaurelRightIcon)`
 
 const getRankingColor = (rank: number) => {
   if (rank === 3) {
-    return 'bronze'
+    return 'warning'
   }
 
   if (rank === 2) {
-    return 'silver'
+    return 'secondary'
   }
 
-  return 'gold'
+  return 'success'
 }
 
 const RankingCard: React.FC<React.PropsWithChildren<RankingCardProps>> = ({ rank, user, token, api }) => {

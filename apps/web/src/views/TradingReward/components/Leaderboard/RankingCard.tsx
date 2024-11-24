@@ -1,27 +1,27 @@
+import { useTranslation } from '@pancakeswap/localization'
 import {
   Box,
   Card,
   CardBody,
   CardRibbon,
   Flex,
-  ProfileAvatar,
   LaurelLeftIcon,
   LaurelRightIcon,
-  Text,
-  SubMenu,
+  ProfileAvatar,
   Skeleton,
+  SubMenu,
+  Text,
 } from '@pancakeswap/uikit'
-import { styled } from 'styled-components'
-import { useTranslation } from '@pancakeswap/localization'
-import { RankListDetail } from 'views/TradingReward/hooks/useRankList'
 import { formatNumber } from '@pancakeswap/utils/formatBalance'
-import { useProfileForAddress } from 'state/profile/hooks'
-import { useDomainNameForAddress } from 'hooks/useDomain'
 import truncateHash from '@pancakeswap/utils/truncateHash'
-import { useCakePrice } from 'hooks/useCakePrice'
-import { useMemo } from 'react'
 import BigNumber from 'bignumber.js'
+import { useCakePrice } from 'hooks/useCakePrice'
+import { useDomainNameForAddress } from 'hooks/useDomain'
 import Image from 'next/image'
+import { useMemo } from 'react'
+import { useProfileForAddress } from 'state/profile/hooks'
+import { styled } from 'styled-components'
+import { RankListDetail } from 'views/TradingReward/hooks/useRankList'
 
 interface RankingCardProps {
   rank: 1 | 2 | 3
@@ -38,14 +38,14 @@ const RotatedLaurelRightIcon = styled(LaurelRightIcon)`
 
 const getRankingColor = (rank: number) => {
   if (rank === 3) {
-    return 'bronze'
+    return 'warning'
   }
 
   if (rank === 2) {
-    return 'silver'
+    return 'secondary'
   }
 
-  return 'gold'
+  return 'success'
 }
 
 const RankingCard: React.FC<React.PropsWithChildren<RankingCardProps>> = ({ rank, user }) => {
