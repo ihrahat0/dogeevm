@@ -103,7 +103,9 @@ export const SwapSelection = ({
         noButtonMargin
         fullWidth
       >
-        <StyledButtonMenuItem style={{ color: 'black' }}>{t('Swap Responsively')}</StyledButtonMenuItem>
+        <StyledButtonMenuItem>{t('Market')}</StyledButtonMenuItem>
+        <StyledButtonMenuItem>{t('Limit')}</StyledButtonMenuItem>
+        <StyledButtonMenuItem {...tSwapProps}>{t('TWAP')}</StyledButtonMenuItem>
       </ButtonMenu>
       {/* NOTE: Commented out until charts are supported again */}
       {/* {isChartSupported && withToolkit && (
