@@ -1,6 +1,5 @@
-import { IconButton } from '@pancakeswap/uikit'
+import { CogIcon, IconButton } from '@pancakeswap/uikit'
 import { styled } from 'styled-components'
-import { SettingsIcon } from './components/Settings/SettingsIcon'
 
 const StyledSwapHeader = styled.div`
   display: flex;
@@ -21,7 +20,7 @@ const SwapHeader = () => {
     <StyledSwapHeader>
       <Title>Swap Seamlessly</Title>
       <IconButton variant="text" scale="sm">
-        <SettingsIcon />
+        <CogIcon width="24px" color="textSubtle" />
       </IconButton>
     </StyledSwapHeader>
   )

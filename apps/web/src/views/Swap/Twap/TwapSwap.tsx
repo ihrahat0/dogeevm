@@ -9,9 +9,8 @@ import { useRouter } from 'next/router'
 import { useContext, useEffect, useState } from 'react'
 import { Field } from 'state/swap/actions'
 import { useDefaultsFromURLSearch, useSingleTokenSwapInfo, useSwapState } from 'state/swap/hooks'
-import PriceChartContainer from '../components/Chart/PriceChartContainer'
-// import { SwapSelection } from '../components/SwapSelection'
 import { SwapSelection } from '../../SwapSimplify/V4Swap/SwapSelectionTab'
+import PriceChartContainer from '../components/Chart/PriceChartContainer'
 import { StyledInputCurrencyWrapper, StyledSwapContainer } from '../styles'
 import { SwapFeaturesContext } from '../SwapFeaturesContext'
 import { SwapType } from '../types'
@@ -107,8 +106,8 @@ export default function TwapAndLimitSwap({ limit }: { limit?: boolean }) {
         />
       )}
       <Flex flexDirection="column">
-        <StyledSwapContainer $isChartExpanded={isChartExpanded}>
-          <StyledInputCurrencyWrapper mt={isChartExpanded ? '24px' : '0'}>
+        <StyledSwapContainer>
+          <StyledInputCurrencyWrapper style={{ marginTop: isChartExpanded ? '24px' : '0' }}>
             <SwapSelection swapType={limit ? SwapType.LIMIT : SwapType.TWAP} style={{ marginBottom: 16 }} />
             <AppBody>
               <TWAPPanel limit={limit} />

@@ -25,11 +25,11 @@ export const dark: CardTheme = {
   boxShadowSuccess: vars.shadows.success,
   boxShadowWarning: vars.shadows.warning,
   cardHeaderBackground: {
-    default: darkColors.gradientCardHeader,
-    blue: darkColors.gradientBlue,
+    default: darkColors.backgroundAlt,
+    blue: darkColors.backgroundAlt,
     bubblegum: lightColors.gradientBubblegum,
-    violet: darkColors.gradientViolet,
-    pale: darkColors.card,
+    violet: darkColors.backgroundAlt,
+    pale: darkColors.backgroundAlt,
   },
   dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
 };

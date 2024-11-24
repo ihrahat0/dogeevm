@@ -2,7 +2,6 @@ import {
   CurrencySelectButton,
   InputWrapper,
   PercentageButton,
-  PercentageButtonGroup,
   StyledInputCurrencyWrapper,
   SwapButton,
   TokenSelectorWrapper,
@@ -10,43 +9,65 @@ import {
 
 export const V3SwapForm = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+    <>
       <StyledInputCurrencyWrapper>
         <InputWrapper>
-          <input type="text" placeholder="0.00" />
+          <input
+            type="number"
+            placeholder="0.00"
+            style={{
+              background: 'none',
+              border: 'none',
+              color: 'white',
+              fontSize: '24px',
+              width: '100%',
+              outline: 'none',
+            }}
+          />
         </InputWrapper>
         <TokenSelectorWrapper>
           <CurrencySelectButton>
             <img src="/images/tokens/sol.png" alt="SOL" />
             SOL
           </CurrencySelectButton>
-          <PercentageButtonGroup>
+          <div style={{ display: 'flex', gap: '4px' }}>
             <PercentageButton>50%</PercentageButton>
             <PercentageButton>MAX</PercentageButton>
-          </PercentageButtonGroup>
+          </div>
         </TokenSelectorWrapper>
       </StyledInputCurrencyWrapper>
 
       <StyledInputCurrencyWrapper>
         <InputWrapper>
-          <input type="text" placeholder="0.00" />
+          <input
+            type="number"
+            placeholder="0.00"
+            style={{
+              background: 'none',
+              border: 'none',
+              color: 'white',
+              fontSize: '24px',
+              width: '100%',
+              outline: 'none',
+            }}
+          />
         </InputWrapper>
         <TokenSelectorWrapper>
           <CurrencySelectButton>
-            <img src="https://seeklogo.com/images/D/dogecoin-doge-logo-625F9D262A-seeklogo.com.png" alt="DOGE" />
+            <img src="/images/tokens/doge.png" alt="DOGE" />
             DOGE
           </CurrencySelectButton>
-          <PercentageButtonGroup>
+          <div style={{ display: 'flex', gap: '4px' }}>
             <PercentageButton>50%</PercentageButton>
             <PercentageButton>MAX</PercentageButton>
-          </PercentageButtonGroup>
+          </div>
         </TokenSelectorWrapper>
       </StyledInputCurrencyWrapper>
 
       <SwapButton>
-        <img src="/images/wallets/metamask.png" alt="wallet" />
+        <img src="/images/discord.png" alt="Discord" />
         Connect
       </SwapButton>
-    </div>
+    </>
   )
 }

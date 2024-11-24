@@ -1,7 +1,11 @@
 import { Card } from '@pancakeswap/uikit'
 import { styled } from 'styled-components'
 
-export const StyledSwapContainer = styled(Card)`
+interface SwapContainerProps {
+  $isChartExpanded?: boolean
+}
+
+export const StyledSwapContainer = styled(Card)<SwapContainerProps>`
   background: rgba(28, 28, 28, 0.95);
   border-radius: 24px;
   padding: 24px;
@@ -12,6 +16,7 @@ export const StyledSwapContainer = styled(Card)`
   backdrop-filter: blur(5px);
   position: relative;
   z-index: 1;
+  margin-top: ${({ $isChartExpanded }) => ($isChartExpanded ? '24px' : '0')};
 `
 
 export const StyledInputCurrencyWrapper = styled.div`
@@ -25,7 +30,7 @@ export const StyledInputCurrencyWrapper = styled.div`
   height: 96px;
 `
 
-export const InputWrapper = styled.div`
+const InputWrapper = styled.div`
   flex: 1;
   height: 100%;
   input {
@@ -43,14 +48,14 @@ export const InputWrapper = styled.div`
   }
 `
 
-export const TokenSelectorWrapper = styled.div`
+const TokenSelectorWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
   width: 140px;
 `
 
-export const CurrencySelectButton = styled.button`
+const CurrencySelectButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,12 +79,12 @@ export const CurrencySelectButton = styled.button`
   }
 `
 
-export const PercentageButtonGroup = styled.div`
+const PercentageButtonGroup = styled.div`
   display: flex;
   gap: 4px;
 `
 
-export const PercentageButton = styled.button`
+const PercentageButton = styled.button`
   background: #ffd70030;
   color: #ffd700;
   border: none;
@@ -94,7 +99,7 @@ export const PercentageButton = styled.button`
   }
 `
 
-export const SwapButton = styled.button`
+const SwapButton = styled.button`
   background: #ff0000;
   color: white;
   width: 100%;
@@ -124,3 +129,6 @@ export const SwapButton = styled.button`
     cursor: not-allowed;
   }
 `
+
+// Export all components through a single named exports
+export { CurrencySelectButton, InputWrapper, PercentageButton, PercentageButtonGroup, SwapButton, TokenSelectorWrapper }
