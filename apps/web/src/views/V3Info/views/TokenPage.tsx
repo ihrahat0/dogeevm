@@ -328,7 +328,7 @@ const TokenPage: React.FC<{ address: string }> = ({ address }) => {
                   ) : view === ChartView.VOL ? (
                     <BarChart
                       data={formattedVolumeData}
-                      color="#1FC7D4"
+                      color="#FFB237"
                       minHeight={340}
                       value={latestValue}
                       label={valueLabel}

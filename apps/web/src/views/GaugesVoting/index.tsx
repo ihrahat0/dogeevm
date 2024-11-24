@@ -33,7 +33,7 @@ const InlineLink = styled(LinkExternal)`
 `
 
 const StyledGaugesVotingPage = styled.div`
-  background: transparent;
+  2d2d2d;
 
   ${({ theme }) => theme.mediaQueries.lg} {
     background: ${({ theme }) => theme.colors.gradientBubblegum};
@@ -55,7 +55,7 @@ const StyledPage = styled(Page)`
   background: ${({ theme }) => theme.colors.backgroundAlt};
 
   ${({ theme }) => theme.mediaQueries.md} {
-    background: transparent;
+    2d2d2d;
   }
 `
 

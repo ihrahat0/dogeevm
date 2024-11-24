@@ -1,38 +1,35 @@
-import { PancakeTheme } from '@pancakeswap/uikit'
 import { createGlobalStyle } from 'styled-components'
-
-declare module 'styled-components' {
-  /* eslint-disable @typescript-eslint/no-empty-interface */
-  export interface DefaultTheme extends PancakeTheme {}
-}
 
 const GlobalStyle = createGlobalStyle`
   * {
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
-
-  html {
-    scroll-behavior: smooth;
-  }
+  
+  // Add Roboto font import
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
   body {
     background-color: ${({ theme }) => theme.colors.background};
-    overflow-x: hidden;
-
+    
     img {
       height: auto;
       max-width: 100%;
     }
   }
 
-  #__next {
-    position: relative;
-    z-index: 1;
+  // Hide specific elements
+  .kcXNTu.hxtGPi,
+  .CardLayouts__FloatingContainer-sc-b860bc5f-0 {
+    display: none !important;
   }
 
-  #portal-root {
-    position: relative;
-    z-index: 2;
+  .grMtET.hUNBbu.vsFos,
+  .styles__StyledFooter-sc-254d2863-0 {
+    display: none !important;
+  }
+  
+  .Box-sc-3fcdcbc5-1.CardLayouts__StaticContainer-sc-b860bc5f-1.kcXNTu.cbKtSh {
+  display: none !important;
   }
 `
 

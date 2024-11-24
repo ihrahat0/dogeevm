@@ -56,16 +56,16 @@ export const PancakeSwapTheme = {
     palette: {
       mode: 'dark',
       primary: {
-        main: '#1EC7D3',
+        main: '#b39b31',
         contrastText: '#191326',
-        light: '#1EC7D3',
+        light: '#b39b31',
       },
       secondary: {
         main: '#372F47',
         contrastText: '#F4EEFF',
         light: '#372F47',
       },
-      info: { main: '#1EC7D3' },
+      info: { main: '#b39b31' },
       success: { main: '#8AE06C' },
       error: { main: '#F56868' },
       warning: { main: '#F1DF38' },
@@ -75,8 +75,8 @@ export const PancakeSwapTheme = {
       },
       divider: '#383241',
       background: {
-        paper: '#27262D',
-        default: '#27262D',
+        paper: 'transparent',
+        default: 'transparent',
       },
     },
   },
@@ -89,16 +89,16 @@ export const PancakeSwapTheme = {
     palette: {
       mode: 'light',
       primary: {
-        main: '#1EC7D3',
+        main: '#b39b31',
         contrastText: '#FFFFFF',
-        light: '#1EC7D3',
+        light: '#b39b31',
       },
       secondary: {
         main: '#EEEAF4',
         contrastText: '#280D5F',
         light: '#EEEAF4d',
       },
-      info: { main: '#1EC7D3' },
+      info: { main: '#b39b31' },
       success: { main: '#8AE06C' },
       error: { main: '#F56868' },
       warning: { main: '#F1DF38' },

@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
-import Flex from "../Box/Flex";
 import Box from "../Box/Box";
+import Flex from "../Box/Flex";
 import { StatusProps, StepProps } from "./types";
 
 const getStepNumberFontColor = ({ theme, status }: StatusProps) => {
@@ -78,7 +78,7 @@ export const StepNumber = styled.div<StatusProps>`
   ${({ theme }) => theme.mediaQueries.md} {
     font-size: 40px;
     width: 80px;
-    height: 80px;
+    height: 110px;
   }
 `;
 

@@ -1,23 +1,126 @@
-import { Box, Flex } from '@pancakeswap/uikit'
+import { Card } from '@pancakeswap/uikit'
 import { styled } from 'styled-components'
 
-export const StyledSwapContainer = styled(Flex)<{ $isChartExpanded: boolean }>`
-  flex-shrink: 0;
-  height: fit-content;
-  padding: 0;
-  ${({ theme }) => theme.mediaQueries.md} {
-    padding: 0 16px;
-  }
+export const StyledSwapContainer = styled(Card)`
+  background: rgba(28, 28, 28, 0.95);
+  border-radius: 24px;
+  padding: 24px;
+  border: none;
+  box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.3), 0px 0px 40px rgba(255, 0, 0, 0.15), 0px 0px 60px rgba(255, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px;
+  backdrop-filter: blur(5px);
+  position: relative;
+  z-index: 1;
+`
 
-  ${({ theme }) => theme.mediaQueries.lg} {
-    padding: 0 40px;
-  }
+export const StyledInputCurrencyWrapper = styled.div`
+  background: #1a1a1a;
+  border-radius: 23px;
+  padding: 20px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 96px;
+`
 
-  ${({ theme }) => theme.mediaQueries.xxl} {
-    ${({ $isChartExpanded }) => ($isChartExpanded ? 'padding: 0 120px' : 'padding: 0 40px')};
+export const InputWrapper = styled.div`
+  flex: 1;
+  height: 100%;
+  input {
+    font-size: 42px;
+    background: none;
+    border: none;
+    color: #666;
+    outline: none;
+    width: 100%;
+    height: 100%;
+
+    &::placeholder {
+      color: #666;
+    }
   }
 `
 
-export const StyledInputCurrencyWrapper = styled(Box)`
-  width: 328px;
+export const TokenSelectorWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 140px;
+`
+
+export const CurrencySelectButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2d2d2d;
+  border-radius: 24px;
+  padding: 8px 16px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+
+  &:hover {
+    background: #3d3d3d;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+`
+
+export const PercentageButtonGroup = styled.div`
+  display: flex;
+  gap: 4px;
+`
+
+export const PercentageButton = styled.button`
+  background: #ffd70030;
+  color: #ffd700;
+  border: none;
+  border-radius: 12px;
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  flex: 1;
+
+  &:hover {
+    background: #ffd70050;
+  }
+`
+
+export const SwapButton = styled.button`
+  background: #ff0000;
+  color: white;
+  width: 100%;
+  padding: 18px;
+  border-radius: 16px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover {
+    background: #cc0000;
+  }
+
+  &:disabled {
+    background: #3d3d3d;
+    cursor: not-allowed;
+  }
 `

@@ -4,7 +4,7 @@ import { Text } from "../Text";
 export const StyledBottomNavItem = styled.button`
   display: block;
   border: 0;
-  background: transparent;
+  2d2d2d;
   cursor: pointer;
   height: 44px;
   padding: 4px 12px;

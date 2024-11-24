@@ -33,7 +33,7 @@ import { CurrencyModalView } from './types'
 
 const Footer = styled.div`
   width: 100%;
-  background-color: ${({ theme }) => theme.colors.backgroundAlt};
+  background-color: #2d2d2d;
   text-align: center;
 `
 const StyledModalContainer = styled(ModalContainer)`

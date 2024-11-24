@@ -1,8 +1,8 @@
 import { styled } from "styled-components";
 import Box from "../Box/Box";
+import IconButton from "../Button/IconButton";
 import Input from "../Input/Input";
 import Text from "../Text/Text";
-import IconButton from "../Button/IconButton";
 import { BalanceInputProps } from "./types";
 
 export const SwitchUnitsButton = styled(IconButton)`
@@ -25,7 +25,7 @@ export const StyledBalanceInput = styled(Box)<{ isWarning: BalanceInputProps["is
 `;
 
 export const StyledInput = styled(Input)<{ textAlign?: string }>`
-  background: transparent;
+  2d2d2d;
   border-radius: 0;
   box-shadow: none;
   padding-left: 0;

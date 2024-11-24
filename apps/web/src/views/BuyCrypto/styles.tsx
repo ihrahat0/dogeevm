@@ -131,7 +131,7 @@ export const StyledBackArrowContainer = styled(Box)`
 
 export const ModalHeader = styled.div<{ background?: string }>`
   align-items: center;
-  background: transparent;
+  2d2d2d;
   border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
   display: flex;
   padding: 12px 24px;

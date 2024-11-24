@@ -8,7 +8,7 @@ export const CONFIG_TESTNET: GaugeConfig[] = [
     address: '0x523405d3072368BEe373F04EE738f2Aa3e3718c6',
     chainId: ChainId.BSC,
     type: GaugeType.V2,
-    token0Address: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+    token0Address: '0xbA2aE424d960c26247Dd6c32edC70B295c744C43',
     token1Address: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
     pairName: 'CAKE-WBNB',
     feeTier: FeeAmount.MEDIUM,

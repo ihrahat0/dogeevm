@@ -25,7 +25,7 @@ export const SubMenuItem = styled.button`
   border: 0;
   outline: 0;
   cursor: pointer;
-  background: transparent;
+  2d2d2d;
   padding: 8px 16px;
   color: ${({ theme }) => theme.colors.text};
   width: 100%;

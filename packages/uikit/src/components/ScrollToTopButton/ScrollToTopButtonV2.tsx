@@ -1,6 +1,6 @@
-import { useState, useEffect, useCallback } from "react";
-import { styled } from "styled-components";
 import throttle from "lodash/throttle";
+import { useCallback, useEffect, useState } from "react";
+import { styled } from "styled-components";
 import { Button } from "../Button";
 import { ArrowUpIcon } from "../Svg";
 

@@ -22,7 +22,7 @@ const Body = styled.div`
   align-items: center;
   display: flex;
   flex-grow: 1;
-  height: 80px;
+  height: 110px;
   padding: 8px 16px;
 `
 

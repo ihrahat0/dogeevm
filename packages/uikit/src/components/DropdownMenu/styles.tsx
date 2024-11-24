@@ -1,4 +1,4 @@
-import { styled, DefaultTheme } from "styled-components";
+import { DefaultTheme, styled } from "styled-components";
 import { Colors } from "../../theme";
 import { Text } from "../Text";
 import { StyledDropdownMenuItemProps } from "./types";
@@ -19,7 +19,7 @@ export const DropdownMenuItem = styled("button").withConfig({
 })<StyledDropdownMenuItemProps & { $isActive: boolean }>`
   align-items: center;
   border: 0;
-  background: transparent;
+  2d2d2d;
   color: ${({ theme, disabled, $isActive }) => getTextColor({ theme, disabled, $isActive })};
   cursor: pointer;
   font-weight: ${({ $isActive = false }) => ($isActive ? "600" : "400")};

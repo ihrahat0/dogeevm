@@ -41,7 +41,7 @@ export const ScrollableContainer = styled(Flex)`
 
 export const ModalHeader = styled.div<{ background?: string }>`
   align-items: center;
-  background: transparent;
+  2d2d2d;
   display: flex;
   justify-content: space-between;
   padding-top: 12px;

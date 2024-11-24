@@ -80,7 +80,7 @@ it("renders correctly", () => {
     }
 
     .c2 {
-      background: transparent;
+      transparent;
       padding: 12px 24px;
     }
 
@@ -96,7 +96,7 @@ it("renders correctly", () => {
 
     .c4 {
       align-items: center;
-      background: transparent;
+      transparent;
       border-bottom: 1px solid var(--colors-cardBorder);
       display: flex;
       padding: 12px 24px;
@@ -149,7 +149,7 @@ it("renders correctly", () => {
 
     @media screen and (min-width: 852px) {
       .c4 {
-        background: transparent;
+        transparent;
       }
     }
 

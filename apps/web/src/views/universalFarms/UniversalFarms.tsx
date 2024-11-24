@@ -16,6 +16,12 @@ const StyledTab = styled(Tab)`
   }
 `
 
+const TabContainer = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+`
+
 const PAGES_LINK = {
   POOLS: '/liquidity/pools',
   POSITIONS: '/liquidity/positions',
@@ -98,9 +104,11 @@ export const UniversalFarms: React.FC<PropsWithChildren> = () => {
     <>
       <PoolsBanner additionLink={<LegacyPage />} />
       <Page>
-        <TabMenu gap="8px" activeIndex={tabIdx} isShowBorderBottom={false}>
-          {Object.values(tabsConfig).map(({ menu }) => menu())}
-        </TabMenu>
+        <TabContainer>
+          <TabMenu gap="8px" activeIndex={tabIdx} isShowBorderBottom={false}>
+            {Object.values(tabsConfig).map(({ menu }) => menu())}
+          </TabMenu>
+        </TabContainer>
         {tabsConfig[tabIdx].page()}
       </Page>
     </>

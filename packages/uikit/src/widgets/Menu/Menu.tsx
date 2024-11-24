@@ -63,11 +63,38 @@ const BodyWrapper = styled(Box)`
   max-width: 100vw;
 `;
 
+const VideoBackground = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+`;
+
 const Inner = styled.div`
   flex-grow: 1;
   transition: margin-top 0.2s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate3d(0, 0, 0);
   max-width: 100%;
+  position: relative;
 `;
 
 const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
@@ -138,6 +165,11 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
   const providerValue = useMemo(() => ({ linkComponent }), [linkComponent]);
   return (
     <MenuContext.Provider value={providerValue}>
+      <VideoBackground>
+        <video autoPlay loop muted playsInline>
+          <source src="https://dogecoin.com/assets/images/Header_Video.mp4" type="video/mp4" />
+        </video>
+      </VideoBackground>
       <AtomBox
         asChild
         minHeight={{

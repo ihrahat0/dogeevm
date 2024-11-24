@@ -9,7 +9,7 @@ export const SwapFormWrapper = styled.div`
   align-items: center;
   gap: 16px;
   max-width: 480px;
-  margin: 0 auto 56px;
+  margin: 0 auto 1px;
 `;
 
 export const InputPanelWrapper = styled(Flex)`
@@ -18,7 +18,7 @@ export const InputPanelWrapper = styled(Flex)`
   justify-content: flex-start;
   padding: 1rem;
   width: 100%;
-  background-color: ${({ theme }) => theme.colors.backgroundAlt};
+  background-color: #2d2d2d;
   border-radius: 24px;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
 `;

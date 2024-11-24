@@ -72,7 +72,7 @@ const CustomBar = ({
 
 const Chart = ({
   data,
-  color = '#1FC7D4',
+  color = '#FFB237',
   setValue,
   setLabel,
   value,

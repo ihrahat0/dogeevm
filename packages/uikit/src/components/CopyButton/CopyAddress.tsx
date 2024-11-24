@@ -20,7 +20,7 @@ const Address = styled.div`
   padding-left: 16px;
 
   & > input {
-    background: transparent;
+    2d2d2d;
     border: 0;
     color: ${({ theme }) => theme.colors.text};
     display: block;

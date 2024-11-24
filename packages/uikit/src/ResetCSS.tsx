@@ -95,7 +95,7 @@ const ResetCSS = createGlobalStyle`
   input[type=range] {
     -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
     width: 100%; /* Specific width is required for Firefox. */
-    background: transparent; /* Otherwise white in Chrome */
+    2d2d2d; /* Otherwise white in Chrome */
   }
   input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -107,7 +107,7 @@ const ResetCSS = createGlobalStyle`
     width: 100%;
     cursor: pointer;
     /* Hides the slider so custom styles can be added */
-    background: transparent; 
+    2d2d2d; 
     border-color: transparent;
     color: transparent;
   }  

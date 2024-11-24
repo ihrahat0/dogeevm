@@ -1,8 +1,8 @@
-import { styled } from "styled-components";
-import { useState, useMemo, useCallback } from "react";
-import { TreeSelect as PrimereactTreeSelect, TreeSelectChangeEvent, TreeSelectProps } from "primereact/treeselect";
-import type { TreeNode } from "primereact/treenode";
 import { useTheme } from "@pancakeswap/hooks";
+import type { TreeNode } from "primereact/treenode";
+import { TreeSelect as PrimereactTreeSelect, TreeSelectChangeEvent, TreeSelectProps } from "primereact/treeselect";
+import { useCallback, useMemo, useState } from "react";
+import { styled } from "styled-components";
 import { ArrowDropDownIcon } from "../Svg";
 
 function traverseData(treeNodes: TreeNode[]) {
@@ -82,7 +82,7 @@ const SelectContainer = styled.div`
       height: 26px;
       color: ${({ theme }) => theme.colors.textSubtle};
       border: 0 none;
-      background: transparent;
+      2d2d2d;
       border-radius: 50%;
       text-align: center;
     }

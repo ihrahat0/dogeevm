@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import { ICampaignBanner } from './ICampaignBanner'
 
 const MobileImage = styled.img`
-  height: 80px;
+  height: 110px;
   width: auto;
   margin-left: -12px;
 `

@@ -171,15 +171,7 @@ const FeeItem = ({ feeTitle, quote }: { feeTitle: FeeTypes; quote: OnRampProvide
           </Text>
         </Box>
 
-        <Box
-          borderBottom="1px solid cardBorder"
-          borderBottomWidth={1}
-          borderStyle="dotted"
-          width="100%"
-          mb="4px"
-          mx="4px"
-          opacity={0.3}
-        />
+        <Box borderBottomWidth={1} borderStyle="dotted" width="100%" mb="4px" mx="4px" opacity={0.3} />
         <Box width="max-content">
           <Text width="max-content" fontSize="14px" fontWeight="600">
             {formatLocaleNumber({

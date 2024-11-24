@@ -23,6 +23,7 @@ it("renders correctly", () => {
 
     .c0 {
       display: inline-flex;
+      background: #transparent;
       position: fixed;
       top: 0;
       left: 50vw;

@@ -32,6 +32,7 @@ import { ExpertModal } from '@pancakeswap/widgets-internal'
 import { TOKEN_RISK } from 'components/AccessRisk'
 import AccessRiskTooltips from 'components/AccessRisk/AccessRiskTooltips'
 import { useActiveChainId } from 'hooks/useActiveChainId'
+import { usePCSX, usePCSXFeatureEnabled } from 'hooks/usePCSX'
 import { useSpeedQuote } from 'hooks/useSpeedQuote'
 import useTheme from 'hooks/useTheme'
 import { useWebNotifications } from 'hooks/useWebNotifications'
@@ -48,7 +49,6 @@ import {
   useUserV2SwapEnable,
   useUserV3SwapEnable,
 } from 'state/user/smartRouter'
-import { usePCSX, usePCSXFeatureEnabled } from 'hooks/usePCSX'
 import { styled } from 'styled-components'
 import GasSettings from './GasSettings'
 import TransactionSettings from './TransactionSettings'
@@ -79,6 +79,9 @@ const ScrollableContainer = styled(Flex)`
   }
 `
 
+const StyledModal = styled(Modal)`
+  background: #232123;
+`
 export const withCustomOnDismiss =
   (Component) =>
   ({
@@ -140,7 +143,7 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
   }
 
   return (
-    <Modal title={t('Settings')} headerBackground="gradientCardHeader" onDismiss={onDismiss}>
+    <StyledModal title={t('Settings')} onDismiss={onDismiss}>
       <ScrollableContainer>
         {mode === SettingsMode.GLOBAL && (
           <>
@@ -151,16 +154,6 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
                 <ThemeSwitcher isDark={isDark} toggleTheme={() => setTheme(isDark ? 'light' : 'dark')} />
               </Flex>
               <Flex justifyContent="space-between" alignItems="center" mb="24px">
-                <Flex alignItems="center">
-                  <Text>{t('Subgraph Health Indicator')}</Text>
-                  <QuestionHelper
-                    text={t(
-                      'Turn on subgraph health indicator all the time. Default is to show the indicator only when the network is delayed',
-                    )}
-                    placement="top"
-                    ml="4px"
-                  />
-                </Flex>
                 <Toggle
                   id="toggle-subgraph-health-button"
                   checked={subgraphHealth}
@@ -171,10 +164,6 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
                 />
               </Flex>
               <Flex justifyContent="space-between" alignItems="center" mb="24px">
-                <Flex alignItems="center">
-                  <Text>{t('Show username')}</Text>
-                  <QuestionHelper text={t('Shows username of wallet instead of bunnies')} placement="top" ml="4px" />
-                </Flex>
                 <Toggle
                   id="toggle-username-visibility"
                   checked={userUsernameVisibility}
@@ -201,9 +190,6 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
                 </Suspense>
               </Flex>
               <Flex justifyContent="space-between" alignItems="center" mb="24px">
-                <Flex alignItems="center">
-                  <Text>{t('Show testnet')}</Text>
-                </Flex>
                 <Toggle
                   id="toggle-show-testnet"
                   checked={showTestnet}
@@ -308,7 +294,7 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
           </>
         )}
       </ScrollableContainer>
-    </Modal>
+    </StyledModal>
   )
 }
 

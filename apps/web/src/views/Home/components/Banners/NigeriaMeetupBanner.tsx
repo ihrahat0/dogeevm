@@ -17,7 +17,9 @@ import { ASSET_CDN } from 'config/constants/endpoints'
 import { Countdown } from './Countdown'
 
 const VerticalDivider = styled.span`
-  background: #999999;
+  2d2d2d;
+  border: 1px solid red;
+  border-radius: 15px;
   width: 1.5px;
   height: 1.5rem;
   margin: 2px;

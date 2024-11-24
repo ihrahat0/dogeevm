@@ -29,7 +29,7 @@ const StyledCard = styled(Card)`
   background: linear-gradient(180deg, #7645d9 0%, #452a7a 100%);
 
   > div {
-    background: transparent;
+    2d2d2d;
   }
 
   .text-decorator {

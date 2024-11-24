@@ -1,5 +1,5 @@
-import { FC } from 'react'
 import { AppHeader } from 'components/App'
+import { FC } from 'react'
 
 export const FormHeader: FC<{
   title: string

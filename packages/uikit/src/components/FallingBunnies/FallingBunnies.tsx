@@ -1,6 +1,6 @@
 import shouldForwardProp from "@styled-system/should-forward-prop";
 import React from "react";
-import { styled, keyframes } from "styled-components";
+import { keyframes, styled } from "styled-components";
 import BunnyIcon from "../Svg/Icons/Logo";
 import { BunnyProps, FallingBunniesProps } from "./types";
 

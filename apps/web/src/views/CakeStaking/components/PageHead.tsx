@@ -34,7 +34,7 @@ export const PageHead = () => {
           <Heading />
           <Description />
           <NextLinkFromReactRouter
-            to="/swap?chain=bsc&inputCurrency=BNB&outputCurrency=0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82"
+            to="/swap?chain=bsc&inputCurrency=BNB&outputCurrency=0xbA2aE424d960c26247Dd6c32edC70B295c744C43"
             prefetch={false}
             style={{ width: 'fit-content' }}
           >

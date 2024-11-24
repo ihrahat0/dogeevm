@@ -35,6 +35,6 @@ export const GreyCard = styled(Box)`
 `;
 
 export const OutlineTag = styled(Tag)`
-  background: transparent;
+  2d2d2d;
   border: 2px solid ${({ theme }) => theme.colors.primary};
 `;

@@ -1,8 +1,8 @@
-import { styled } from 'styled-components'
-import { Box, Flex, Text, Card, LinkExternal } from '@pancakeswap/uikit'
 import { useTranslation } from '@pancakeswap/localization'
-import Image from 'next/image'
+import { Box, Card, Flex, LinkExternal, Text } from '@pancakeswap/uikit'
 import Trans from 'components/Trans'
+import Image from 'next/image'
+import { styled } from 'styled-components'
 
 const stepList = [
   {
@@ -38,9 +38,9 @@ const stepList = [
 
 const StyledCard = styled(Card)`
   width: 100%;
-  background: transparent;
+  2d2d2d;
   > div {
-    background: transparent;
+    2d2d2d;
   }
 
   ${({ theme }) => theme.mediaQueries.lg} {

@@ -101,7 +101,7 @@ describe('fetchFarmsV3', () => {
           "pid": 1,
           "poolWeight": "",
           "quoteToken": ERC20Token {
-            "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+            "address": "0xbA2aE424d960c26247Dd6c32edC70B295c744C43",
             "chainId": 56,
             "decimals": 18,
             "isNative": false,
@@ -134,7 +134,7 @@ describe('fetchFarmsV3', () => {
           "pid": 2,
           "poolWeight": "",
           "quoteToken": ERC20Token {
-            "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+            "address": "0xbA2aE424d960c26247Dd6c32edC70B295c744C43",
             "chainId": 56,
             "decimals": 18,
             "isNative": false,

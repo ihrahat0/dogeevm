@@ -74,7 +74,7 @@ it("renders correctly", () => {
     }
 
     .c6 {
-      background: transparent;
+      transparent;
       border-radius: 0;
       box-shadow: none;
       padding-left: 0;
@@ -212,7 +212,7 @@ it("renders correctly with unit prop", () => {
     }
 
     .c6 {
-      background: transparent;
+      transparent;
       border-radius: 0;
       box-shadow: none;
       padding-left: 0;
@@ -425,7 +425,7 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
     }
 
     .c6 {
-      background: transparent;
+      transparent;
       border-radius: 0;
       box-shadow: none;
       padding-left: 0;

@@ -1,4 +1,4 @@
-import { styled, DefaultTheme, css } from "styled-components";
+import { DefaultTheme, css, styled } from "styled-components";
 
 import { Input } from "@pancakeswap/uikit";
 import getThemeValue from "@pancakeswap/uikit/util/getThemeValue";
@@ -13,7 +13,7 @@ const getColor = ({ color, theme }: ThemedProps) => {
 };
 
 export const StyledInput = styled(Input)<{ textAlign?: string; color?: string }>`
-  background: transparent;
+  2d2d2d;
   border-radius: 0;
   box-shadow: none;
   padding-left: 0;
