@@ -2,7 +2,6 @@ import { useTranslation } from '@pancakeswap/localization'
 import { Flex, Text, Menu as UikitMenu } from '@pancakeswap/uikit'
 import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 import { NetworkSwitcher } from 'components/NetworkSwitcher'
-import { useActiveChainId } from 'hooks/useActiveChainId'
 import { useDogePrice } from 'hooks/useDogePrice'
 import useTheme from 'hooks/useTheme'
 import { useRouter } from 'next/router'
@@ -17,8 +16,7 @@ const LinkComponent = (linkProps) => {
 }
 
 const Menu = (props) => {
-  const { _chainId } = useActiveChainId()
-  const { _isDark } = useTheme()
+  const { isDark } = useTheme()
   const { currentLanguage, t } = useTranslation()
   const { pathname } = useRouter()
   const dogePrice = useDogePrice()
@@ -65,7 +63,7 @@ const Menu = (props) => {
           <UserMenu />
         </>
       }
-      isDark={_isDark}
+      isDark={isDark}
       currentLang={currentLanguage.code}
       langs={[]}
       links={menuItems}

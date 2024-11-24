@@ -1,3 +1,15 @@
+interface Props {
+  _items: any
+  _isDark: boolean
+  _toggleTheme: () => void
+  _currentLang: string
+  _langs: string[]
+  _setLang: (lang: string) => void
+  _cakePriceUsd?: number
+  _buyCakeLabel: string
+  _buyCakeLink: string
+}
+
 const Footer: React.FC<Props> = ({
   _items,
   _isDark,
@@ -10,5 +22,5 @@ const Footer: React.FC<Props> = ({
   _buyCakeLink,
   ...props
 }) => {
-  // ... rest of the code
+  return null
 }
