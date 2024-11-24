@@ -8,21 +8,21 @@ import TransactionSettings from '../TransactionSettings'
 import { TabContent } from './TabContent'
 
 interface SettingsTabProps {
-  _onCustomizeRoutingClick?: () => void
-  _showExpertModeAcknowledgement: boolean
-  _setShowConfirmExpertModal: (show: boolean) => void
-  _expertMode: boolean
-  _setExpertMode: (expertMode: any) => void
+  onCustomizeRoutingClick?: () => void
+  showExpertModeAcknowledgement: boolean
+  setShowConfirmExpertModal: (show: boolean) => void
+  expertMode: boolean
+  setExpertMode: (expertMode: boolean) => void
   ariaId?: string
 }
 
 export const SettingsTab = memo(
   ({
-    _onCustomizeRoutingClick,
-    _showExpertModeAcknowledgement,
-    _setShowConfirmExpertModal,
-    _expertMode,
-    _setExpertMode,
+    onCustomizeRoutingClick,
+    showExpertModeAcknowledgement,
+    setShowConfirmExpertModal,
+    expertMode,
+    setExpertMode,
     ariaId,
   }: SettingsTabProps) => {
     const { t } = useTranslation()
