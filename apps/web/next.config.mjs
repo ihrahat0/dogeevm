@@ -1,20 +1,50 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import BundleAnalyzer from '@next/bundle-analyzer'
 import { withWebSecurityHeaders } from '@pancakeswap/next-config/withWebSecurityHeaders'
+import smartRouterPkgs from '@pancakeswap/smart-router/package.json' with { type: 'json' }
+import { withSentryConfig } from '@sentry/nextjs'
 import { createVanillaExtractPlugin } from '@vanilla-extract/next-plugin'
 import vercelToolbarPlugin from '@vercel/toolbar/plugins/next'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
 const withVercelToolbar = vercelToolbarPlugin()
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
+
 const withBundleAnalyzer = BundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
 })
+
 const withVanillaExtract = createVanillaExtractPlugin()
+
+const sentryWebpackPluginOptions =
+  process.env.VERCEL_ENV === 'production'
+    ? {
+        // Additional config options for the Sentry Webpack plugin. Keep in mind that
+        // the following options are set automatically, and overriding them is not
+        // recommended:
+        //   release, url, org, project, authToken, configFile, stripPrefix,
+        //   urlPrefix, include, ignore
+        silent: false, // Logging when deploying to check if there is any problem
+        validate: true,
+        hideSourceMaps: false,
+        // https://github.com/getsentry/sentry-webpack-plugin#options.
+      }
+    : {
+        hideSourceMaps: false,
+        silent: true, // Suppresses all logs
+        dryRun: !process.env.SENTRY_AUTH_TOKEN,
+      }
+
+const workerDeps = Object.keys(smartRouterPkgs.dependencies)
+  .map((d) => d.replace('@pancakeswap/', 'packages/'))
+  .concat(['/packages/smart-router/', '/packages/swap-sdk/', '/packages/token-lists/'])
 
 /** @type {import('next').NextConfig} */
 const config = {
+  basePath: '/evm',
+  assetPrefix: '/evm',
   typescript: {
     tsconfigPath: 'tsconfig.json',
     ignoreBuildErrors: true,
@@ -40,12 +70,13 @@ const config = {
     '@pancakeswap/widgets-internal',
     '@pancakeswap/ifos',
     '@pancakeswap/uikit',
+    // https://github.com/TanStack/query/issues/6560#issuecomment-1975771676
     '@tanstack/query-core',
   ],
   reactStrictMode: true,
   swcMinify: false,
   images: {
-    unoptimized: true,
+    contentDispositionType: 'attachment',
     remotePatterns: [
       {
         protocol: 'https',
@@ -58,31 +89,10 @@ const config = {
         pathname: '/web/**',
       },
     ],
-  },
-  webpack: (webpackConfig, { webpack }) => {
-    webpackConfig.plugins.push(
-      new webpack.DefinePlugin({
-        __SENTRY_DEBUG__: false,
-        __SENTRY_TRACING__: false,
-      }),
-    )
-    return webpackConfig
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
+    unoptimized: true,
   },
   async rewrites() {
     return {
-      beforeFiles: [
-        {
-          source: '/evm',
-          destination: '/',
-        },
-        {
-          source: '/evm/:path*',
-          destination: '/:path*',
-        }
-      ],
       afterFiles: [
         {
           source: '/info/token/:address',
@@ -99,13 +109,141 @@ const config = {
       ],
     }
   },
+  async headers() {
+    return [
+      {
+        source: '/favicon.ico',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, immutable, max-age=31536000',
+          },
+        ],
+      },
+      {
+        source: '/logo.png',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, immutable, max-age=31536000',
+          },
+        ],
+      },
+      {
+        source: '/images/:all*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, immutable, max-age=31536000',
+          },
+        ],
+      },
+      {
+        source: '/images/tokens/:all*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, immutable, max-age=604800',
+          },
+        ],
+      },
+    ]
+  },
+  async redirects() {
+    return [
+      {
+        source: '/send',
+        destination: '/swap',
+        permanent: true,
+      },
+      {
+        source: '/create/:currency*',
+        destination: '/add/:currency*',
+        permanent: true,
+      },
+      {
+        source: '/farms/archived',
+        destination: '/farms/history',
+        permanent: true,
+      },
+      {
+        source: '/pool',
+        destination: '/liquidity',
+        permanent: true,
+      },
+      {
+        source: '/staking',
+        destination: '/pools',
+        permanent: true,
+      },
+      {
+        source: '/syrup',
+        destination: '/pools',
+        permanent: true,
+      },
+      {
+        source: '/collectibles',
+        destination: '/nfts',
+        permanent: true,
+      },
+      {
+        source: '/info/pools',
+        destination: '/info/pairs',
+        permanent: true,
+      },
+      {
+        source: '/info/pools/:address',
+        destination: '/info/pairs/:address',
+        permanent: true,
+      },
+      {
+        source: '/api/v3/:chainId/farms/liquidity/:address',
+        destination: 'https://farms-api.pancakeswap.com/v3/:chainId/liquidity/:address',
+        permanent: false,
+      },
+      {
+        source: '/images/tokens/:address',
+        destination: 'https://tokens.pancakeswap.finance/images/:address',
+        permanent: false,
+      },
+      {
+        source: '/swap',
+        destination: '/',
+        permanent: true,
+      },
+    ]
+  },
+  webpack: (webpackConfig, { webpack, isServer }) => {
+    // tree shake sentry tracing
+    webpackConfig.plugins.push(
+      new webpack.DefinePlugin({
+        __SENTRY_DEBUG__: false,
+        __SENTRY_TRACING__: false,
+      }),
+    )
+    if (!isServer && webpackConfig.optimization.splitChunks) {
+      // webpack doesn't understand worker deps on quote worker, so we need to manually add them
+      // https://github.com/webpack/webpack/issues/16895
+      // eslint-disable-next-line no-param-reassign
+      webpackConfig.optimization.splitChunks.cacheGroups.workerChunks = {
+        chunks: 'all',
+        test(module) {
+          const resource = module.nameForCondition?.() ?? ''
+          return resource ? workerDeps.some((d) => resource.includes(d)) : false
+        },
+        priority: 31,
+        name: 'worker-chunks',
+        reuseExistingChunk: true,
+      }
+    }
+    return webpackConfig
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 }
 
-// Temporarily remove Sentry config
 export default withVercelToolbar(
-  withBundleAnalyzer(
-    withVanillaExtract(
-      withWebSecurityHeaders(config)
-    )
-  )
+  withBundleAnalyzer(withVanillaExtract(withSentryConfig(withWebSecurityHeaders(config)), sentryWebpackPluginOptions)),
 )
+
