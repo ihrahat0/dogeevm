@@ -7,6 +7,7 @@
     "dev": "next dev",
     "build": "DISABLE_ESLINT_PLUGIN=true DISABLE_TYPE_CHECK=true SKIP_SENTRY=true next build",
     "build:prod": "next build && next export",
+    "start": "next start",
     "start:prod": "next start",
     "test": "LC_ALL=\"en_US.UTF-8\" vitest --run",
     "test:watch": "LC_ALL=\"en_US.UTF-8\" vitest --watch",
