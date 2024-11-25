@@ -26,14 +26,7 @@ export function CurrencyInputPanel({
       <AtomBox display="flex" alignItems="center" justifyContent="space-between">
         {top}
       </AtomBox>
-      <AtomBox
-        display="flex"
-        flexDirection="column"
-        flexWrap="nowrap"
-        position="relative"
-        backgroundColor="transparent"
-        zIndex="1"
-      >
+      <AtomBox display="flex" flexDirection="column" flexWrap="nowrap" position="relative" zIndex="1">
         <AtomBox
           as="label"
           className={SwapCSS.inputContainerVariants({

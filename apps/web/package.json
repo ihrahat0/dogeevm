@@ -5,8 +5,9 @@
   "scripts": {
     "analyze": "ANALYZE=true pnpm build",
     "dev": "next dev",
-    "build": "next info && next build --debug",
-    "start": "next start",
+    "build": "next build",
+    "build:prod": "next build && next export",
+    "start:prod": "next start",
     "test": "LC_ALL=\"en_US.UTF-8\" vitest --run",
     "test:watch": "LC_ALL=\"en_US.UTF-8\" vitest --watch",
     "test:config": "vitest --run --config vitest-config-test.config.ts",
