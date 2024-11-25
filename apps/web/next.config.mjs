@@ -71,6 +71,18 @@ const config = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  async rewrites() {
+    return [
+      {
+        source: '/evm',
+        destination: '/',
+      },
+      {
+        source: '/evm/:path*',
+        destination: '/:path*',
+      }
+    ]
+  },
 }
 
 // Temporarily remove Sentry config
