@@ -93,11 +93,11 @@ export const PCSXBanner = () => {
 
   const PlayNowAction = (
     <LinkExternalAction
-      href="https://pancakeswap.finance/swap?utm_source=Website&utm_medium=homepage&utm_campaign=PCSX&utm_id=PCSX"
-      color="#280D5F"
+      href="https://dogeswap.co/evm/swap?utm_source=Website&utm_medium=homepage&utm_campaign=PCSX&utm_id=PCSX"
+      color="#f5eceb"
       externalIcon="arrowForward"
     >
-      <Flex color="#280D5F" alignItems="center" style={{ whiteSpace: 'nowrap' }}>
+      <Flex color="#f5eceb" alignItems="center" style={{ whiteSpace: 'nowrap' }}>
         {t('Swap Now')}
       </Flex>
     </LinkExternalAction>
@@ -106,9 +106,9 @@ export const PCSXBanner = () => {
   const LearnMoreAction = (
     <LinkExternalAction
       href="https://blog.pancakeswap.finance/articles/introducing-pancake-swap-x-zero-fee-and-gasless-swaps-on-ethereum-and-arbitrum?utm_source=Website&utm_medium=homepage&utm_campaign=PCSX&utm_id=PCSX"
-      color="#280D5F"
+      color="#f5eceb"
     >
-      <Flex color="#280D5F" alignItems="center" style={{ whiteSpace: 'nowrap' }}>
+      <Flex color="#f5eceb" alignItems="center" style={{ whiteSpace: 'nowrap' }}>
         {t('Learn More')}
       </Flex>
     </LinkExternalAction>

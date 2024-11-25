@@ -1,5 +1,14 @@
-import { useTheme, THEME_DOMAIN, COOKIE_THEME_KEY } from '@pancakeswap/hooks'
+import { useContext } from 'react'
+import { ThemeContext as StyledThemeContext } from 'styled-components'
 
-export { THEME_DOMAIN, COOKIE_THEME_KEY }
+const useTheme = () => {
+  const theme = useContext(StyledThemeContext)
+  return {
+    isDark: true,
+    theme,
+    setTheme: () => null,
+    toggleTheme: () => null,
+  }
+}
 
 export default useTheme

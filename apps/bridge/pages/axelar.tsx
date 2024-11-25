@@ -7,7 +7,7 @@ import { useTheme } from 'styled-components'
 
 const lightStyle = {
   neutralContent: '#7a6eaa',
-  baseContent: '#280d5f',
+  baseContent: '#f5eceb',
   base100: '#eeeaf4',
   base200: '#ffffff',
   base300: '#ffffff',
@@ -16,7 +16,7 @@ const lightStyle = {
   success: '#31d0aa',
   primary: '#FFB237',
   secondary: '#FFB237',
-  secondaryContent: '#280d5f',
+  secondaryContent: '#f5eceb',
   neutral: '#FFFFFF',
   roundedBtn: '26px',
   roundedBox: '1rem',
@@ -35,7 +35,7 @@ const darkStyle = {
   success: '#31d0aa',
   primary: '#FFB237',
   secondary: '#FFB237',
-  secondaryContent: '#280d5f',
+  secondaryContent: '#f5eceb',
   neutral: '#26272c',
   roundedBtn: '26px',
   roundedBox: '1rem',

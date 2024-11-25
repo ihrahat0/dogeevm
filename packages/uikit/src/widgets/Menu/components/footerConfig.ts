@@ -7,19 +7,19 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t("Trade"),
-        href: "https://pancakeswap.finance/swap",
+        href: "https://dogeswap.co/evm/swap",
       },
       {
         label: t("Earn"),
-        href: "https://pancakeswap.finance/liquidity/pools",
+        href: "https://dogeswap.co/evm/liquidity/pools",
       },
       {
         label: t("Play"),
-        href: "https://pancakeswap.finance/prediction",
+        href: "https://dogeswap.co/evm/prediction",
       },
       {
         label: t("veCAKE"),
-        href: "https://pancakeswap.finance/cake-staking",
+        href: "https://dogeswap.co/evm/cake-staking",
       },
       {
         label: t("Merchandise"),
@@ -36,7 +36,7 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
       },
       {
         label: t("Staking Pools"),
-        href: "https://pancakeswap.finance/pools",
+        href: "https://dogeswap.co/evm/pools",
       },
       {
         label: t("Token Launches"),
@@ -65,7 +65,7 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
       },
       {
         label: t("V4"),
-        href: "https://pancakeswap.finance/v4",
+        href: "https://dogeswap.co/evm/v4",
       },
     ],
   },
@@ -115,7 +115,7 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
       },
       {
         label: t("Terms Of Service"),
-        href: "https://pancakeswap.finance/terms-of-service",
+        href: "https://dogeswap.co/evm/terms-of-service",
       },
     ],
   },

@@ -54,7 +54,7 @@ const bgXsVariant: GraphicDetail = {
 }
 
 const titleVariant = {
-  color: '#280D5F',
+  color: '#f5eceb',
   strokeColor: '#ffffff',
   strokeSize: 2,
   fontSize: 28,
@@ -109,7 +109,7 @@ export const AthleticsBanner = () => {
         desc={<BannerDesc style={{ whiteSpace: 'break-spaces' }}>{t(subTitleText)}</BannerDesc>}
         actions={
           <BannerActionContainer>
-            <LinkExternalAction href={learnMoreLink} externalIcon="arrowForward" color="#280D5F">
+            <LinkExternalAction href={learnMoreLink} externalIcon="arrowForward" color="#f5eceb">
               {t('Join Now!')}
             </LinkExternalAction>
           </BannerActionContainer>

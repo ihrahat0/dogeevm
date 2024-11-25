@@ -1,17 +1,17 @@
 import noop from "lodash/noop";
-import { LinkStatus } from "./types";
-import { MenuItemsType } from "../../components/MenuItems/types";
 import {
-  SwapIcon,
-  SwapFillIcon,
-  EarnIcon,
-  EarnFillIcon,
-  TrophyIcon,
-  TrophyFillIcon,
-  MoreIcon,
   DropdownMenuItems,
+  EarnFillIcon,
+  EarnIcon,
+  MoreIcon,
+  SwapFillIcon,
+  SwapIcon,
+  TrophyFillIcon,
+  TrophyIcon,
 } from "../../components";
 import { DropdownMenuItemType } from "../../components/DropdownMenu/types";
+import { MenuItemsType } from "../../components/MenuItems/types";
+import { LinkStatus } from "./types";
 
 export const status: { NEW: LinkStatus; SOON: LinkStatus; LIVE: LinkStatus } = {
   LIVE: {
@@ -162,7 +162,7 @@ export const userMenulinks: DropdownMenuItems[] = [
   },
   {
     type: DropdownMenuItemType.EXTERNAL_LINK,
-    href: "https://pancakeswap.finance",
+    href: "https://dogeswap.co/evm",
     label: "Link",
   },
   {

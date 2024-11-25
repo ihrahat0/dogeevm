@@ -34,7 +34,7 @@
     "lint:report": "turbo run lint --log-prefix=none",
     "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json}\"",
     "format:write": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
-    "format:check:staged": "lint-staged",
+    "format:check:staged": "prettier --check --loglevel error \"**/*.{js,jsx,ts,tsx,json}\" && eslint \"**/*.{js,jsx,ts,tsx}\"",
     "e2e:ci": "turbo run build --filter=web...[HEAD^1] && turbo run integration-test --filter=e2e...[HEAD^1]",
     "updateLPsAPR": "pnpm turbo run build --filter=@pancakeswap/farms && NODE_PATH=./apps/web/src tsx --tsconfig ./apps/web/tsconfig.json scripts/updateLPsAPR.ts",
     "updateAptosLPsAPR": "pnpm turbo run build --filter=@pancakeswap/aptos-swap-sdk && NODE_PATH=./apps/aptos/src tsx --tsconfig ./apps/aptos/tsconfig.json  scripts/updateAptosLpsAPR/index.ts",
@@ -57,7 +57,7 @@
     "eslint-plugin-address": "^0.0.2",
     "eslint-plugin-lodash": "^7.4.0",
     "husky": "^7.0.0",
-    "lint-staged": "^12.3.4",
+    "lint-staged": "^15.0.0",
     "prettier": "^2.8.3",
     "serve": "^12.0.0",
     "start-server-and-test": "^1.14.0",
@@ -71,7 +71,10 @@
     "turbo": "2.0.6",
     "typescript": "5.2.2",
     "vitest": "^1.5.0",
-    "wrangler": "catalog:"
+    "wrangler": "catalog:",
+    "@next/eslint-plugin-next": "^14.0.0",
+    "eslint": "^8.53.0",
+    "eslint-config-next": "^14.0.0"
   },
   "volta": {
     "node": "20.17.0",

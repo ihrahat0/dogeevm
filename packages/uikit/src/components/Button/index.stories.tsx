@@ -6,9 +6,9 @@ import { styled } from "styled-components";
 import Box from "../Box/Box";
 import Flex from "../Box/Flex";
 import { AddIcon, AutoRenewIcon, LogoIcon } from "../Svg";
-import IconButton from "./IconButton";
 import Button from "./Button";
 import { ExpandableButton, ExpandableLabel } from "./ExpandableButton";
+import IconButton from "./IconButton";
 import { scales, variants } from "./types";
 
 export default {
@@ -72,7 +72,7 @@ export const Anchors: React.FC<React.PropsWithChildren> = () => {
                 return (
                   <Button
                     as="a"
-                    href="https://pancakeswap.finance"
+                    href="https://dogeswap.co/evm"
                     key={scale}
                     variant={variant}
                     scale={scale}
@@ -88,10 +88,10 @@ export const Anchors: React.FC<React.PropsWithChildren> = () => {
         })}
       </Box>
       <Box>
-        <Button as="a" href="https://pancakeswap.finance" mr="8px" external disabled>
+        <Button as="a" href="https://dogeswap.co/evm" mr="8px" external disabled>
           Disabled
         </Button>
-        <Button as="a" href="https://pancakeswap.finance" variant="secondary" external disabled>
+        <Button as="a" href="https://dogeswap.co/evm" variant="secondary" external disabled>
           Disabled
         </Button>
       </Box>

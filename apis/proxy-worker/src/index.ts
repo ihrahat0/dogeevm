@@ -18,7 +18,7 @@ function createEndpoint(url: string) {
     const response = await fetch(url, {
       headers: {
         'X-Forwarded-For': ip,
-        origin: isLocalHost ? 'https://pancakeswap.finance' : headers.get('origin') || '',
+        origin: isLocalHost ? 'https://dogeswap.co/evm' : headers.get('origin') || '',
       },
       body,
       method: 'POST',

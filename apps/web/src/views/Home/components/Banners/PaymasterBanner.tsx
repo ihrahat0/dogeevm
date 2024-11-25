@@ -41,7 +41,7 @@ const BannerDesc = styled(Text)`
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  color: #280d5f;
+  color: #000;
   white-space: nowrap;
 `
 
@@ -60,15 +60,15 @@ export const PaymasterBanner = () => {
   const { isMobile, isTablet } = useMatchBreakpoints()
 
   const startTradeAction = (
-    <LinkExternalAction href={startTradeLink} color="#280d5f" externalIcon="arrowForward">
-      <Flex color="#280d5f" alignItems="center" style={{ whiteSpace: 'nowrap' }}>
+    <LinkExternalAction href={startTradeLink} color="#f5eceb" externalIcon="arrowForward">
+      <Flex color="#f5eceb" alignItems="center" style={{ whiteSpace: 'nowrap' }}>
         {t('Start Trading')}
       </Flex>
     </LinkExternalAction>
   )
 
   const learnMoreAction = (
-    <LinkExternalAction color="#280d5f" href={learnMoreLink} style={{ whiteSpace: 'nowrap' }}>
+    <LinkExternalAction color="#f5eceb" href={learnMoreLink} style={{ whiteSpace: 'nowrap' }}>
       {t('Learn More')}
     </LinkExternalAction>
   )

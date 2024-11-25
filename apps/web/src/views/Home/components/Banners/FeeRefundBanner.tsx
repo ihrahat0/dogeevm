@@ -40,7 +40,7 @@ const BannerDesc = styled(Text)`
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  color: #280d5f;
+  color: #000;
   white-space: nowrap;
 `
 

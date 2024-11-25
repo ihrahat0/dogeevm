@@ -78,12 +78,12 @@ export const AlloraBanner = () => {
         actions={
           <BannerActionContainer>
             <Action
-              href="https://pancakeswap.finance/prediction?token=ETH&chain=arb&utm_source=homepagebanner&utm_medium=website&utm_campaign=Arbitrum&utm_id=AlloraPointsPrediction"
+              href="https://dogeswap.co/evm/prediction?token=ETH&chain=arb&utm_source=homepagebanner&utm_medium=website&utm_campaign=Arbitrum&utm_id=AlloraPointsPrediction"
               display={isMobile ? 'none' : 'flex'}
               icon="arrowForward"
               alignItems="center"
               text="Join now"
-              color="#280D5F"
+              color="#f5eceb"
             />
             <Action
               href="https://www.allora.network/blog/announcing-the-allora-x-pancakeswap-points-program"
@@ -91,7 +91,7 @@ export const AlloraBanner = () => {
               display="flex"
               alignItems="center"
               text="Learn More"
-              color="#280D5F"
+              color="#f5eceb"
             />
           </BannerActionContainer>
         }

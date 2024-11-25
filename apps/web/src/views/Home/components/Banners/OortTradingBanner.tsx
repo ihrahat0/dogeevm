@@ -102,7 +102,7 @@ export const OortTradingBanner = () => {
               icon="arrowForward"
               alignItems="center"
               text={t('Trade Now')}
-              color="#280D5F"
+              color="#f5eceb"
             />
             <Action
               href={learnMoreLink}
@@ -110,7 +110,7 @@ export const OortTradingBanner = () => {
               display="flex"
               alignItems="center"
               text={t('Learn More')}
-              color="#280D5F"
+              color="#f5eceb"
             />
           </BannerActionContainer>
         }

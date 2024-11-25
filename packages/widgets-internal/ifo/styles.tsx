@@ -23,7 +23,7 @@ export const LogoWrapper = styled(Box)`
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  background: #280d5f;
+  background: #f5eceb;
 
   border: ${({ theme }) => (theme.isDark ? "1px solid #3a216e" : "")};
 `;

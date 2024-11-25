@@ -95,7 +95,7 @@ export const PancakeSwapTheme = {
       },
       secondary: {
         main: '#EEEAF4',
-        contrastText: '#280D5F',
+        contrastText: '#f5eceb',
         light: '#EEEAF4d',
       },
       info: { main: '#b39b31' },
@@ -103,7 +103,7 @@ export const PancakeSwapTheme = {
       error: { main: '#F56868' },
       warning: { main: '#F1DF38' },
       text: {
-        primary: '#280D5F',
+        primary: '#f5eceb',
         secondary: '#7C70AB',
       },
       divider: '#E7E3EB',

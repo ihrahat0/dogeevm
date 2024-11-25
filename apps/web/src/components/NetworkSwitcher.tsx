@@ -71,7 +71,7 @@ const NetworkSelect = ({ switchNetwork, chainId, isWrongNetwork }) => {
         style={{ justifyContent: 'flex-start' }}
         as="a"
         target="_blank"
-        href="https://dogeswap.co/solana/"
+        href="https://dogeswap.co/"
       >
         <img
           src="https://cdn-icons-png.flaticon.com/512/6001/6001527.png"

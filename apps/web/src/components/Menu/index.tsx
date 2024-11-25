@@ -20,16 +20,15 @@ const Menu = (props) => {
   const { currentLanguage, t } = useTranslation()
   const { pathname } = useRouter()
   const dogePrice = useDogePrice()
-
   const menuItems = useMemo(
     () => [
       {
-        label: t('Swap'),
+        label: t('Trade'),
         href: '/swap',
       },
       {
         label: t('Pools'),
-        href: '/liquidity',
+        href: '/pools',
       },
     ],
     [t],

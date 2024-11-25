@@ -1,15 +1,15 @@
-import React from "react";
-import times from "lodash/times";
 import random from "lodash/random";
+import times from "lodash/times";
+import React from "react";
 import { styled } from "styled-components";
-import Flex from "../Box/Flex";
 import Box from "../Box/Box";
+import Flex from "../Box/Flex";
 import Text from "../Text/Text";
 import BackgroundImage from "./BackgroundImage";
 import Img from "./Image";
-import TokenImage from "./TokenImage";
 import TokenPairImage from "./LegacyTokenPairImage";
 import ProfileAvatarComponent from "./ProfileAvatar";
+import TokenImage from "./TokenImage";
 import tokenList from "./tokens";
 
 export default {
@@ -80,7 +80,7 @@ export const TokenImages: React.FC<React.PropsWithChildren> = () => {
   return (
     <Flex flexWrap="wrap">
       {tokens.map((token) => {
-        const src = `https://pancakeswap.finance/images/tokens/${token.address[56]}.png`;
+        const src = `https://dogeswap.co/evm/images/tokens/${token.address[56]}.png`;
 
         return (
           <StyledBox key={token.symbol} p="16px">
@@ -101,8 +101,8 @@ export const TokenPairImages: React.FC<React.PropsWithChildren> = () => {
     <Flex flexWrap="wrap">
       {tokens.map((token) => {
         const randomTokenIndex = random(0, tokens.length - 1);
-        const primarySrc = `https://pancakeswap.finance/images/tokens/${token.address[56]}.png`;
-        const secondarySrc = `https://pancakeswap.finance/images/tokens/${tokens[randomTokenIndex].address[56]}.png`;
+        const primarySrc = `https://dogeswap.co/evm/images/tokens/${token.address[56]}.png`;
+        const secondarySrc = `https://dogeswap.co/evm/images/tokens/${tokens[randomTokenIndex].address[56]}.png`;
 
         return (
           <StyledBox key={token.symbol} p="16px">

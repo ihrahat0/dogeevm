@@ -63,8 +63,8 @@ export const PancakeNotifications: {
     return {
       title: t('New LP Position Added'),
       body: t('New LP position successfully added. You will be notified on important updates.'),
-      icon: `https://pancakeswap.finance/logo.png`,
-      url: 'https://pancakeswap.finance',
+      icon: `https://dogeswap.co/evm/logo.png`,
+      url: 'https://dogeswap.co/evm',
       type: SubsctiptionType.Liquidity,
     }
   },
@@ -74,7 +74,7 @@ export const PancakeNotifications: {
       body: t(
         'You are now susbscribed and will receive alerts and updates on PCS features. If you dont want to receive notifications you can unsubscribe at any time.',
       ),
-      icon: `https://pancakeswap.finance/logo.png`,
+      icon: `https://dogeswap.co/evm/logo.png`,
       type: SubsctiptionType.Alerts,
     }
   },

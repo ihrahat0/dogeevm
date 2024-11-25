@@ -102,6 +102,18 @@ export const socials = [
     icon: InstagramIcon,
     href: "https://instagram.com/dogeswap_",
   },
+  {
+    label: "TikTok",
+    icon: () => (
+      <img
+        src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png"
+        alt="TikTok"
+        width={24}
+        height={24}
+      />
+    ),
+    href: "https://tiktok.com/@dogeswap",
+  },
   // {
   //   label: "Github",
   //   icon: GithubIcon,

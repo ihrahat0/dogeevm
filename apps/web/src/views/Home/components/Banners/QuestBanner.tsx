@@ -70,7 +70,7 @@ export const QuestBanner = () => {
               icon="arrowForward"
               alignItems="center"
               text={t('Create Your Profile')}
-              color="#280D5F"
+              color="#f5eceb"
             />
             <Action
               href="https://blog.pancakeswap.finance/articles/introducing-pancake-swap-quest-beta-your-ultimate-de-fi-quest-platform"
@@ -78,7 +78,7 @@ export const QuestBanner = () => {
               icon="openNew"
               alignItems="center"
               text={t('Learn More')}
-              color="#280D5F"
+              color="#f5eceb"
             />
           </BannerActionContainer>
         }

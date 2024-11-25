@@ -176,7 +176,7 @@ export const PairPriceChart: React.FC<PairPriceChartNewProps> = ({
     const chart = createChart(chartRef?.current, {
       layout: {
         background: { color: "transparent" },
-        textColor: isDark ? "#F4EEFF" : "#280D5F",
+        textColor: isDark ? "#F4EEFF" : "#f5eceb",
       },
       autoSize: true,
       handleScale: false,

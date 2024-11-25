@@ -1,6 +1,5 @@
 import { ContextApi } from '@pancakeswap/localization'
-import { DropdownMenuItems, EarnFillIcon, EarnIcon, MenuItemsType, SwapFillIcon, SwapIcon } from '@pancakeswap/uikit'
-import { SUPPORT_FARMS } from 'config/constants/supportChains'
+import { DropdownMenuItems, EarnIcon, MenuItemsType, SwapFillIcon, SwapIcon } from '@pancakeswap/uikit'
 
 export type ConfigMenuDropDownItemsType = DropdownMenuItems & {
   hideSubNav?: boolean
@@ -45,9 +44,6 @@ const config: (
       label: t('Pool'),
       href: '/liquidity/pools',
       icon: EarnIcon,
-      fillIcon: EarnFillIcon,
-      supportChainIds: SUPPORT_FARMS,
-      matchHrefs: ['/liquidity/positions', '/farms'],
     },
   ].map((item) => addMenuItemSupported(item, chainId))
 

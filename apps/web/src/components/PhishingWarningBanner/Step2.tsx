@@ -2,7 +2,7 @@ import { useTranslation } from '@pancakeswap/localization'
 import { Box, Text } from '@pancakeswap/uikit'
 import { useMemo } from 'react'
 
-const domain = 'https://pancakeswap.finance'
+const domain = 'https://dogeswap.co/evm'
 
 export const Step2 = () => {
   const { t } = useTranslation()

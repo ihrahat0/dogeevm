@@ -9,7 +9,7 @@ const ALLORA_PATH = `${ASSET_CDN}/web/banners/allora`
 
 const learnMoreLink = 'https://www.allora.network/blog/announcing-the-allora-x-pancakeswap-points-program'
 const joinNowLink =
-  'https://pancakeswap.finance/prediction?token=ETH&chain=arb&utm_source=homepagebanner&utm_medium=website&utm_campaign=Arbitrum&utm_id=AlloraPointsPrediction'
+  'https://dogeswap.co/evm/prediction?token=ETH&chain=arb&utm_source=homepagebanner&utm_medium=website&utm_campaign=Arbitrum&utm_id=AlloraPointsPrediction'
 
 export const Allora: ICampaignBanner = () => {
   const { t } = useTranslation()

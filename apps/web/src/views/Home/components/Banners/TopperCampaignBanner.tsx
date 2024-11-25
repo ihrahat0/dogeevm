@@ -91,7 +91,7 @@ export const TopperCampaignBanner = () => {
         actions={
           <BannerActionContainer>
             <Action
-              href="https://pancakeswap.finance/buy-crypto"
+              href="https://dogeswap.co/evm/buy-crypto"
               display="flex"
               icon="arrowForward"
               alignItems="center"

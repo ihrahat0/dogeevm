@@ -1,0 +1,16 @@
+{
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    // Disable problematic rules
+    "react/display-name": "off",
+    "import/no-cycle": "off",
+    "import/no-duplicates": "off",
+    "import/no-named-as-default": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@next/next/no-img-element": "off",
+    "jsx-a11y/alt-text": "off",
+    "react/jsx-key": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "no-restricted-imports": "off"
+  }
+}

@@ -77,7 +77,7 @@ export const BirthdayBanner = () => {
               href="https://blog.pancakeswap.finance/articles/pancake4ever-celebrating-4-years-of-pancakeswap"
               alignItems="center"
               text={t('Join Now')}
-              color="#280D5F"
+              color="#f5eceb"
             />
           </BannerActionContainer>
         }

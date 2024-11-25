@@ -7,7 +7,7 @@
     "patch": 0
   },
   "tags": {},
-  "logoURI": "https://pancakeswap.finance/logo.png",
+  "logoURI": "https://dogeswap.co/evm/logo.png",
   "keywords": ["pancake", "default"],
   "tokens": [
     {
@@ -48,7 +48,7 @@
       "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
       "chainId": 56,
       "decimals": 18,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0x2170Ed0880ac9A755fd29B2688956BD959F933F8.png"
+      "logoURI": "https://dogeswap.co/evm/images/tokens/0x2170Ed0880ac9A755fd29B2688956BD959F933F8.png"
     },
     {
       "name": "BTCB Token",
@@ -377,7 +377,7 @@
       "address": "0xd66c6B4F0be8CE5b39D52E0Fd1344c389929B378",
       "chainId": 97,
       "decimals": 18,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0x2170Ed0880ac9A755fd29B2688956BD959F933F8.png"
+      "logoURI": "https://dogeswap.co/evm/images/tokens/0x2170Ed0880ac9A755fd29B2688956BD959F933F8.png"
     },
     {
       "name": "Wrapped BNB",
@@ -401,7 +401,7 @@
       "address": "0xe7798f023fc62146e8aa1b36da45fb70855a77ea",
       "chainId": 204,
       "decimals": 18,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0x2170Ed0880ac9A755fd29B2688956BD959F933F8.png"
+      "logoURI": "https://dogeswap.co/evm/images/tokens/0x2170Ed0880ac9A755fd29B2688956BD959F933F8.png"
     },
     {
       "name": "Tether USD",
@@ -417,7 +417,7 @@
       "address": "0xa11B290B038C35711eB309268a2460754f730921",
       "chainId": 5611,
       "decimals": 18,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0xbA2aE424d960c26247Dd6c32edC70B295c744C43.png"
+      "logoURI": "https://dogeswap.co/evm/images/tokens/0xbA2aE424d960c26247Dd6c32edC70B295c744C43.png"
     },
     {
       "name": "Tether USD",

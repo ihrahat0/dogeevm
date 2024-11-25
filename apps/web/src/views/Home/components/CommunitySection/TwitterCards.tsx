@@ -75,7 +75,7 @@ export const useTweetsData = () => {
         tweet: `Get Your Uniswap Interface Fees Refunded on PancakeSwap, up to $8M!
 
 Match your Ethereum Uniswap volume 1:1 on Ethereum PancakeSwap, and we’ll refund ALL your interface fees paid.
-Trade now: https://pancakeswap.finance/swap?chain=eth&utm_source=twitter&utm_medium=Ethereum&utm_campaign=Swap&utm_id=InterfacefeeRefund
+Trade now: https://dogeswap.co/evm/swap?chain=eth&utm_source=twitter&utm_medium=Ethereum&utm_campaign=Swap&utm_id=InterfacefeeRefund
 `,
         link: 'https://x.com/PancakeSwap/status/1791076335462314097',
         date: 'May 16',

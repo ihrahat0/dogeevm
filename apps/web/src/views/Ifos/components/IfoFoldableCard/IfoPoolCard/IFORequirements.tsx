@@ -1,11 +1,11 @@
-import { useMemo } from 'react'
-import { Text, Flex, AccountIcon, TeamBattleIcon, Box, useTooltip, LinkExternal } from '@pancakeswap/uikit'
-import { useAccount } from 'wagmi'
 import { useTranslation } from '@pancakeswap/localization'
+import { AccountIcon, Box, Flex, LinkExternal, TeamBattleIcon, Text, useTooltip } from '@pancakeswap/uikit'
+import { useMemo } from 'react'
+import { useAccount } from 'wagmi'
 
+import TransWithElement from '../../TransWithElement'
 import OkNFTIcon from './Icons/OkNFT'
 import OkProfilePointsIcon from './Icons/OkProfilePoints'
-import TransWithElement from '../../TransWithElement'
 
 const NotOkNFT = ({ admissionProfile }) => {
   const { t } = useTranslation()
@@ -22,7 +22,7 @@ const NotOkNFT = ({ admissionProfile }) => {
         <>
           <LinkExternal
             style={{ display: 'inline' }}
-            href={`https://pancakeswap.finance/nfts/collections/${admissionProfile}`}
+            href={`https://dogeswap.co/evm/nfts/collections/${admissionProfile}`}
           >
             {t('Pancake Squad NFT')}
           </LinkExternal>
@@ -48,10 +48,7 @@ const NotOkProfilePoints = ({ pointThreshold }) => {
       element={
         <>
           <br />
-          <LinkExternal
-            style={{ display: 'inline' }}
-            href={`https://pancakeswap.finance/profile/${account}/achievements/`}
-          >
+          <LinkExternal style={{ display: 'inline' }} href={`https://dogeswap.co/evm/profile/${account}/achievements/`}>
             {t('Pancake Profile')}
           </LinkExternal>
         </>

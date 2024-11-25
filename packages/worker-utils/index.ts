@@ -3,7 +3,7 @@ export const CORS_ALLOW = [
   /\.pancakeswap\.finance$/,
   /\.pancakeswap\.games$/,
   /\.pancakeswap\.com$/,
-  'https://pancakeswap.finance',
+  'https://dogeswap.co/evm',
   'https://pancakeswap.games',
   'https://pancakeswap.com',
   'https://tgqa.noahlabs.tech',

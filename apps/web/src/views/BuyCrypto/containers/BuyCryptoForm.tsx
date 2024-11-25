@@ -27,12 +27,12 @@ import {
   type SetStateAction,
 } from 'react'
 import { useBuyCryptoActionHandlers } from 'state/buyCrypto/hooks'
+import { useBuyCryptoFormState } from 'state/buyCrypto/reducer'
 import { Field } from 'state/swap/actions'
 import { useTheme } from 'styled-components'
 import { v4 } from 'uuid'
 import { OnRampUnit, type OnRampProviderQuote } from 'views/BuyCrypto/types'
 import OnBoardingView from 'views/Notifications/containers/OnBoardingView'
-import { useBuyCryptoFormState } from 'state/buyCrypto/reducer'
 import { BuyCryptoSelector } from '../components/OnRampCurrencySelect'
 import { OnRampFlipButton } from '../components/OnRampFlipButton/OnRampFlipButton'
 import { PopOverScreenContainer } from '../components/PopOverScreen/PopOverScreen'
@@ -263,7 +263,7 @@ export function BuyCryptoForm({ providerAvailabilities }: { providerAvailabiliti
               style={{ color: `${theme.colors.primary}` }}
               display="flex"
               fontSize="14px"
-              href="https://pancakeswap.finance/terms-of-service"
+              href="https://dogeswap.co/evm/terms-of-service"
               external
             >
               {t('terms of service')}

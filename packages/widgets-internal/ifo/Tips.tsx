@@ -1,9 +1,9 @@
+import { useTranslation } from "@pancakeswap/localization";
+import { Box, FlexGap, InfoFilledIcon, Link, Message, MessageProps, MessageText } from "@pancakeswap/uikit";
 import BigNumber from "bignumber.js";
 import { useMemo } from "react";
-import { SpaceProps } from "styled-system";
-import { FlexGap, Message, MessageText, InfoFilledIcon, Box, MessageProps, Link } from "@pancakeswap/uikit";
-import { useTranslation } from "@pancakeswap/localization";
 import styled from "styled-components";
+import { SpaceProps } from "styled-system";
 
 type Props = {
   amount?: BigNumber | number;
@@ -60,7 +60,7 @@ export function MigrateVeCakeTips(props: SpaceProps) {
             {t("To participate, you need to migrate your fixed-term CAKE staking position to veCAKE.")}
           </MessageText>
           <LinkMessageText bold>
-            <Link href="https://pancakeswap.finance">
+            <Link href="https://dogeswap.co/evm">
               {t("Learn more")} {">>"}
             </Link>
           </LinkMessageText>

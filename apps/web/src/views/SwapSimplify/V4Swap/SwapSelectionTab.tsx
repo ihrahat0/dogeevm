@@ -55,10 +55,10 @@ export const SwapSelection = ({
       let url = ''
       switch (value) {
         case SwapType.LIMIT:
-          url = '/swap/limit'
+          url = '/liquidity'
           break
         case SwapType.TWAP:
-          url = '/swap/twap'
+          url = '/pools'
           break
         case SwapType.MARKET:
           url = '/'
@@ -103,9 +103,9 @@ export const SwapSelection = ({
         noButtonMargin
         fullWidth
       >
-        <StyledButtonMenuItem>{t('Market')}</StyledButtonMenuItem>
-        <StyledButtonMenuItem>{t('Limit')}</StyledButtonMenuItem>
-        <StyledButtonMenuItem {...tSwapProps}>{t('TWAP')}</StyledButtonMenuItem>
+        <StyledButtonMenuItem>{t('Swap')}</StyledButtonMenuItem>
+        <StyledButtonMenuItem>{t('Liquidity')}</StyledButtonMenuItem>
+        <StyledButtonMenuItem>{t('Pools')}</StyledButtonMenuItem>
       </ButtonMenu>
       {/* NOTE: Commented out until charts are supported again */}
       {/* {isChartSupported && withToolkit && (

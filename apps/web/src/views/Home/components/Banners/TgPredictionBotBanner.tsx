@@ -91,8 +91,8 @@ export const TgPredictionBotBanner = () => {
   const { isMobile, isSm } = useMatchBreakpoints()
 
   const PlayNowAction = (
-    <LinkExternalAction href="https://t.me/pancakefi_bot" color="#280D5F" externalIcon="arrowForward">
-      <Flex color="#280D5F" alignItems="center" style={{ whiteSpace: 'nowrap' }}>
+    <LinkExternalAction href="https://t.me/pancakefi_bot" color="#f5eceb" externalIcon="arrowForward">
+      <Flex color="#f5eceb" alignItems="center" style={{ whiteSpace: 'nowrap' }}>
         {t('Play Now on Telegram')}
       </Flex>
     </LinkExternalAction>

@@ -49,7 +49,7 @@ export const BrasilMeetupBanner = memo(function BrasilMeetupBanner() {
               icon="openNew"
               alignItems="center"
               text={t('Learn More')}
-              color="#280D5F"
+              color="#f5eceb"
             />
           </BannerActionContainer>
         }
