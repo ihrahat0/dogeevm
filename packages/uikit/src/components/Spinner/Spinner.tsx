@@ -9,7 +9,7 @@ const Spinner: React.FC<React.PropsWithChildren<SpinnerProps>> = ({ size = 128 }
       <Image
         width={size}
         height={size * 1.197}
-        src="images/pancake-3d-spinner-v2.gif"
+        src="images/spinner-doge.gif"
         alt="pancake-3d-spinner"
         style={{ borderRadius: "20px" }}
       />

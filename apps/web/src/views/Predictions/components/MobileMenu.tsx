@@ -1,19 +1,9 @@
+import { ButtonMenu, ButtonMenuItem } from '@pancakeswap/uikit'
+import useLocalDispatch from 'contexts/LocalRedux/useLocalDispatch'
+import { setChartPaneState, setHistoryPaneState } from 'state/predictions'
+import { useGetPredictionsStatus, useIsChartPaneOpen, useIsHistoryPaneOpen } from 'state/predictions/hooks'
 import { styled } from 'styled-components'
 import { useAccount } from 'wagmi'
-import {
-  ArrowBackIcon,
-  ArrowForwardIcon,
-  ButtonMenu,
-  ButtonMenuItem,
-  Cards,
-  ChartIcon,
-  HistoryIcon,
-  IconButton,
-} from '@pancakeswap/uikit'
-import useLocalDispatch from 'contexts/LocalRedux/useLocalDispatch'
-import { PredictionStatus } from '@pancakeswap/prediction'
-import { useGetPredictionsStatus, useIsChartPaneOpen, useIsHistoryPaneOpen } from 'state/predictions/hooks'
-import { setChartPaneState, setHistoryPaneState } from 'state/predictions'
 import useSwiper from '../hooks/useSwiper'
 
 const ButtonNav = styled.div`
@@ -78,29 +68,14 @@ const MobileMenu = () => {
 
   return (
     <StyledMobileMenu>
-      <ButtonNav>
-        <IconButton variant="text" onClick={() => swiper?.slidePrev()} disabled={status !== PredictionStatus.LIVE}>
-          <ArrowBackIcon width="24px" color="primary" />
-        </IconButton>
-      </ButtonNav>
-      <TabNav>
-        <ButtonMenu activeIndex={activeIndex} scale="sm" variant="subtle" onItemClick={handleItemClick}>
-          <ButtonMenuItem>
-            <Cards color="currentColor" />
-          </ButtonMenuItem>
-          <ButtonMenuItem>
-            <ChartIcon color="currentColor" />
-          </ButtonMenuItem>
-          <ButtonMenuItem disabled={!account}>
-            <HistoryIcon color="currentColor" />
-          </ButtonMenuItem>
-        </ButtonMenu>
-      </TabNav>
-      <ButtonNav>
-        <IconButton variant="text" onClick={() => swiper?.slideNext()} disabled={status !== PredictionStatus.LIVE}>
-          <ArrowForwardIcon width="24px" color="primary" />
-        </IconButton>
-      </ButtonNav>
+      <ButtonMenu scale="sm" variant="subtle">
+        <ButtonMenuItem as="a" href="/swap">
+          Swap
+        </ButtonMenuItem>
+        <ButtonMenuItem as="a" href="/pools">
+          Pool
+        </ButtonMenuItem>
+      </ButtonMenu>
     </StyledMobileMenu>
   )
 }
