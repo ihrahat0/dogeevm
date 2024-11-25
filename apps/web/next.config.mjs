@@ -72,16 +72,32 @@ const config = {
     ignoreDuringBuilds: true,
   },
   async rewrites() {
-    return [
-      {
-        source: '/evm',
-        destination: '/',
-      },
-      {
-        source: '/evm/:path*',
-        destination: '/:path*',
-      }
-    ]
+    return {
+      beforeFiles: [
+        {
+          source: '/evm',
+          destination: '/',
+        },
+        {
+          source: '/evm/:path*',
+          destination: '/:path*',
+        }
+      ],
+      afterFiles: [
+        {
+          source: '/info/token/:address',
+          destination: '/info/tokens/:address',
+        },
+        {
+          source: '/info/pool/:address',
+          destination: '/info/pools/:address',
+        },
+        {
+          source: '/.well-known/vercel/flags',
+          destination: '/api/vercel/flags',
+        },
+      ],
+    }
   },
 }
 
