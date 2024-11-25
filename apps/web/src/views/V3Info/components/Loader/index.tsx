@@ -78,7 +78,7 @@ export const LocalLoader = ({ fill }: { fill: boolean }) => {
   return (
     <Wrapper fill={fill ? 1 : 0}>
       <AnimatedImg>
-        <img src="images/pancake-3d-spinner-v2.gif" alt="loading-icon" />
+        <img src="images/pancake-3d-spinner-v2.gif" alt="loading-icon" style={{ borderRadius: '20px' }} />
       </AnimatedImg>
     </Wrapper>
   )
