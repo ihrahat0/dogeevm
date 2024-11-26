@@ -253,7 +253,7 @@ export const arbitrumTokens = {
     18,
     'DLP',
     'RDNT-WETH',
-    'https://dogeswap.co/evm',
+    'https://pancakeswap.finance',
   ),
   mdlp: new ERC20Token(
     ChainId.ARBITRUM_ONE,

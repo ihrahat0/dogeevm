@@ -197,7 +197,7 @@ const config = {
         permanent: true,
       },
       {
-        source: '/api/v3/:chainId/farms/liquidity/:address',
+        source: 'https://pancakeswap.finance/api/v3/:chainId/farms/liquidity/:address',
         destination: 'https://farms-api.pancakeswap.com/v3/:chainId/liquidity/:address',
         permanent: false,
       },

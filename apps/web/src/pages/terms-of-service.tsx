@@ -40,7 +40,7 @@ const TermsOfService = () => {
           These Terms of Service (the “Agreement”) explains the terms and conditions by which you may access and use
         </Text>
         <Link m="0 4px" display="inline !important" href="https://dogeswap.co/evm">
-          https://dogeswap.co/evm
+          https://pancakeswap.finance
         </Link>
         <Text as="span">
           and any subdomains associated with the Website. You must read this Agreement carefully as it governs your use
@@ -80,7 +80,7 @@ const TermsOfService = () => {
           a current version of the Agreement at
         </Text>
         <Link m="0 4px" display="inline !important" href="https://dogeswap.co/evm/terms-of-service">
-          https://dogeswap.co/evm/terms-of-service.
+          https://pancakeswap.finance/terms-of-service.
         </Link>
         <Text as="span">
           All modifications will be effective when they are posted, and your continued accessing or use of the Website

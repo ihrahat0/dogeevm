@@ -9,8 +9,8 @@ const Spinner: React.FC<React.PropsWithChildren<SpinnerProps>> = ({ size = 128 }
       <Image
         width={size}
         height={size * 1.197}
-        src="images/spinner-doge.gif"
-        alt="pancake-3d-spinner"
+        src="https://raw.githubusercontent.com/ihrahat0/dogeevm/refs/heads/main/apps/web/public/images/spinner-doge.gif"
+        alt="doge-spinner"
         style={{ borderRadius: "20px" }}
       />
     </Box>

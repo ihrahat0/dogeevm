@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://dogeswap.co/evm">
-      <img src="https://dogeswap.co/evm/logo.png" height="128">
+      <img src="https://pancakeswap.finance/logo.png" height="128">
   </a>
 </p>
 

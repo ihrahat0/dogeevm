@@ -43,7 +43,7 @@ import { Hex, decodeFunctionResult, encodeFunctionData } from 'viem'
 import { useAccount } from 'wagmi'
 
 export const farmV3ApiFetch = (chainId: number): Promise<FarmsV3Response> =>
-  fetch(`/api/v3/${chainId}/farms`)
+  fetch(`https://pancakeswap.finance/api/v3/${chainId}/farms`)
     .then((res) => res.json())
     .then((data: SerializedFarmsV3Response) => {
       const farmsWithPrice = data.farmsWithPrice.map((f) => ({
