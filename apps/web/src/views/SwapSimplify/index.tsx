@@ -20,7 +20,6 @@ const Wrapper = styled(Box)`
   ${({ theme }) => theme.mediaQueries.md} {
     min-width: 328px;
     max-width: 480px;
-    display: none;
   }
 `
 
