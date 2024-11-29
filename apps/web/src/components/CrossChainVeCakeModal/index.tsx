@@ -328,7 +328,7 @@ export const CrossChainVeCakeModal: React.FC<{
                 ) : (
                   <ConnectWalletButton />
                 )}
-                <Button variant="secondary" width="50%" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
+                <Button variant="secondary" width="50%" onClick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
                   {t('Close')}
                 </Button>
               </Flex>

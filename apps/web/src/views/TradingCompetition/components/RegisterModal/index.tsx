@@ -48,7 +48,7 @@ const RegisterModal: React.FC<React.PropsWithChildren<CompetitionProps>> = ({
         </AvatarWrapper>
         {modalInner()}
       </Flex>
-      <Button variant="text" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
+      <Button variant="text" onClick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
         {t('Close Window')}
       </Button>
     </Modal>

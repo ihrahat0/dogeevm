@@ -59,7 +59,7 @@ export function CollectModal({
       >
         {pendingTx ? t("Confirming") : t("Confirm")}
       </Button>
-      <Button variant="text" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }} pb="0px">
+      <Button variant="text" onClick={onDismiss} style={{ backgroundColor: '#8B0000' }} pb="0px">
         {t("Close Window")}
       </Button>
     </Modal>

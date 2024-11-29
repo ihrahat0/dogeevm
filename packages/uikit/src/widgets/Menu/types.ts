@@ -14,20 +14,21 @@ export interface NavProps {
   linkComponent?: ElementType;
   rightSide?: ReactNode;
   banner?: ReactElement;
+  isDark: boolean;
+  toggleTheme: (isDark: boolean) => void;
+  currentLang: string;
+  setLang: (lang: Language) => void;
+  cakePriceUsd?: number;
   links: Array<MenuItemsType>;
   subLinks?: Array<SubMenuItemsType>;
   footerLinks: Array<FooterLinkType>;
   activeItem?: string;
   activeSubItem?: string;
   activeSubItemChildItem?: string;
-  isDark: boolean;
-  toggleTheme: (isDark: boolean) => void;
-  cakePriceUsd?: number;
-  currentLang: string;
+  langs: Language[];
   buyCakeLabel: string;
   buyCakeLink: string;
-  langs: Language[];
   chainId: number;
-  setLang: (lang: Language) => void;
-  logoComponent?: ReactNode;
+  navBackground?: string;
+  style?: React.CSSProperties;
 }

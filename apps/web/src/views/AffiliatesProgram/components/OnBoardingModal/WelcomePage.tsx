@@ -95,7 +95,7 @@ const WelcomePage: React.FC<React.PropsWithChildren<WelcomePageProps>> = ({ isLo
                 {t('Start Now')}
               </Button>
             ) : (
-              <Button width="100%" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
+              <Button width="100%" onClick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
                 {t('Close')}
               </Button>
             )}

@@ -73,7 +73,7 @@ const PauseProfilePage: React.FC<React.PropsWithChildren<PauseProfilePageProps>>
       >
         {t('Confirm')}
       </Button>
-      <Button variant="text" width="100%" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
+      <Button variant="text" width="100%" onClick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
         {t('Close Window')}
       </Button>
     </>

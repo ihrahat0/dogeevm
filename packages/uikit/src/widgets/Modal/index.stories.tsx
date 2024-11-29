@@ -50,7 +50,7 @@ export const WithBackButton: React.FC<React.PropsWithChildren> = () => {
 
     return (
       <Modal title={title} onDismiss={onDismiss} onBack={handleOnBack} hideCloseButton>
-        <Button onclick={onDismiss} style={{ backgroundColor: '#8B0000' }} variant="text">
+        <Button onClick={onDismiss} style={{ backgroundColor: '#8B0000' }} variant="text">
           Consumer can still close it.
         </Button>
       </Modal>
@@ -112,7 +112,7 @@ export const ReactingToOutsideChanges: React.FC<React.PropsWithChildren> = () =>
     return (
       <Modal title={title} onDismiss={onDismiss}>
         <h2>Counter: {count}</h2>
-        <Button mt="8px" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
+        <Button mt="8px" onClick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
           Close
         </Button>
       </Modal>

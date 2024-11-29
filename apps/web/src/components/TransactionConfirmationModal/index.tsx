@@ -84,7 +84,7 @@ export function TransactionSubmittedContent({
               tokenLogo={token instanceof WrappedTokenInfo ? token.logoURI : undefined}
             />
           )}
-          <Button onclick={onDismiss} style={{ backgroundColor: '#8B0000' }} mt="20px">
+          <Button onClick={onDismiss} style={{ backgroundColor: '#8B0000' }} mt="20px">
             {t('Close')}
           </Button>
         </AutoColumn>

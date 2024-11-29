@@ -173,7 +173,7 @@ const FeeTransactionModal: React.FC<FeeModalProps> = ({
         bottom={0}
         background="rgba(0, 0, 0, 0.6)"
         zIndex={99}
-        onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}
+        onClick={onDismiss} style={{ backgroundColor: '#8B0000' }}
       />
       <Modal 
         title={t('Approve Transaction')} 

@@ -112,7 +112,7 @@ const WithdrawModal: React.FC<React.PropsWithChildren<WithdrawModalProps>> = ({
           </Box>
         )}
         <ModalActions>
-          <Button variant="secondary" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }} width="100%" disabled={pendingTx}>
+          <Button variant="secondary" onClick={onDismiss} style={{ backgroundColor: '#8B0000' }} width="100%" disabled={pendingTx}>
             {t("Cancel")}
           </Button>
           {pendingTx ? (

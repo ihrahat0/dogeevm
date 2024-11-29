@@ -78,7 +78,7 @@ const EditNumbersModal: React.FC<
         >
           {isConfirming ? t('Confirming') : t('Confirm and buy')}
         </Button>
-        <Button mt="8px" variant={isConfirming ? 'secondary' : 'text'} disabled={isConfirming} onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
+        <Button mt="8px" variant={isConfirming ? 'secondary' : 'text'} disabled={isConfirming} onClick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
           <ArrowBackIcon color={isConfirming ? 'disabled' : 'primary'} height="24px" width="24px" /> {t('Go back')}
         </Button>
       </Flex>

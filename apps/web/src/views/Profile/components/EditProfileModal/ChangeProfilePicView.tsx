@@ -137,7 +137,7 @@ const ChangeProfilePicPage: React.FC<React.PropsWithChildren<ChangeProfilePicPag
         onApprove={handleApprove}
         onConfirm={handleConfirm}
       />
-      <Button mt="8px" variant="text" width="100%" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }} disabled={isApproving || isConfirming}>
+      <Button mt="8px" variant="text" width="100%" onClick={onDismiss} style={{ backgroundColor: '#8B0000' }} disabled={isApproving || isConfirming}>
         {t('Close Window')}
       </Button>
     </>

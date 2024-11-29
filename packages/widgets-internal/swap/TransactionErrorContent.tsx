@@ -33,7 +33,7 @@ export function TransactionErrorContent({
       {onDismiss ? (
         <StepTitleAnimationContainer>
           <Flex justifyContent="center" pt="24px">
-            <Button onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}>{t("Dismiss")}</Button>
+            <Button onClick={onDismiss} style={{ backgroundColor: '#8B0000' }}>{t("Dismiss")}</Button>
           </Flex>
         </StepTitleAnimationContainer>
       ) : null}

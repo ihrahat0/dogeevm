@@ -21,7 +21,7 @@ const TransactionConfirmed: React.FC<React.PropsWithChildren<TransactionConfirme
       </Flex>
       <Divider />
       <Flex px="16px" pb="16px" justifyContent="center">
-        <Button onclick={onDismiss} style={{ backgroundColor: '#8B0000' }} variant="secondary" width="100%">
+        <Button onClick={onDismiss} style={{ backgroundColor: '#8B0000' }} variant="secondary" width="100%">
           {t('Close')}
         </Button>
       </Flex>

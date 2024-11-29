@@ -56,7 +56,7 @@ const VoteDetailsModal: React.FC<React.PropsWithChildren<VoteDetailsModalProps>>
                 block={block}
               />
             )}
-            <Button variant="secondary" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }} width="100%" mt="16px">
+            <Button variant="secondary" onClick={onDismiss} style={{ backgroundColor: '#8B0000' }} width="100%" mt="16px">
               {t('Close')}
             </Button>
           </>
