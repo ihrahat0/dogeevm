@@ -84,7 +84,7 @@ const PoolPage: React.FC<{ address: string }> = ({ address }) => {
   // theming
 
   const { theme } = useTheme()
-  const backgroundColor = theme.colors.primary
+  const backgroundColor = '#8B0000'
 
   // token data
   const poolData = usePoolData(address)

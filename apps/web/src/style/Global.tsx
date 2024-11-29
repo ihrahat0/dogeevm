@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
- button{
+ button {
  background-color: #8B0000;
  }
 

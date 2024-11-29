@@ -132,7 +132,7 @@ export const ActionItems = ({ pool, icon }: { pool: PoolInfo; icon?: React.React
         <StyledConnectWalletButton scale="sm" variant="text" />
       ) : (
         <NextLinkFromReactRouter to={addLiquidityLink}>
-          <StyledButton scale="sm" variant="text">
+          <StyledButton scale="sm" variant="text" style={{ backgroundColor: '#8B0000' }}>
             {t('Add Liquidity')}
             {icon}
           </StyledButton>

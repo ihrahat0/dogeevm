@@ -316,7 +316,7 @@ export const AddLiquidity = memo(function AddLiquidity({
   )
   return (
     <ModalV2 onDismiss={onDismiss} isOpen={isOpen}>
-      <StyledModal title={isTxLoading ? t('Pending Confirm') : t('Add Liquidity')}>
+      <StyledModal title={isTxLoading ? t('Pending Confirm') : t('Add Liquidity')} style={{ backgroundColor: '#8B0000' }}>
         {isTxLoading ? (
           <ConfirmationPendingContent pendingText={pendingText} />
         ) : (

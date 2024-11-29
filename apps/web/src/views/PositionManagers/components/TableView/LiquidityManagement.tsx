@@ -219,7 +219,7 @@ export const LiquidityManagement = memo(function LiquidityManagement({
               {!account ? (
                 <ConnectWalletButton mt="4px" width="100%" />
               ) : (
-                <Button variant="primary" width="100%" onClick={showAddLiquidityModal}>
+                <Button variant="primary" width="100%" onClick={showAddLiquidityModal} style={{ backgroundColor: '#8B0000' }}>
                   {t('Add Liquidity')}
                 </Button>
               )}

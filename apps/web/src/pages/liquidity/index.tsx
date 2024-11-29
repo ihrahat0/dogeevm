@@ -2,20 +2,20 @@ import { PositionDetails } from '@pancakeswap/farms'
 import { useTranslation } from '@pancakeswap/localization'
 import { isStableSwapSupported } from '@pancakeswap/stable-swap-sdk'
 import {
-    AddIcon,
-    Button,
-    ButtonMenu,
-    ButtonMenuItem,
-    CardBody,
-    CardFooter,
-    Checkbox,
-    Dots,
-    Flex,
-    HistoryIcon,
-    IconButton,
-    Tag,
-    Text,
-    useModal,
+  AddIcon,
+  Button,
+  ButtonMenu,
+  ButtonMenuItem,
+  CardBody,
+  CardFooter,
+  Checkbox,
+  Dots,
+  Flex,
+  HistoryIcon,
+  IconButton,
+  Tag,
+  Text,
+  useModal,
 } from '@pancakeswap/uikit'
 import { Liquidity, NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 import { AppBody, AppHeader } from 'components/App'
@@ -38,9 +38,9 @@ import { V2PairCard } from 'views/AddLiquidityV3/components/V2PairCard'
 import PositionListItem from 'views/AddLiquidityV3/formViews/V3FormView/components/PoolListItem'
 import Page from 'views/Page'
 import useStableConfig, {
-    LPStablePair,
-    StableConfigContext,
-    useLPTokensWithBalanceByAccount,
+  LPStablePair,
+  StableConfigContext,
+  useLPTokensWithBalanceByAccount,
 } from 'views/Swap/hooks/useStableConfig'
 
 const Body = styled(CardBody)`
@@ -356,7 +356,7 @@ export default function PoolListPage() {
         </Body>
         <CardFooter style={{ textAlign: 'center' }}>
           <NextLink href="/add" passHref>
-            <Button id="join-pool-button" width="100%" startIcon={<AddIcon color="invertedContrast" />}>
+            <Button id="join-pool-button" width="100%" startIcon={<AddIcon color="invertedContrast" />} style={{ backgroundColor: '#8B0000' }}>
               {t('Add Liquidity')}
             </Button>
           </NextLink>

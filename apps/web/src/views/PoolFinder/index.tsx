@@ -158,7 +158,7 @@ export default function PoolFinder() {
                     <Button
                       as={NextLinkFromReactRouter}
                       to={`/v2/add/${currencyId(currency0)}/${currencyId(currency1)}`}
-                      variant="secondary"
+                      variant="secondary" style={{ backgroundColor: '#8B0000' }}
                     >
                       {t('Add Liquidity')}
                     </Button>

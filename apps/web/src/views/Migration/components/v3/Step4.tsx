@@ -141,7 +141,7 @@ export function Step4() {
             </Button>
           </>
         ) : (
-          <CommitButton onClick={openModal} width="100%">
+          <CommitButton onClick={openModal} width="100%" style={{ backgroundColor: '#8B0000' }}>
             {t('Add Liquidity')}
           </CommitButton>
         )}

@@ -182,7 +182,7 @@ const TokenPage: React.FC<React.PropsWithChildren<{ routeAddress: string }>> = (
               </Flex>
               <Flex>
                 <NextLinkFromReactRouter to={`/add/${address}?chain=${CHAIN_QUERY_NAME[chainId]}`}>
-                  <Button mr="8px" variant="secondary">
+                  <Button mr="8px" variant="secondary" style={{ backgroundColor: '#8B0000' }}>
                     {t('Add Liquidity')}
                   </Button>
                 </NextLinkFromReactRouter>
