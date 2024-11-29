@@ -1,16 +1,16 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Box, useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerDesc,
-  BannerGraphics,
-  BannerMain,
-  BannerTitle,
-  LinkExternalAction,
-  PancakeSwapBadge,
-  type GraphicDetail,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerDesc,
+    BannerGraphics,
+    BannerMain,
+    BannerTitle,
+    LinkExternalAction,
+    PancakeSwapBadge,
+    type GraphicDetail,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import { useViewport } from 'hooks/useViewport'
@@ -70,7 +70,7 @@ export const QuestBanner = () => {
               icon="arrowForward"
               alignItems="center"
               text={t('Create Your Profile')}
-              color="#f5eceb"
+              color="#fff"
             />
             <Action
               href="https://blog.pancakeswap.finance/articles/introducing-pancake-swap-quest-beta-your-ultimate-de-fi-quest-platform"
@@ -78,7 +78,7 @@ export const QuestBanner = () => {
               icon="openNew"
               alignItems="center"
               text={t('Learn More')}
-              color="#f5eceb"
+              color="#fff"
             />
           </BannerActionContainer>
         }

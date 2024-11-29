@@ -3,15 +3,15 @@ import { Box, useMatchBreakpoints } from '@pancakeswap/uikit'
 import { memo } from 'react'
 
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerGraphics,
-  BannerMain,
-  BannerTitle,
-  FloatingGraphic,
-  LinkExternalAction,
-  PancakeSwapBadge,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerGraphics,
+    BannerMain,
+    BannerTitle,
+    FloatingGraphic,
+    LinkExternalAction,
+    PancakeSwapBadge,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import { Countdown } from './Countdown'
@@ -49,7 +49,7 @@ export const BrasilMeetupBanner = memo(function BrasilMeetupBanner() {
               icon="openNew"
               alignItems="center"
               text={t('Learn More')}
-              color="#f5eceb"
+              color="#fff"
             />
           </BannerActionContainer>
         }

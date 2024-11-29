@@ -3,7 +3,7 @@ import { ArrowForwardIcon, Box, Button, Flex, Link, useMatchBreakpoints } from '
 import { ASSET_CDN } from 'config/constants/endpoints'
 import Image from 'next/legacy/image'
 import { memo } from 'react'
-import { styled, css, keyframes } from 'styled-components'
+import { css, keyframes, styled } from 'styled-components'
 import * as S from './Styled'
 
 const fading = keyframes`
@@ -136,7 +136,9 @@ const LogoBox = styled(Box)`
   }
 `
 const Devider = styled.div`
-  background: #ffffff;
+  background: transparent;
+border: 1px solid #fff;
+border-radius: 12px;;
   height: 10px;
   width: 2px;
   border-radius: 1px;

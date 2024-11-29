@@ -105,7 +105,7 @@ export const SwapSelection = ({
       >
         <StyledButtonMenuItem>{t('Swap')}</StyledButtonMenuItem>
         <StyledButtonMenuItem>{t('Liquidity')}</StyledButtonMenuItem>
-        <StyledButtonMenuItem>{t('Pools')}</StyledButtonMenuItem>
+        {/* <StyledButtonMenuItem>{t('Pools')}</StyledButtonMenuItem> */}
       </ButtonMenu>
       {/* NOTE: Commented out until charts are supported again */}
       {/* {isChartSupported && withToolkit && (

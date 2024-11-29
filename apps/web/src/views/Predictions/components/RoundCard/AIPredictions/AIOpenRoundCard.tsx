@@ -2,16 +2,16 @@ import { AVERAGE_CHAIN_BLOCK_TIMES } from '@pancakeswap/chains'
 import { useTranslation } from '@pancakeswap/localization'
 import { BetPosition, TRANSACTION_BUFFER_BLOCKS } from '@pancakeswap/prediction'
 import {
-  Box,
-  Button,
-  Card,
-  CardBody,
-  Flex,
-  PlayCircleOutlineIcon,
-  QuestionHelper,
-  Text,
-  useToast,
-  useTooltip,
+    Box,
+    Button,
+    Card,
+    CardBody,
+    Flex,
+    PlayCircleOutlineIcon,
+    QuestionHelper,
+    Text,
+    useToast,
+    useTooltip,
 } from '@pancakeswap/uikit'
 import { formatBigInt } from '@pancakeswap/utils/formatBalance'
 import { ToastDescriptionWithTx } from 'components/Toast'
@@ -221,7 +221,7 @@ export const AIOpenRoundCard: React.FC<React.PropsWithChildren<AIOpenRoundCardPr
                 style={{
                   fontSize: '24px',
                   marginBottom: liveAIPosition === 'DOWN' && userPosition === 'DOWN' ? '12px' : '0',
-                  // WebkitTextStroke: '3px #f5eceb',
+                  // WebkitTextStroke: '3px #fff',
                 }}
               >
                 {t('AI prediction')}

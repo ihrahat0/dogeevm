@@ -16,7 +16,7 @@ export const variants = {
   DANGER: "danger",
   SUBTLE: "subtle",
   SUCCESS: "success",
-  LIGHT: "light",
+  LIGHT: "dark",
   BUBBLEGUM: "bubblegum",
 } as const;
 

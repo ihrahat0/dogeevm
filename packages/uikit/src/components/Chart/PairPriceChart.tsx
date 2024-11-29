@@ -2,13 +2,13 @@ import { useTranslation } from "@pancakeswap/localization";
 import { formatAmount, formatAmountNotation, tokenPrecisionStyle } from "@pancakeswap/utils/formatInfoNumbers";
 import dayjs from "dayjs";
 import {
-  BarData,
-  createChart,
-  IChartApi,
-  ISeriesApi,
-  LineStyle,
-  MouseEventParams,
-  UTCTimestamp,
+    BarData,
+    createChart,
+    IChartApi,
+    ISeriesApi,
+    LineStyle,
+    MouseEventParams,
+    UTCTimestamp,
 } from "lightweight-charts";
 import { Dispatch, RefObject, SetStateAction, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useTheme } from "styled-components";
@@ -176,7 +176,7 @@ export const PairPriceChart: React.FC<PairPriceChartNewProps> = ({
     const chart = createChart(chartRef?.current, {
       layout: {
         background: { color: "transparent" },
-        textColor: isDark ? "#F4EEFF" : "#f5eceb",
+        textColor: isDark ? "#F4EEFF" : "#fff",
       },
       autoSize: true,
       handleScale: false,

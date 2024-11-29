@@ -2,20 +2,20 @@ import { ChainId } from '@pancakeswap/chains'
 import { useTranslation } from '@pancakeswap/localization'
 import { WNATIVE } from '@pancakeswap/sdk'
 import {
-  Box,
-  Button,
-  CopyAddress,
-  Flex,
-  FlexGap,
-  InfoFilledIcon,
-  InjectedModalProps,
-  LinkExternal,
-  Message,
-  ScanLink,
-  Skeleton,
-  Text,
-  TooltipText,
-  useTooltip,
+    Box,
+    Button,
+    CopyAddress,
+    Flex,
+    FlexGap,
+    InfoFilledIcon,
+    InjectedModalProps,
+    LinkExternal,
+    Message,
+    ScanLink,
+    Skeleton,
+    Text,
+    TooltipText,
+    useTooltip,
 } from '@pancakeswap/uikit'
 import { ChainLogo } from 'components/Logo/ChainLogo'
 import { FetchStatus } from 'config/constants/types'
@@ -155,7 +155,7 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowNativeBalance, onDismiss 
                     display="flex"
                     style={{ justifyContent: 'center' }}
                   >
-                    <InfoFilledIcon pl="2px" fill="#000" color="#D67E0A" width="22px" />
+                    <InfoFilledIcon pl="2px" fill="#fff" color="#D67E0A" width="22px" />
                   </TooltipText>
                 ) : null}
                 {buyCryptoTooltipVisible && (!isMobile || mobileTooltipShow) && buyCryptoTooltip}
@@ -211,7 +211,7 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowNativeBalance, onDismiss 
                     display="flex"
                     style={{ justifyContent: 'center' }}
                   >
-                    <InfoFilledIcon pl="2px" fill="#000" color="#D67E0A" width="22px" />
+                    <InfoFilledIcon pl="2px" fill="#fff" color="#D67E0A" width="22px" />
                   </TooltipText>
                 ) : null}
                 {buyCryptoTooltipVisible && (!isMobile || mobileTooltipShow) && buyCryptoTooltip}

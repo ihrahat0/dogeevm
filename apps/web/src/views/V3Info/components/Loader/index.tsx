@@ -1,4 +1,4 @@
-import { css, keyframes, styled } from 'styled-components'
+import { css, keyframes, styled } from 'styled-components';
 
 const rotate = keyframes`
   from {
@@ -78,7 +78,7 @@ export const LocalLoader = ({ fill }: { fill: boolean }) => {
   return (
     <Wrapper fill={fill ? 1 : 0}>
       <AnimatedImg>
-        <img src="images/spinner-doge.gif" alt="loading-icon" style={{ borderRadius: '20px' }} />
+        <img id='SpinnerDoge' src="images/spinner-doge.gif" alt="loading-icon" />
       </AnimatedImg>
     </Wrapper>
   )

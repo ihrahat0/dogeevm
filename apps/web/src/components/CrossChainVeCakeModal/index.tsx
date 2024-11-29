@@ -1,28 +1,28 @@
 import { ChainId } from '@pancakeswap/chains'
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  ArrowUpIcon,
-  AtomBox,
-  Box,
-  Button,
-  CheckmarkCircleFillIcon,
-  Flex,
-  Heading,
-  LinkExternal,
-  LinkIcon,
-  Loading,
-  ModalBody,
-  ModalCloseButton,
-  ModalContainer,
-  ModalHeader,
-  ModalTitle,
-  ModalV2,
-  Spinner,
-  Svg,
-  SvgProps,
-  Text,
-  useMatchBreakpoints,
-  useToast,
+    ArrowUpIcon,
+    AtomBox,
+    Box,
+    Button,
+    CheckmarkCircleFillIcon,
+    Flex,
+    Heading,
+    LinkExternal,
+    LinkIcon,
+    Loading,
+    ModalBody,
+    ModalCloseButton,
+    ModalContainer,
+    ModalHeader,
+    ModalTitle,
+    ModalV2,
+    Spinner,
+    Svg,
+    SvgProps,
+    Text,
+    useMatchBreakpoints,
+    useToast,
 } from '@pancakeswap/uikit'
 import { formatNumber, getBalanceNumber } from '@pancakeswap/utils/formatBalance'
 import BigNumber from 'bignumber.js'
@@ -75,7 +75,7 @@ const LogoWrapper = styled.div`
   height: 32px;
   justify-content: center;
   align-items: center;
-  background: #f5eceb;
+  background: #fff;
   border-radius: 8px;
 `
 

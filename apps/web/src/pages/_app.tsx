@@ -1,3 +1,4 @@
+import { useTheme } from '@pancakeswap/hooks'
 import { ResetCSS, ScrollToTopButtonV2, ToastListener } from '@pancakeswap/uikit'
 import BigNumber from 'bignumber.js'
 import { SentryErrorBoundary } from 'components/ErrorBoundary'
@@ -22,7 +23,7 @@ import type { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import Script from 'next/script'
-import { Fragment } from 'react'
+import { Fragment, useEffect } from 'react'
 import { PersistGate } from 'redux-persist/integration/react'
 import 'utils/abortcontroller-polyfill'
 import { V4CakeIcon } from 'views/Home/components/V4CakeIcon'
@@ -31,6 +32,7 @@ import { AdPanel } from 'components/AdPanel'
 import { layoutDesktopAdIgnoredPages, layoutMobileAdIgnoredPages } from 'components/AdPanel/config'
 import { shouldRenderOnPages } from 'components/AdPanel/renderConditions'
 import { ZKSyncAirdropModalWithAutoPopup } from 'components/ClaimZksyncAirdropModal'
+import { ErrorBoundary } from 'components/ErrorBoundary'
 import { useDataDogRUM } from 'hooks/useDataDogRUM'
 import { useLoadExperimentalFeatures } from 'hooks/useExperimentalFeatureEnabled'
 import useInitNotificationsClient from 'hooks/useInitNotificationsClient'
@@ -83,9 +85,15 @@ function MPGlobalHooks() {
 function MyApp(props: AppProps<{ initialReduxState: any; dehydratedState: any }>) {
   const { pageProps, Component } = props
   const store = useStore(pageProps.initialReduxState)
+  const { setTheme } = useTheme()
+
+  // Set dark theme as default
+  useEffect(() => {
+    setTheme('dark')
+  }, [setTheme])
 
   return (
-    <>
+    <ErrorBoundary fallback={<div>Something went wrong</div>}>
       <Head>
         <meta
           name="viewport"
@@ -135,7 +143,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         `,
         }}
       />
-    </>
+    </ErrorBoundary>
   )
 }
 

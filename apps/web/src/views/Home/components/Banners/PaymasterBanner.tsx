@@ -1,15 +1,15 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Flex, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerGraphics,
-  BannerMain,
-  BannerTitle,
-  CoBrandBadge,
-  GraphicDetail,
-  LinkExternalAction,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerGraphics,
+    BannerMain,
+    BannerTitle,
+    CoBrandBadge,
+    GraphicDetail,
+    LinkExternalAction,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import styled from 'styled-components'
@@ -31,7 +31,7 @@ const bgXsVariant: GraphicDetail = {
 }
 
 const VerticalDivider = styled.span`
-  background: #000000;
+  background: #fff000;
   width: 1px;
   height: 1rem;
   margin: auto 8px;
@@ -41,7 +41,7 @@ const BannerDesc = styled(Text)`
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  color: #000;
+  color: #fff;
   white-space: nowrap;
 `
 
@@ -60,15 +60,15 @@ export const PaymasterBanner = () => {
   const { isMobile, isTablet } = useMatchBreakpoints()
 
   const startTradeAction = (
-    <LinkExternalAction href={startTradeLink} color="#f5eceb" externalIcon="arrowForward">
-      <Flex color="#f5eceb" alignItems="center" style={{ whiteSpace: 'nowrap' }}>
+    <LinkExternalAction href={startTradeLink} color="#fff" externalIcon="arrowForward">
+      <Flex color="#fff" alignItems="center" style={{ whiteSpace: 'nowrap' }}>
         {t('Start Trading')}
       </Flex>
     </LinkExternalAction>
   )
 
   const learnMoreAction = (
-    <LinkExternalAction color="#f5eceb" href={learnMoreLink} style={{ whiteSpace: 'nowrap' }}>
+    <LinkExternalAction color="#fff" href={learnMoreLink} style={{ whiteSpace: 'nowrap' }}>
       {t('Learn More')}
     </LinkExternalAction>
   )

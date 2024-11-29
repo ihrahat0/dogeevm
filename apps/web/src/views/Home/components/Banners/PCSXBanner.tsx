@@ -1,17 +1,17 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Box, Flex, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerGraphics,
-  BannerMain,
-  BannerTitle,
-  FloatingGraphic,
-  LinkExternalAction,
-  PancakeSwapBadge,
-  VerticalDivider,
-  type GraphicDetail,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerGraphics,
+    BannerMain,
+    BannerTitle,
+    FloatingGraphic,
+    LinkExternalAction,
+    PancakeSwapBadge,
+    VerticalDivider,
+    type GraphicDetail,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import styled from 'styled-components'
@@ -94,10 +94,10 @@ export const PCSXBanner = () => {
   const PlayNowAction = (
     <LinkExternalAction
       href="https://dogeswap.co/evm/swap?utm_source=Website&utm_medium=homepage&utm_campaign=PCSX&utm_id=PCSX"
-      color="#f5eceb"
+      color="#fff"
       externalIcon="arrowForward"
     >
-      <Flex color="#f5eceb" alignItems="center" style={{ whiteSpace: 'nowrap' }}>
+      <Flex color="#fff" alignItems="center" style={{ whiteSpace: 'nowrap' }}>
         {t('Swap Now')}
       </Flex>
     </LinkExternalAction>
@@ -106,9 +106,9 @@ export const PCSXBanner = () => {
   const LearnMoreAction = (
     <LinkExternalAction
       href="https://blog.pancakeswap.finance/articles/introducing-pancake-swap-x-zero-fee-and-gasless-swaps-on-ethereum-and-arbitrum?utm_source=Website&utm_medium=homepage&utm_campaign=PCSX&utm_id=PCSX"
-      color="#f5eceb"
+      color="#fff"
     >
-      <Flex color="#f5eceb" alignItems="center" style={{ whiteSpace: 'nowrap' }}>
+      <Flex color="#fff" alignItems="center" style={{ whiteSpace: 'nowrap' }}>
         {t('Learn More')}
       </Flex>
     </LinkExternalAction>

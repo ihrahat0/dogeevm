@@ -27,21 +27,22 @@ const SwitchIconButton = styled(IconButton)`
 `;
 
 const SwitchButton = (props: ButtonProps) => (
-  <SwitchIconButton variant="light" scale="sm" {...props}>
+  <SwitchIconButton variant="dark" scale="sm" {...props}>
     <ArrowDownIcon className="icon-down" color="primary" />
     <ArrowUpDownIcon className="icon-up-down" color="primary" />
   </SwitchIconButton>
 );
 
 export {
-  CurrencyInputHeader,
-  CurrencyInputHeaderSubTitle,
-  CurrencyInputHeaderTitle,
-  CurrencyInputPanel,
-  Footer,
-  Info,
-  InfoLabel,
-  Page,
-  SwitchButton,
-  TradePrice,
+    CurrencyInputHeader,
+    CurrencyInputHeaderSubTitle,
+    CurrencyInputHeaderTitle,
+    CurrencyInputPanel,
+    Footer,
+    Info,
+    InfoLabel,
+    Page,
+    SwitchButton,
+    TradePrice
 };
+

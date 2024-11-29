@@ -1,15 +1,15 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Flex, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerGraphics,
-  BannerMain,
-  FloatingGraphic,
-  GraphicDetail,
-  LinkExternalAction,
-  PancakeSwapBadge,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerGraphics,
+    BannerMain,
+    FloatingGraphic,
+    GraphicDetail,
+    LinkExternalAction,
+    PancakeSwapBadge,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import styled from 'styled-components'
@@ -37,7 +37,7 @@ const bgXsVariant: GraphicDetail = {
 }
 
 const VerticalDivider = styled.span`
-  background: #000000;
+  background: #fff000;
   width: 1px;
   height: 1rem;
   margin: auto 8px;
@@ -101,7 +101,7 @@ export const PredictionBanner = () => {
   )
 
   return (
-    <BannerContainer background="linear-gradient(0deg, #213147 0%, #213147 100%), #000">
+    <BannerContainer background="linear-gradient(0deg, #213147 0%, #213147 100%), #fff">
       <BannerMain
         badges={
           <Flex alignItems="center">

@@ -42,7 +42,7 @@ export const SwitchButtonV2 = (props: ButtonProps) => {
         buttonWrapperRef.current?.classList.remove("switch-animation");
       }}
     >
-      <SwitchIconButtonV2 variant="light" scale="sm" {...props}>
+      <SwitchIconButtonV2 variant="dark" scale="sm" {...props}>
         <ArrowUpDownIcon className="icon-up-down" width={24} color="primary" />
       </SwitchIconButtonV2>
     </ButtonWrapper>

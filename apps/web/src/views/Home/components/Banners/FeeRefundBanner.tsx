@@ -1,15 +1,15 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Flex, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerGraphics,
-  BannerMain,
-  BannerTitle,
-  GraphicDetail,
-  LinkExternalAction,
-  PancakeSwapBadge,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerGraphics,
+    BannerMain,
+    BannerTitle,
+    GraphicDetail,
+    LinkExternalAction,
+    PancakeSwapBadge,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import styled from 'styled-components'
@@ -30,7 +30,7 @@ const bgXsVariant: GraphicDetail = {
 }
 
 const VerticalDivider = styled.span`
-  background: #000000;
+  background: #fff000;
   width: 1px;
   height: 1rem;
   margin: auto 8px;
@@ -40,7 +40,7 @@ const BannerDesc = styled(Text)`
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  color: #000;
+  color: #fff;
   white-space: nowrap;
 `
 

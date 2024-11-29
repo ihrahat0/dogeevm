@@ -1,15 +1,15 @@
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  Box,
-  Button,
-  Heading,
-  ModalBody,
-  ModalCloseButton,
-  ModalContainer,
-  ModalHeader,
-  ModalTitle,
-  ModalV2,
-  Text,
+    Box,
+    Button,
+    Heading,
+    ModalBody,
+    ModalCloseButton,
+    ModalContainer,
+    ModalHeader,
+    ModalTitle,
+    ModalV2,
+    Text,
 } from '@pancakeswap/uikit'
 import NextLink from 'next/link'
 import { styled, useTheme } from 'styled-components'
@@ -59,7 +59,7 @@ export const SwitchToBnbChainModal: React.FC<{
             <Box width="60px" height="60px" style={{ transform: 'rotate(-25deg)' }} mt="-20px">
               <img width="100%" srcSet="/images/cake-staking/benefit-farm-boost.png 2x" alt="ve-cake" />
             </Box>
-            <Text mt="30px" color={theme.isDark ? '#f5eceb' : 'white'}>
+            <Text mt="30px" color={theme.isDark ? '#fff' : 'white'}>
               {t('Stake CAKE to obtain bCAKE – to boost farm yields.')}
             </Text>
             <Box position="absolute" width="120px" right="-90px">

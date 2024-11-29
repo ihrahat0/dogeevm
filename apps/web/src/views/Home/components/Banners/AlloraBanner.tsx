@@ -1,17 +1,17 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Box, Flex, useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerDesc,
-  BannerGraphics,
-  BannerMain,
-  BannerTitle,
-  CoBrandBadge,
-  FloatingGraphic,
-  LinkExternalAction,
-  type GraphicDetail,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerDesc,
+    BannerGraphics,
+    BannerMain,
+    BannerTitle,
+    CoBrandBadge,
+    FloatingGraphic,
+    LinkExternalAction,
+    type GraphicDetail,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 
@@ -83,7 +83,7 @@ export const AlloraBanner = () => {
               icon="arrowForward"
               alignItems="center"
               text="Join now"
-              color="#f5eceb"
+              color="#fff"
             />
             <Action
               href="https://www.allora.network/blog/announcing-the-allora-x-pancakeswap-points-program"
@@ -91,7 +91,7 @@ export const AlloraBanner = () => {
               display="flex"
               alignItems="center"
               text="Learn More"
-              color="#f5eceb"
+              color="#fff"
             />
           </BannerActionContainer>
         }

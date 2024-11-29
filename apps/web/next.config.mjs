@@ -43,11 +43,9 @@ const workerDeps = Object.keys(smartRouterPkgs.dependencies)
 
 /** @type {import('next').NextConfig} */
 const config = {
-  basePath: '/evm',
-  assetPrefix: '/evm',
   typescript: {
     tsconfigPath: 'tsconfig.json',
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false,
   },
   compiler: {
     styledComponents: true,
@@ -60,6 +58,7 @@ const config = {
       '*': [],
     },
     optimizePackageImports: ['@pancakeswap/widgets-internal', '@pancakeswap/uikit'],
+    esmExternals: 'loose',
   },
   transpilePackages: [
     '@pancakeswap/farms',
@@ -70,23 +69,16 @@ const config = {
     '@pancakeswap/widgets-internal',
     '@pancakeswap/ifos',
     '@pancakeswap/uikit',
-    // https://github.com/TanStack/query/issues/6560#issuecomment-1975771676
     '@tanstack/query-core',
   ],
   reactStrictMode: true,
-  swcMinify: false,
+  swcMinify: true,
   images: {
     contentDispositionType: 'attachment',
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'static-nft.pancakeswap.com',
-        pathname: '/mainnet/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'assets.pancakeswap.finance',
-        pathname: '/web/**',
+        hostname: '**',
       },
     ],
     unoptimized: true,

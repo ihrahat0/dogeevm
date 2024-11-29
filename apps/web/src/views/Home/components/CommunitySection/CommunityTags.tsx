@@ -24,7 +24,7 @@ const CommunityTag = styled.div`
   &:hover {
     background-color: ${({ theme }) => theme.colors.primary};
     svg path {
-      fill: ${({ theme }) => (theme.isDark ? '#000000' : '#ffffff')};
+      fill: ${({ theme }) => (theme.isDark ? '#fff000' : '#ffffff')};
     }
   }
   ${({ theme }) => theme.mediaQueries.sm} {

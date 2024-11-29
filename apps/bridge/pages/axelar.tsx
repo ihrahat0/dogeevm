@@ -7,7 +7,7 @@ import { useTheme } from 'styled-components'
 
 const lightStyle = {
   neutralContent: '#7a6eaa',
-  baseContent: '#f5eceb',
+  baseContent: '#fff',
   base100: '#eeeaf4',
   base200: '#ffffff',
   base300: '#ffffff',
@@ -16,7 +16,7 @@ const lightStyle = {
   success: '#31d0aa',
   primary: '#FFB237',
   secondary: '#FFB237',
-  secondaryContent: '#f5eceb',
+  secondaryContent: '#fff',
   neutral: '#FFFFFF',
   roundedBtn: '26px',
   roundedBox: '1rem',
@@ -35,7 +35,7 @@ const darkStyle = {
   success: '#31d0aa',
   primary: '#FFB237',
   secondary: '#FFB237',
-  secondaryContent: '#f5eceb',
+  secondaryContent: '#fff',
   neutral: '#26272c',
   roundedBtn: '26px',
   roundedBox: '1rem',
@@ -72,7 +72,7 @@ const Axelar = () => {
           width: 16px;
         }
 
-        [data-theme='light'] {
+        [data-theme='dark'] {
           .tw-dsw-toggle-secondary:not(:checked) {
             box-shadow: calc(1.5rem * -1) 0 0 2px #efebf4 inset, 0 0 0 2px #efebf4 inset, 0 0 !important;
           }

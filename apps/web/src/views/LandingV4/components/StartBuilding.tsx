@@ -109,7 +109,7 @@ export const StartBuilding = () => {
             fill: #faf9fa;
           }
           [data-theme='dark'] #start-build .inner-wedge svg {
-            fill: #000000;
+            fill: #fff000;
           }
         `}
       </style>

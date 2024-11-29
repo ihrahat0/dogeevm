@@ -207,7 +207,7 @@ const useTooltip = (content: React.ReactNode, options?: TooltipOptions): Tooltip
       <AnimatePresence>
         <StyledTooltip
           onClick={stopPropagation}
-          data-theme={isDark ? "light" : "dark"}
+          data-theme={isDark ? "dark" : "dark"}
           {...animationMap}
           variants={animationVariants}
           transition={{ duration: 0.3 }}

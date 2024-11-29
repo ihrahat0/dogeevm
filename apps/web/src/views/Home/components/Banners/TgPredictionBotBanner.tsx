@@ -1,16 +1,16 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Box, Flex, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerGraphics,
-  BannerMain,
-  BannerTitle,
-  FloatingGraphic,
-  LinkExternalAction,
-  PancakeSwapBadge,
-  type GraphicDetail,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerGraphics,
+    BannerMain,
+    BannerTitle,
+    FloatingGraphic,
+    LinkExternalAction,
+    PancakeSwapBadge,
+    type GraphicDetail,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import { useMemo } from 'react'
@@ -91,8 +91,8 @@ export const TgPredictionBotBanner = () => {
   const { isMobile, isSm } = useMatchBreakpoints()
 
   const PlayNowAction = (
-    <LinkExternalAction href="https://t.me/pancakefi_bot" color="#f5eceb" externalIcon="arrowForward">
-      <Flex color="#f5eceb" alignItems="center" style={{ whiteSpace: 'nowrap' }}>
+    <LinkExternalAction href="https://t.me/pancakefi_bot" color="#fff" externalIcon="arrowForward">
+      <Flex color="#fff" alignItems="center" style={{ whiteSpace: 'nowrap' }}>
         {t('Play Now on Telegram')}
       </Flex>
     </LinkExternalAction>

@@ -1,16 +1,16 @@
 import { useTranslation, type TranslateFunction } from '@pancakeswap/localization'
 import { Flex, useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerDesc,
-  BannerGraphics,
-  BannerMain,
-  BannerTitle,
-  LinkExternalAction,
-  PancakeSwapBadge,
-  type GraphicDetail,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerDesc,
+    BannerGraphics,
+    BannerMain,
+    BannerTitle,
+    LinkExternalAction,
+    PancakeSwapBadge,
+    type GraphicDetail,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import { useViewport } from 'hooks/useViewport'
@@ -54,7 +54,7 @@ const bgXsVariant: GraphicDetail = {
 }
 
 const titleVariant = {
-  color: '#f5eceb',
+  color: '#fff',
   strokeColor: '#ffffff',
   strokeSize: 2,
   fontSize: 28,
@@ -109,7 +109,7 @@ export const AthleticsBanner = () => {
         desc={<BannerDesc style={{ whiteSpace: 'break-spaces' }}>{t(subTitleText)}</BannerDesc>}
         actions={
           <BannerActionContainer>
-            <LinkExternalAction href={learnMoreLink} externalIcon="arrowForward" color="#f5eceb">
+            <LinkExternalAction href={learnMoreLink} externalIcon="arrowForward" color="#fff">
               {t('Join Now!')}
             </LinkExternalAction>
           </BannerActionContainer>

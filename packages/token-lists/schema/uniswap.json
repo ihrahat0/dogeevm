@@ -65,7 +65,7 @@
       },
       "examples": [
         {
-          "color": "#000000",
+          "color": "#fff000",
           "is_verified_by_me": true
         },
         {
@@ -84,7 +84,7 @@
           "type": "string",
           "minLength": 1,
           "maxLength": 42,
-          "examples": ["#00000"]
+          "examples": ["#fff00"]
         },
         {
           "type": "boolean",

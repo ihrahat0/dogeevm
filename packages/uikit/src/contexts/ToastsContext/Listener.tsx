@@ -8,7 +8,7 @@ const ToastListener = () => {
       duration={6000}
       position="top-right"
       gap={24}
-      theme={isDark ? "dark" : "light"}
+      theme={isDark ? "dark" : "dark"}
       toastOptions={{
         style: {
           width: "100%",

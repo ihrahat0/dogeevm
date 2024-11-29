@@ -1,15 +1,15 @@
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  Box,
-  Button,
-  CurrencyIcon,
-  FarmIcon,
-  Flex,
-  InlineMenu,
-  RocketIcon,
-  Text,
-  Toggle,
-  TradeIcon,
+    Box,
+    Button,
+    CurrencyIcon,
+    FarmIcon,
+    Flex,
+    InlineMenu,
+    RocketIcon,
+    Text,
+    Toggle,
+    TradeIcon,
 } from '@pancakeswap/uikit'
 import { useEffect, useRef, useState } from 'react'
 import { styled } from 'styled-components'
@@ -91,7 +91,7 @@ export const FarmTypesFilter: React.FC<FarmTypesFilterProps> = ({
         <Box ref={wrapperRef}>
           <InlineMenu
             component={
-              <Button onClick={handleMenuClick} variant="light" scale="sm">
+              <Button onClick={handleMenuClick} variant="dark" scale="sm">
                 {t('Farm Types')}
                 {farmTypesEnableCount > 0 && `(${farmTypesEnableCount})`}
               </Button>

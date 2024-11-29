@@ -117,7 +117,9 @@ const LogoBox = styled(Box)`
   }
 `
 const Devider = styled.div`
-  background: #ffffff;
+  background: transparent;
+border: 1px solid #fff;
+border-radius: 12px;;
   height: 10px;
   width: 2px;
   border-radius: 1px;

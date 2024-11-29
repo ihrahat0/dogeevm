@@ -24,7 +24,7 @@ type Variant = {
 const variants: { [key in VariantTypes]: Variant } = {
   white: {
     color: "#ffffff",
-    strokeColor: "#000000",
+    strokeColor: "#fff000",
     strokeSize: 2,
     fontSize: 28,
     lineHeight: 30,

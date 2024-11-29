@@ -91,7 +91,7 @@ const Divider = styled.div`
 `
 const VerticalDivider = styled.div`
   opacity: 0.5;
-  background: #e7e3eb;
+  background: #2d2d2d;
   height: 45px;
   width: 1px;
 

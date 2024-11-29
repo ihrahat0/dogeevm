@@ -121,7 +121,7 @@ const Header = styled.div`
   font-size: 16px;
   line-height: 101%;
   font-feature-settings: 'liga' off;
-  color: #000;
+  color: #fff;
   margin: 5px 0px;
   ${({ theme }) => theme.mediaQueries.md} {
     font-size: 24px;

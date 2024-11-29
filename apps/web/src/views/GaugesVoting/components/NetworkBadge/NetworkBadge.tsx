@@ -38,7 +38,7 @@ const NETWORK_COLOR_COLORED = {
   [ChainId.BASE]: '#0052FF',
 }
 
-const NETWORK_COLOR_PURE_BLACK = '#000000'
+const NETWORK_COLOR_PURE_BLACK = '#fff000'
 
 const NETWORK_COLOR: Record<NetworkLogoTheme, string | { [chainId: number]: string }> = {
   default: NETWORK_COLOR_DEFAULT,

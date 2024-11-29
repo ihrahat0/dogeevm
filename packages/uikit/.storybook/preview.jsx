@@ -17,7 +17,7 @@ export const globalTypes = {
       icon: "circlehollow",
       // Array of options
       items: [
-        { value: "light", icon: "circlehollow", title: "light" },
+        { value: "dark", icon: "circlehollow", title: "dark" },
         { value: "dark", icon: "circle", title: "dark" },
       ],
       // Property that specifies if the name of the item will be displayed
@@ -28,7 +28,7 @@ export const globalTypes = {
 
 const globalDecorator = (StoryFn, context) => {
   const theme = context.parameters.theme || context.globals.theme;
-  const storyTheme = theme === "dark" ? "dark" : "light";
+  const storyTheme = theme === "dark" ? "dark" : "dark";
 
   return (
     <StorybookThemeProvider themeName={storyTheme}>

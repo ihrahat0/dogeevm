@@ -105,7 +105,7 @@ const ArbitrumOneBanner = () => {
   return (
     <S.Wrapper
       style={{
-        background: `linear-gradient(0deg, #213147 0%, #213147 100%), #000`,
+        background: `linear-gradient(0deg, #213147 0%, #213147 100%), #fff`,
       }}
     >
       <S.Inner>

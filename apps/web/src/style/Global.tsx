@@ -17,6 +17,18 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  .Image__StyledImage-sc-b793f600-0.csytvV {
+    border-radius: 20px;
+  }
+
+  .Box__MotionBox-sc-3fcdcbc5-0.styles__ModalContainer-sc-da5fe41f-3.EBfFM.lbAa-Dg {
+  background-color: #2d2d2d;
+  }
+
+  .reset_base__1a5xov70.sprinkles_display_grid_xs__1qhetbfc.sprinkles_gridAutoRows_auto_xs__1qhetbf2au.SwapModalFooterV2__SwapModalFooterContainer-sc-897c11b5-0.bxXXCs {
+    box-shadow: 0px 0px 9px 4px rgba(255, 204, 0, 1);
+    background-color: transparent;
+  }
 
   // Hide specific elements
   .hxtGPi,
@@ -24,82 +36,106 @@ const GlobalStyle = createGlobalStyle`
     display: none !important;
   }
 
-  .vsFos,
-  .styles__StyledFooter-sc-254d2863-0 {
-    display: none !important;
-  }
-  
-  .cbKtSh {
-  display: none !important;
-  }
   .Text-sc-1e14ff52-0.Link__StyledLink-sc-e718cb8-0.kA-DvpM.dbBuiW{
   margin-right: 24px;
   }
- /* Background transparent for specific classes */
-.bbpMlm{
-  background: transparent;
-}
-
-.sprinkles_backgroundColor_backgroundAlt_base__1qhetbf2wp {
-  background-color: cyan;
-  border-radius: 20px;
-}
-/* Background color for hover, focus, active states */
-.sprinkles_backgroundColor_input_base__1qhetbf2xt{
-  background-color: #716439;
-}
-
-.bqdbyA {
-  background-color: #000;
-}
-
-/* Transparent background for another class */
-.zWvCr {
-  background: transparent;
-}
-.jJxiTc {
-  border: 2px solid #000;
-  1px 1px 1px 1px rgb(45 45 45);
-}
-
-.EBfFM.kdEPqI.jrvfQB {
-  background: #000;
-}
-.eWPOGB{
-color: #000;
-}
-.iWevOn{
-background: transparent;
-border: none;
-}
-.kCGmwi{
-color: #000;
-}
-.bRxrtj{
-color: #000;
-}
-.gaCunK{
-display: none;
-}
-CommonBases__BaseWrapper-sc-fa748001-1{
-background-color: transparent;
-}
-.dOxABy{
-display: none;
-}
 
 .Box-sc-3fcdcbc5-1.Flex-sc-9cde33ed-0.hzwUJ.emANlq{
 display: none;
 }
-/* Hide specific elements */
-.dnDOkL {
-  display: none;
-}
 
-.fqqISZ {
-  background: #000;
-}
 
+  .Menu__StyledNav-sc-f316da5f-1.bqdbyA {
+    background-color: transparent;
+  }
+
+  .Box-sc-3fcdcbc5-1.Flex-sc-9cde33ed-0.SwapWrapper__SwapTabAndInputPanelWrapper-sc-636aebd6-2.kcXNTu.jAyBAa.jJSCzS {
+    background-color: #1c1c1c;
+  }
+  
+  .SwapWrapper__SwapFormWrapper-sc-636aebd6-0.hVJifd {
+    background-color: #1c1c1c;
+  }
+
+  .SwapSelectionTab__SwapSelectionWrapper-sc-7c7a027a-1.fWjYaE {
+    background: transparent;
+    border: none;
+  }
+
+  .Box-sc-3fcdcbc5-1.SwapSimplify__Wrapper-sc-5f20b57f-0.fSolOs.bGgVaL {
+    background-color: #1c1c1c;
+  }
+
+  .ButtonAndDetailsPanel__PanelWrapper-sc-551e9519-0.iaiNpU {
+    border: none;
+  }
+  
+  .StyledButton-sc-6b7e583a-0.kZxxBr.pancake-button--disabled {
+    box-shadow: 0px 0px 9px 4px rgba(255, 204, 0, 1);
+  }
+
+  .StyledButton-sc-6b7e583a-0.kmdylw.CurrencyInputPanelSimplify__CurrencySelectButton-sc-768c46d2-0.jJxiTc.open-currency-select-button {
+    border: 2px solid #fff;
+  }
+  #swap-page{
+  box-shadow: 0px 0px 3px 2px orange;
+  }
+  .Box-sc-3fcdcbc5-1.ifnxtc {
+    background: #232123;
+  }
+  .UserMenu__Menu-sc-604e22e5-2.jVDyBX {
+    background: #232123;
+  }
+  .Box__MotionBox-sc-3fcdcbc5-0.styles__ModalContainer-sc-da5fe41f-3.CurrencySearchModal__StyledModalContainer-sc-259f968e-1.EBfFM.kdEPqI.jrvfQB {
+    background: #000;
+  }
+
+  .Box-sc-3fcdcbc5-1.Card-sc-2340fd50-0.Card__LightGreyCard-sc-2340fd50-2.bHJRaJ.bocvhc.eFtxcS {
+    background: #232123;
+  }
+  .StyledButton-sc-6b7e583a-0.dkxzUe.IconButton-sc-a43322ca-0.fbXhFB {
+    display: none;
+  }
+  .Box__MotionBox-sc-3fcdcbc5-0.styles__ModalContainer-sc-da5fe41f-3.EBfFM.lozAgX {
+    background: #232123;
+  }
+  .StyledButton-sc-6b7e583a-0.wWoww.CurrencyInputPanelSimplify__CurrencySelectButton-sc-768c46d2-0.jJxiTc.open-currency-select-button {
+    border: 2px solid #fff;
+  }
+  .SwapSelectionTab__SwapSelectionWrapper-sc-63e24f2c-1.hHYSyz{
+   border: none;
+   background: transparent;
+  }
+  .Box__MotionBox-sc-3fcdcbc5-0.styles__ModalContainer-sc-da5fe41f-3.EBfFM.fASWoL {
+    background: #000;
+  }
+  .StyledButton-sc-6b7e583a-0.qzfes {
+    color: #000;
+  }
+  .StyledButton-sc-6b7e583a-0.cReZMz {
+    background: #ac1111;
+    color: #fff;
+  }
+  .StyledButton-sc-6b7e583a-0.cpQqPV.pancake-button--loading {
+    background: #ac1111;
+  }
+  .StyledButton-sc-6b7e583a-0.auvKZ {
+    background: #ac1111;
+    color: #fff;
+  }
+  .SwapSelectionTab__SwapSelectionWrapper-sc-8412d0ef-1.kfThHS {
+    background: transparent;
+    border: none;
+  }
+  .Box-sc-3fcdcbc5-1.doZmQL {
+    background: #232123;
+  }
+  .Box-sc-3fcdcbc5-1.Flex-sc-9cde33ed-0.styles__ModalHeader-sc-da5fe41f-0.WalletModal__ModalHeader-sc-96ab3caf-0.kcXNTu.jAyBAa.ctUiDh.hbsXAB {
+    background: #232123;
+  }
+  .CopyAddress__Address-sc-f8ce0449-1.cGZMqu input {
+    color: #000;
+  }
 
 `
 

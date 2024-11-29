@@ -22,6 +22,7 @@ import { useSwitchNetwork } from 'hooks/useSwitchNetwork'
 import { useRouter } from 'next/router'
 import { useMemo } from 'react'
 import { useUserShowTestnet } from 'state/user/hooks/useUserShowTestnet'
+import styled from 'styled-components'
 import { chainNameConverter } from 'utils/chainNameConverter'
 import { chains } from 'utils/wagmi'
 import { useAccount } from 'wagmi'
@@ -31,6 +32,25 @@ const AptosChain = {
   id: 1,
   name: 'Solana',
 }
+
+const StyledUserMenu = styled(UserMenu)`
+  background: #000;
+  border: 1px solid ${({ theme }) => theme.colors.cardBorder};
+  
+  > button {
+    background: #000;
+    &:hover:not(:disabled) {
+      background: #000;
+    }
+  }
+`
+
+const StyledUserMenuItem = styled(UserMenuItem)`
+  background: #000;
+  &:hover {
+    background: ${({ theme }) => theme.colors.primary}20;
+  }
+`
 
 const NetworkSelect = ({ switchNetwork, chainId, isWrongNetwork }) => {
   const { t } = useTranslation()
@@ -51,7 +71,7 @@ const NetworkSelect = ({ switchNetwork, chainId, isWrongNetwork }) => {
           return true
         })
         .map((chain) => (
-          <UserMenuItem
+          <StyledUserMenuItem
             key={chain.id}
             style={{ justifyContent: 'flex-start' }}
             onClick={() => (chain.id !== chainId || isWrongNetwork) && switchNetwork(chain.id)}
@@ -64,14 +84,14 @@ const NetworkSelect = ({ switchNetwork, chainId, isWrongNetwork }) => {
             >
               {chainNameConverter(chain.name)}
             </Text>
-          </UserMenuItem>
+          </StyledUserMenuItem>
         ))}
-      <UserMenuItem
+      <StyledUserMenuItem
         key={`aptos-${AptosChain.id}`}
         style={{ justifyContent: 'flex-start' }}
         as="a"
         target="_blank"
-        href="https://dogeswap.co/"
+        href="https://solana.dogeswap.co/"
       >
         <img
           src="https://cdn-icons-png.flaticon.com/512/6001/6001527.png"
@@ -82,7 +102,7 @@ const NetworkSelect = ({ switchNetwork, chainId, isWrongNetwork }) => {
         <Text color="text" pl="12px">
           {AptosChain.name}
         </Text>
-      </UserMenuItem>
+      </StyledUserMenuItem>
     </>
   )
 }
@@ -120,20 +140,20 @@ const WrongNetworkSelect = ({ switchNetwork, chainId }) => {
       {tooltipVisible && tooltip}
       <UserMenuDivider />
       {chain && (
-        <UserMenuItem ref={ref1} style={{ justifyContent: 'flex-start' }}>
+        <StyledUserMenuItem ref={ref1} style={{ justifyContent: 'flex-start' }}>
           <ChainLogo chainId={chain.id} />
           <Text color="secondary" bold pl="12px">
             {chainNameConverter(chain.name)}
           </Text>
-        </UserMenuItem>
+        </StyledUserMenuItem>
       )}
       <Box px="16px" pt="8px">
         {isHover ? <ArrowUpIcon color="text" /> : <ArrowDownIcon color="text" />}
       </Box>
-      <UserMenuItem onClick={() => switchNetwork(localChainId)} style={{ justifyContent: 'flex-start' }}>
+      <StyledUserMenuItem onClick={() => switchNetwork(localChainId)} style={{ justifyContent: 'flex-start' }}>
         <ChainLogo chainId={localChainId} />
         <Text pl="12px">{chainNameConverter(localChainName)}</Text>
-      </UserMenuItem>
+      </StyledUserMenuItem>
       <Button mx="16px" my="8px" scale="sm" onClick={() => switchNetwork(localChainId)}>
         {t('Switch network in wallet')}
       </Button>
@@ -190,7 +210,7 @@ export const NetworkSwitcher = () => {
   return (
     <Box ref={cannotChangeNetwork ? targetRef : null} height="100%">
       {cannotChangeNetwork && tooltipVisible && tooltip}
-      <UserMenu
+      <StyledUserMenu
         mr="8px"
         placement="bottom"
         variant={isLoading ? 'pending' : isWrongNetwork ? 'danger' : 'default'}
@@ -218,7 +238,7 @@ export const NetworkSwitcher = () => {
             <NetworkSelect switchNetwork={switchNetworkAsync} chainId={chainId} isWrongNetwork={isWrongNetwork} />
           )
         }
-      </UserMenu>
+      </StyledUserMenu>
     </Box>
   )
 }

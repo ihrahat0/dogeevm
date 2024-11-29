@@ -1,15 +1,15 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Box, useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerGraphics,
-  BannerMain,
-  BannerTitle,
-  FloatingGraphic,
-  PancakeSwapBadge,
-  type GraphicDetail,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerGraphics,
+    BannerMain,
+    BannerTitle,
+    FloatingGraphic,
+    PancakeSwapBadge,
+    type GraphicDetail,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import Link from 'next/link'
@@ -77,7 +77,7 @@ export const BirthdayBanner = () => {
               href="https://blog.pancakeswap.finance/articles/pancake4ever-celebrating-4-years-of-pancakeswap"
               alignItems="center"
               text={t('Join Now')}
-              color="#f5eceb"
+              color="#fff"
             />
           </BannerActionContainer>
         }

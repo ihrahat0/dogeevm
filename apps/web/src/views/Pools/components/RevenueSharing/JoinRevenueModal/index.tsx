@@ -27,7 +27,7 @@ const TooltipContainer = styled(Box)`
   background-color: ${({ theme }) => (theme.isDark ? '#FFFFFF' : '#27262c')};
 
   ${Text} {
-    color: ${({ theme }) => (theme.isDark ? '#f5eceb' : '#F4EEFF')};
+    color: ${({ theme }) => (theme.isDark ? '#fff' : '#F4EEFF')};
   }
 
   &:before {

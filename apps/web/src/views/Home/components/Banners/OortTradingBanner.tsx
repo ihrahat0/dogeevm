@@ -1,17 +1,17 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Box, Flex, useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerDesc,
-  BannerGraphics,
-  BannerMain,
-  BannerTitle,
-  FloatingGraphic,
-  LinkExternalAction,
-  PancakeSwapBadge,
-  type GraphicDetail,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerDesc,
+    BannerGraphics,
+    BannerMain,
+    BannerTitle,
+    FloatingGraphic,
+    LinkExternalAction,
+    PancakeSwapBadge,
+    type GraphicDetail,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import styled from 'styled-components'
@@ -102,7 +102,7 @@ export const OortTradingBanner = () => {
               icon="arrowForward"
               alignItems="center"
               text={t('Trade Now')}
-              color="#f5eceb"
+              color="#fff"
             />
             <Action
               href={learnMoreLink}
@@ -110,7 +110,7 @@ export const OortTradingBanner = () => {
               display="flex"
               alignItems="center"
               text={t('Learn More')}
-              color="#f5eceb"
+              color="#fff"
             />
           </BannerActionContainer>
         }
