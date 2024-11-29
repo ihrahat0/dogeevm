@@ -188,7 +188,6 @@ const FeeTransactionModal: React.FC<FeeModalProps> = ({
           width: '100%',
           zIndex: 100,
           borderRadius: '32px',
-          background: 'linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%)',
           border: '1px solid rgba(255, 255, 255, 0.12)',
         }}
       >
