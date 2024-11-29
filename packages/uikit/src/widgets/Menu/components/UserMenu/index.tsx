@@ -3,13 +3,13 @@ import { usePopper } from "react-popper";
 import { styled } from "styled-components";
 import { Box, Flex } from "../../../../components/Box";
 import { ChevronDownIcon } from "../../../../components/Svg";
-import { UserMenuProps, variants } from "./types";
 import MenuIcon from "./MenuIcon";
 import { UserMenuItem } from "./styles";
+import { UserMenuProps, variants } from "./types";
 
 export const StyledUserMenu = styled(Flex)`
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.tertiary};
+  background-color: #0d0c0c;
   border-radius: 16px;
   box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -37,7 +37,7 @@ export const LabelText = styled.div`
 `;
 
 const Menu = styled.div<{ $isOpen: boolean }>`
-  background-color: ${({ theme }) => theme.card.background};
+  background-color: #0d0c0c;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
   border-radius: 16px;
   padding-bottom: 4px;

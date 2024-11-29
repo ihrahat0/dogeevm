@@ -11,10 +11,10 @@ import { memo, useCallback, useEffect, useMemo, useRef } from 'react'
 import Split, { SplitInstance } from 'split-grid'
 import { setChartPaneState, setChartView } from 'state/predictions'
 import {
-  useChartView,
-  useGetPredictionsStatus,
-  useIsChartPaneOpen,
-  useIsHistoryPaneOpen,
+    useChartView,
+    useGetPredictionsStatus,
+    useIsChartPaneOpen,
+    useIsHistoryPaneOpen,
 } from 'state/predictions/hooks'
 import { styled } from 'styled-components'
 import History from './History'
@@ -35,7 +35,7 @@ const ExpandButtonGroup = styled(Flex)`
   left: 32px;
   position: absolute;
   display: none;
-  background-color: ${({ theme }) => theme.colors.input};
+  background-color: #0d0c0c;
   border-radius: 24px 24px 0 0;
   z-index: 50;
   ${({ theme }) => theme.mediaQueries.lg} {
@@ -95,7 +95,7 @@ const Gutter = styled.div<{ $isChartPaneOpen?: boolean }>`
   position: relative;
 
   &:before {
-    background-color: ${({ theme }) => theme.colors.textSubtle};
+    background-color: #0d0c0c;
     border-radius: 8px;
     content: '';
     height: 4px;

@@ -1,20 +1,20 @@
-import BigNumber from "bignumber.js";
-import { useCallback, useMemo, useState } from "react";
 import { useTranslation } from "@pancakeswap/localization";
+import {
+    AutoRenewIcon,
+    Box,
+    Button,
+    Message,
+    MessageText,
+    Modal,
+    ModalActions,
+    ModalBody,
+    ModalInput,
+} from "@pancakeswap/uikit";
+import { BIG_ZERO } from "@pancakeswap/utils/bigNumber";
 import { getFullDisplayBalance } from "@pancakeswap/utils/formatBalance";
 import { trimTrailZero } from "@pancakeswap/utils/trimTrailZero";
-import { BIG_ZERO } from "@pancakeswap/utils/bigNumber";
-import {
-  Button,
-  AutoRenewIcon,
-  Message,
-  MessageText,
-  Box,
-  Modal,
-  ModalBody,
-  ModalActions,
-  ModalInput,
-} from "@pancakeswap/uikit";
+import BigNumber from "bignumber.js";
+import { useCallback, useMemo, useState } from "react";
 
 interface WithdrawModalProps {
   max: BigNumber;
@@ -112,7 +112,7 @@ const WithdrawModal: React.FC<React.PropsWithChildren<WithdrawModalProps>> = ({
           </Box>
         )}
         <ModalActions>
-          <Button variant="secondary" onClick={onDismiss} width="100%" disabled={pendingTx}>
+          <Button variant="secondary" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }} width="100%" disabled={pendingTx}>
             {t("Cancel")}
           </Button>
           {pendingTx ? (

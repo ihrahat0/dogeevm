@@ -39,7 +39,7 @@ const getHeight = ({ scale = scales.MD }: StyledInputProps) => {
 const Input = styled("input").withConfig({
   shouldForwardProp: (props) => !["scale", "isSuccess", "isWarning", "isError"].includes(props),
 })<InputProps>`
-  background-color: ${({ theme }) => theme.colors.input};
+  background-color: #0d0c0c;
   border-radius: 16px;
   box-shadow: ${getBoxShadow};
   color: ${({ theme }) => theme.colors.text};
@@ -56,7 +56,7 @@ const Input = styled("input").withConfig({
   }
 
   &:disabled {
-    background-color: ${({ theme }) => theme.colors.backgroundDisabled};
+    background-color: #0d0c0c;
     box-shadow: none;
     color: ${({ theme }) => theme.colors.textDisabled};
     cursor: not-allowed;

@@ -10,7 +10,7 @@ import styled from 'styled-components'
 import { PrimaryOutlineButton } from './styles'
 
 const ButtonsContainer = styled(FlexGap).attrs({ flexWrap: 'wrap', gap: '4px' })`
-  background-color: ${({ theme }) => theme.colors.input};
+  background-color: #0d0c0c;
   border-radius: ${({ theme }) => theme.radii.default};
   padding: 1px;
   width: fit-content;

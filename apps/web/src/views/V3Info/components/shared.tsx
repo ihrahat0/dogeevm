@@ -1,5 +1,5 @@
-import { styled } from 'styled-components'
 import { Flex, Link } from '@pancakeswap/uikit'
+import { styled } from 'styled-components'
 
 export const PageButtons = styled.div`
   width: 100%;
@@ -22,7 +22,7 @@ export const Arrow = styled.div<{ faded: boolean }>`
 
 export const Break = styled.div`
   height: 1px;
-  background-color: ${({ theme }) => theme.colors.backgroundAlt};
+  background-color: #0d0c0c;
   width: 100%;
 `
 

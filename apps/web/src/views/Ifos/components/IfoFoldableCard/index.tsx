@@ -2,15 +2,15 @@ import { useIsWindowVisible } from '@pancakeswap/hooks'
 import { Ifo, PoolIds } from '@pancakeswap/ifos'
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  Box,
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
-  ExpandableButton,
-  ExpandableLabel,
-  useMatchBreakpoints,
-  useToast,
+    Box,
+    Card,
+    CardBody,
+    CardFooter,
+    CardHeader,
+    ExpandableButton,
+    ExpandableLabel,
+    useMatchBreakpoints,
+    useToast,
 } from '@pancakeswap/uikit'
 import { useQuery } from '@tanstack/react-query'
 import { ToastDescriptionWithTx } from 'components/Toast'
@@ -80,7 +80,7 @@ const Header = styled(CardHeader)<{ ifoId: string; $isCurrent?: boolean }>`
   background-position: center;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
-  background-color: ${({ theme }) => theme.colors.dropdown};
+  background-color: #0d0c0c;
   background-image: ${({ ifoId }) => `url('${getBannerUrl(ifoId)}')`};
   ${({ theme }) => theme.mediaQueries.md} {
     height: 112px;

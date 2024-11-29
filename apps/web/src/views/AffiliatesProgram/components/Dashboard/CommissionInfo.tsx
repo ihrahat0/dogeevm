@@ -1,10 +1,10 @@
-import React, { ReactNode, useMemo } from 'react'
-import { useTranslation, Trans } from '@pancakeswap/localization'
-import { styled } from 'styled-components'
+import { Trans, useTranslation } from '@pancakeswap/localization'
 import { Box, Card, Flex, Text } from '@pancakeswap/uikit'
+import { formatNumber } from '@pancakeswap/utils/formatBalance'
 import BigNumber from 'bignumber.js'
 import { useCakePrice } from 'hooks/useCakePrice'
-import { formatNumber } from '@pancakeswap/utils/formatBalance'
+import React, { ReactNode, useMemo } from 'react'
+import { styled } from 'styled-components'
 import { InfoDetail } from 'views/AffiliatesProgram/hooks/useAuthAffiliate'
 import PieChartContainer from './PieChartContainer'
 
@@ -30,7 +30,7 @@ const StyledCircle = styled(Flex)<{ backgroundColor: string }>`
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: ${({ backgroundColor }) => `${backgroundColor}`};
+  background-color: #0d0c0c;
 `
 
 interface CommissionInfoProps {

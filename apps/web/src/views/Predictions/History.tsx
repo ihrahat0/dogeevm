@@ -1,27 +1,27 @@
-import { ReactNode, useEffect, useState } from 'react'
-import { Flex, Spinner, Text } from '@pancakeswap/uikit'
-import { useAccount } from 'wagmi'
-import { styled } from 'styled-components'
-import ConnectWalletButton from 'components/ConnectWalletButton'
 import { useTranslation } from '@pancakeswap/localization'
+import { Flex, Spinner, Text } from '@pancakeswap/uikit'
+import ConnectWalletButton from 'components/ConnectWalletButton'
+import useLocalDispatch from 'contexts/LocalRedux/useLocalDispatch'
+import { useActiveChainId } from 'hooks/useActiveChainId'
+import { ReactNode, useEffect, useState } from 'react'
 import { fetchNodeHistory } from 'state/predictions'
 import { getFilteredBets } from 'state/predictions/helpers'
-import { useActiveChainId } from 'hooks/useActiveChainId'
-import useLocalDispatch from 'contexts/LocalRedux/useLocalDispatch'
 import {
-  useGetCurrentEpoch,
-  useGetCurrentHistoryPage,
-  useGetHistory,
-  useGetHistoryFilter,
-  useGetIsFetchingHistory,
-  useIsHistoryPaneOpen,
+    useGetCurrentEpoch,
+    useGetCurrentHistoryPage,
+    useGetHistory,
+    useGetHistoryFilter,
+    useGetIsFetchingHistory,
+    useIsHistoryPaneOpen,
 } from 'state/predictions/hooks'
+import { styled } from 'styled-components'
+import { useAccount } from 'wagmi'
 import { Header, HistoryTabs } from './components/History'
-import RoundsTab from './components/History/RoundsTab'
 import PnlTab from './components/History/PnlTab/PnlTab'
+import RoundsTab from './components/History/RoundsTab'
 
 const StyledHistory = styled.div`
-  background-color: ${({ theme }) => theme.card.background};
+  background-color: #0d0c0c;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -36,7 +36,7 @@ const BetWrapper = styled.div`
 
 const SpinnerWrapper = styled.div`
   align-items: center;
-  background-color: ${({ theme }) => theme.card.background};
+  background-color: #0d0c0c;
   display: flex;
   left: 0;
   height: 100%;

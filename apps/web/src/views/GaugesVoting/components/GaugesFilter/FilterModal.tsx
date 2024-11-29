@@ -39,8 +39,9 @@ export const FilterModal: React.FC<FilterModalProps> = ({ isOpen, onDismiss, typ
           >
             {allSelected ? t('Unselect All') : t('Select All')}
           </Button>
-          <Button variant="primary" onClick={onDismiss}>
+          <Button variant="primary" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }} style={{ color: '#8B0000' }}>
             {t('Done')}
+            
           </Button>
         </FlexGap>
       </Modal>

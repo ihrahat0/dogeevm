@@ -12,7 +12,7 @@ const StyledFeatureItem = styled.span`
   gap: 4px;
   padding: 2px 6px;
   border-radius: 999px;
-  background-color: ${({ theme }) => theme.colors.tertiary};
+  background-color: #0d0c0c;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -28,7 +28,7 @@ const CountsIndicator = styled(Text)`
   font-weight: 400;
   line-height: 1.5;
   color: ${({ theme }) => theme.colors.secondary};
-  background-color: ${({ theme }) => theme.colors.tertiary};
+  background-color: #0d0c0c;
   border-radius: 999px;
   border: 2px solid ${({ theme }) => theme.colors.background};
   display: inline-flex;

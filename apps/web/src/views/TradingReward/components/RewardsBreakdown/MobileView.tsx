@@ -8,7 +8,7 @@ import { RewardBreakdownDetail } from 'views/TradingReward/hooks/useRewardBreakd
 
 const StyledMobileRow = styled(Box)`
   padding: 24px 0;
-  background-color: ${({ theme }) => theme.card.background};
+  background-color: #0d0c0c;
   border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
 
   &:first-child {

@@ -1,7 +1,7 @@
 import { styled } from 'styled-components'
 
 const StyledBannerImageWrapper = styled.div`
-  ${({ theme }) => `background-color: ${theme.colors.cardBorder}`};
+  ${({ theme }) => `background-color: #0d0c0c;
   flex: none;
   position: relative;
   width: 100%;

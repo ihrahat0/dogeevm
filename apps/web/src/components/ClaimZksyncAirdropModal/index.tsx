@@ -2,21 +2,21 @@ import { ChainId } from '@pancakeswap/chains'
 import { useTranslation } from '@pancakeswap/localization'
 import { zksyncTokens } from '@pancakeswap/tokens'
 import {
-  AtomBox,
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Link,
-  ModalBody,
-  ModalCloseButton,
-  ModalContainer,
-  ModalHeader,
-  ModalTitle,
-  ModalV2,
-  Text,
-  useMatchBreakpoints,
-  useTooltip,
+    AtomBox,
+    Box,
+    Button,
+    Flex,
+    Heading,
+    Link,
+    ModalBody,
+    ModalCloseButton,
+    ModalContainer,
+    ModalHeader,
+    ModalTitle,
+    ModalV2,
+    Text,
+    useMatchBreakpoints,
+    useTooltip,
 } from '@pancakeswap/uikit'
 import { formatNumber, getBalanceNumber } from '@pancakeswap/utils/formatBalance'
 import BN from 'bignumber.js'
@@ -47,7 +47,7 @@ const Badge = styled.span`
   width: fit-content;
   border-radius: ${({ theme }) => theme.radii['32px']};
   color: ${({ theme }) => theme.colors.invertedContrast};
-  background-color: ${({ theme }) => theme.colors.success};
+  background-color: #0d0c0c;
 `
 
 const asset = `${ASSET_CDN}/web/banners/zksync-airdrop-banner/modal.png`

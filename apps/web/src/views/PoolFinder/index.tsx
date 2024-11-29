@@ -28,7 +28,7 @@ enum Fields {
 }
 
 const StyledButton = styled(Button)`
-  background-color: ${({ theme }) => theme.colors.input};
+  background-color: #0d0c0c;
   color: ${({ theme }) => theme.colors.text};
   box-shadow: none;
   border-radius: 16px;

@@ -1,7 +1,7 @@
 import { useTranslation } from '@pancakeswap/localization'
-import { styled } from 'styled-components'
-import { Modal, Text, Button, OpenNewIcon, Link } from '@pancakeswap/uikit'
+import { Button, Link, Modal, OpenNewIcon, Text } from '@pancakeswap/uikit'
 import useTheme from 'hooks/useTheme'
+import { styled } from 'styled-components'
 
 interface NotEnoughTokensModalProps {
   tokenSymbol: string
@@ -43,7 +43,7 @@ const NotEnoughTokensModal: React.FC<React.PropsWithChildren<NotEnoughTokensModa
           <OpenNewIcon color="primary" ml="4px" />
         </Button>
       </StyledLink>
-      <Button variant="text" onClick={onDismiss}>
+      <Button variant="text" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
         {t('Close Window')}
       </Button>
     </Modal>

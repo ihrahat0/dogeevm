@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react'
 import { useTranslation } from '@pancakeswap/localization'
-import { styled } from 'styled-components'
 import { Flex } from '@pancakeswap/uikit'
 import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
+import { useEffect, useState } from 'react'
+import { styled } from 'styled-components'
 
 import { useRouter } from 'next/router'
 
@@ -20,7 +20,7 @@ const Tab = styled.button<{ $active: boolean }>`
   border-radius: 16px 16px 0 0;
   font-size: 16px;
   font-weight: ${({ $active }) => ($active ? '600' : '400')};
-  background-color: ${({ theme, $active }) => ($active ? theme.colors.background : 'transparent')};
+  background-color: #0d0c0c;
   transition: background-color 0.3s ease-out;
 `
 

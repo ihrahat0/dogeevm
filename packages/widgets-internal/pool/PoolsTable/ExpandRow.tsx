@@ -1,12 +1,12 @@
-import { useState, memo, ReactNode, useCallback, useEffect, useRef } from "react";
-import { styled } from "styled-components";
 import { useDelayedUnmount } from "@pancakeswap/hooks";
 import { useMatchBreakpoints } from "@pancakeswap/uikit";
+import { memo, ReactNode, useCallback, useEffect, useRef, useState } from "react";
+import { styled } from "styled-components";
 
 import { ExpandActionCell } from "../Cells/ExpandActionCell";
 
 const StyledRow = styled.div`
-  background-color: transparent;
+  background-color: #0d0c0c;
   display: flex;
   cursor: pointer;
 `;

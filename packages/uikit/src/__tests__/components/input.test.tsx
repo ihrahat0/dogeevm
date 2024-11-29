@@ -9,7 +9,7 @@ it("renders correctly", () => {
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c0 {
-      background-color: var(--colors-input);
+      background-color: #0d0c0c;
       border-radius: 16px;
       box-shadow: var(--shadows-inset);
       color: #fff;;
@@ -27,7 +27,7 @@ it("renders correctly", () => {
     }
 
     .c0:disabled {
-      background-color: var(--colors-backgroundDisabled);
+      background-color: #0d0c0c;
       box-shadow: none;
       color: var(--colors-textDisabled);
       cursor: not-allowed;

@@ -37,7 +37,7 @@ it("renders correctly", () => {
     }
 
     .c5 {
-      background-color: var(--colors-input);
+      background-color: #0d0c0c;
       border-radius: 16px;
       box-shadow: var(--shadows-inset);
       color: #fff;;
@@ -55,7 +55,7 @@ it("renders correctly", () => {
     }
 
     .c5:disabled {
-      background-color: var(--colors-backgroundDisabled);
+      background-color: #0d0c0c;
       box-shadow: none;
       color: var(--colors-textDisabled);
       cursor: not-allowed;
@@ -66,7 +66,7 @@ it("renders correctly", () => {
     }
 
     .c0 {
-      background-color: var(--colors-input);
+      background-color: #0d0c0c;
       border: 1px solid var(--colors-inputSecondary);
       border-radius: 16px;
       box-shadow: var(--shadows-inset);
@@ -168,7 +168,7 @@ it("renders correctly with unit prop", () => {
     }
 
     .c5 {
-      background-color: var(--colors-input);
+      background-color: #0d0c0c;
       border-radius: 16px;
       box-shadow: var(--shadows-inset);
       color: #fff;;
@@ -186,7 +186,7 @@ it("renders correctly with unit prop", () => {
     }
 
     .c5:disabled {
-      background-color: var(--colors-backgroundDisabled);
+      background-color: #0d0c0c;
       box-shadow: none;
       color: var(--colors-textDisabled);
       cursor: not-allowed;
@@ -204,7 +204,7 @@ it("renders correctly with unit prop", () => {
     }
 
     .c0 {
-      background-color: var(--colors-input);
+      background-color: #0d0c0c;
       border: 1px solid var(--colors-inputSecondary);
       border-radius: 16px;
       box-shadow: var(--shadows-inset);
@@ -328,7 +328,7 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
     }
 
     .c5 {
-      background-color: var(--colors-input);
+      background-color: #0d0c0c;
       border-radius: 16px;
       box-shadow: var(--shadows-inset);
       color: #fff;;
@@ -346,7 +346,7 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
     }
 
     .c5:disabled {
-      background-color: var(--colors-backgroundDisabled);
+      background-color: #0d0c0c;
       box-shadow: none;
       color: var(--colors-textDisabled);
       cursor: not-allowed;
@@ -375,7 +375,7 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
       transition: background-color 0.2s,opacity 0.2s;
       height: 32px;
       padding: 0 16px;
-      background-color: transparent;
+      background-color: #0d0c0c;
       color: var(--colors-primary);
       box-shadow: none;
     }
@@ -393,7 +393,7 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
 
     .c11:disabled,
     .c11.pancake-button--disabled {
-      background-color: var(--colors-backgroundDisabled);
+      background-color: #0d0c0c;
       border-color: var(--colors-backgroundDisabled);
       box-shadow: none;
       color: var(--colors-textDisabled);
@@ -417,7 +417,7 @@ it("renders correctly with unit prop and switchEditingUnits", () => {
     }
 
     .c0 {
-      background-color: var(--colors-input);
+      background-color: #0d0c0c;
       border: 1px solid var(--colors-inputSecondary);
       border-radius: 16px;
       box-shadow: var(--shadows-inset);

@@ -1,10 +1,10 @@
+import { useTranslation } from '@pancakeswap/localization'
+import { ArrowBackIcon, AutoRenewIcon, Button, Flex, Modal, Text } from '@pancakeswap/uikit'
+import useTheme from 'hooks/useTheme'
 import { useCallback } from 'react'
 import { styled } from 'styled-components'
-import { Modal, Text, Flex, Button, ArrowBackIcon, AutoRenewIcon } from '@pancakeswap/uikit'
-import useTheme from 'hooks/useTheme'
-import { useTranslation } from '@pancakeswap/localization'
 import TicketInput from './TicketInput'
-import { UpdateTicketAction, Ticket } from './useTicketsReducer'
+import { Ticket, UpdateTicketAction } from './useTicketsReducer'
 
 const StyledModal = styled(Modal)`
   max-height: 552px;
@@ -78,7 +78,7 @@ const EditNumbersModal: React.FC<
         >
           {isConfirming ? t('Confirming') : t('Confirm and buy')}
         </Button>
-        <Button mt="8px" variant={isConfirming ? 'secondary' : 'text'} disabled={isConfirming} onClick={onDismiss}>
+        <Button mt="8px" variant={isConfirming ? 'secondary' : 'text'} disabled={isConfirming} onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
           <ArrowBackIcon color={isConfirming ? 'disabled' : 'primary'} height="24px" width="24px" /> {t('Go back')}
         </Button>
       </Flex>

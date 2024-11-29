@@ -30,7 +30,7 @@ const SwapSelectionWrapper = styled.div`
   width: 100%;
   gap: 4px;
   padding: 16px;
-  background-color: ${({ theme }) => theme.colors.backgroundAlt};
+  background-color: #0d0c0c;
   border-radius: 24px;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
   ${({ theme }) => theme.mediaQueries.md} {

@@ -14,7 +14,7 @@ const GridCell = styled.div`
 `;
 
 const ReferenceElement = styled.div`
-  background-color: #ffb237;
+  background-color: #0d0c0c;
   width: 160px;
   height: 160px;
   border-radius: 8px;
@@ -31,7 +31,7 @@ const ExpandableCard = styled.div`
   width: 300px;
   margin: 0 auto;
   padding: 0 10px;
-  background-color: #fff;
+  background-color: #0d0c0c;
   border-radius: 8px;
   box-shadow: rgba(70, 70, 80, 0.2) 0px 7px 29px 0px;
 `;

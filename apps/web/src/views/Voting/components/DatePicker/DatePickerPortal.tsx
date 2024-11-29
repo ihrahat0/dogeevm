@@ -31,7 +31,7 @@ const StyledDatePickerPortal = styled.div`
   .react-datepicker__month-text:hover,
   .react-datepicker__quarter-text:hover,
   .react-datepicker__year-text:hover {
-    background-color: ${({ theme }) => theme.colors.cardBorder};
+    background-color: #0d0c0c;
   }
 
   .react-datepicker-popper[data-placement^='bottom'] .react-datepicker__triangle::before,
@@ -51,7 +51,7 @@ const StyledDatePickerPortal = styled.div`
   .react-datepicker__year-text--selected,
   .react-datepicker__year-text--in-selecting-range,
   .react-datepicker__year-text--in-range {
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: #0d0c0c;
   }
 
   .react-datepicker__day--selected:hover,
@@ -66,23 +66,23 @@ const StyledDatePickerPortal = styled.div`
   .react-datepicker__year-text--selected:hover,
   .react-datepicker__year-text--in-selecting-range:hover,
   .react-datepicker__year-text--in-range:hover {
-    background-color: ${({ theme }) => theme.colors.primaryBright};
+    background-color: #0d0c0c;
   }
 
   .react-datepicker__day--keyboard-selected,
   .react-datepicker__month-text--keyboard-selected,
   .react-datepicker__quarter-text--keyboard-selected,
   .react-datepicker__year-text--keyboard-selected {
-    background-color: ${({ theme }) => theme.colors.secondary};
-    color: #ffffff;
+    background-color: #0d0c0c;
+    #fff;
   }
 
   .react-datepicker__day--keyboard-selected:hover,
   .react-datepicker__month-text--keyboard-selected:hover,
   .react-datepicker__quarter-text--keyboard-selected:hover,
   .react-datepicker__year-text--keyboard-selected:hover {
-    background-color: ${({ theme }) => theme.colors.secondary};
-    color: #ffffff;
+    background-color: #0d0c0c;
+    #fff;
   }
 
   .react-datepicker__time-container,
@@ -108,10 +108,10 @@ const StyledDatePickerPortal = styled.div`
     .react-datepicker__time-box
     ul.react-datepicker__time-list
     li.react-datepicker__time-list-item {
-    background-color: ${({ theme }) => theme.card.background};
+    background-color: #0d0c0c;
 
     &:hover {
-      background-color: ${({ theme }) => theme.colors.cardBorder};
+      background-color: #0d0c0c;
     }
   }
 

@@ -13,11 +13,11 @@ import Hero from './components/Hero'
 import MetricsSection from './components/MetricsSection'
 import { NewsSection } from './components/NewsSection'
 import {
-  InnerWedgeWrapper,
-  OuterWedgeWrapper,
-  WedgeBottomRight,
-  WedgeTopLeft,
-  WedgeTopRight,
+    InnerWedgeWrapper,
+    OuterWedgeWrapper,
+    WedgeBottomRight,
+    WedgeTopLeft,
+    WedgeTopRight,
 } from './components/WedgeSvgs'
 
 const StyledHeroSection = styled(PageSection)`
@@ -45,7 +45,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
             background: radial-gradient(103.12% 50% at 50% 50%, #21193a 0%, #191326 100%);
           }
           #home-2 .page-bg {
-            background: linear-gradient(180deg, #ffffff 22%, #d7caec 100%);
+            background: linear-gradient(180deg, #000 22%, #d7caec 100%);
           }
           [data-theme='dark'] #home-2 .page-bg {
             background: linear-gradient(180deg, #09070c 22%, #201335 100%);

@@ -1,13 +1,13 @@
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  ArrowBackIcon,
-  ArrowForwardIcon,
-  AutoColumn,
-  Box,
-  Flex,
-  ScanLink,
-  SortArrowIcon,
-  Text,
+    ArrowBackIcon,
+    ArrowForwardIcon,
+    AutoColumn,
+    Box,
+    Flex,
+    ScanLink,
+    SortArrowIcon,
+    Text,
 } from '@pancakeswap/uikit'
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { ChainLinkSupportChains, multiChainId } from 'state/info/constant'
@@ -75,7 +75,7 @@ const SortText = styled.button<{ active: boolean }>`
   font-weight: ${({ active }) => (active ? 500 : 400)};
   margin-right: 0.75rem !important;
   border: none;
-  background-color: transparent;
+  background-color: #0d0c0c;
   font-size: 1rem;
   padding: 0px;
   color: ${({ active, theme }) => (active ? theme.colors.text : theme.colors.textSubtle)};

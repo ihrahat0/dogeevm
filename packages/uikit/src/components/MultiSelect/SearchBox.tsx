@@ -1,9 +1,9 @@
+import { useTheme } from "@pancakeswap/hooks";
 import { forwardRef, useCallback, useEffect, useImperativeHandle, useLayoutEffect, useRef, useState } from "react";
 import { styled } from "styled-components";
-import { useTheme } from "@pancakeswap/hooks";
-import { IOptionType, ISelectItem } from "./types";
 import { Box, Flex } from "../Box";
 import { CrossIcon } from "../Svg";
+import { IOptionType, ISelectItem } from "./types";
 
 export const BORDER_RADIUS = "16px";
 
@@ -15,7 +15,7 @@ const StyledBox = styled(Box)<{ isFocus: boolean }>`
   display: flex;
   align-items: center;
   border: 1px solid ${({ theme }) => theme.colors.inputSecondary};
-  background-color: ${({ theme }) => theme.colors.input};
+  background-color: #0d0c0c;
   border-radius: ${BORDER_RADIUS};
   line-height: 24px;
   margin: 16px;
@@ -122,7 +122,7 @@ const SelectedLabel = styled.span`
   padding: 2px;
   border-radius: ${BORDER_RADIUS};
   border: 1px solid ${({ theme }) => theme.colors.inputSecondary};
-  background-color: ${({ theme }) => theme.colors.textSubtle};
+  background-color: #0d0c0c;
   color: ${({ theme }) => theme.card.background};
   gap: 4px;
 `;

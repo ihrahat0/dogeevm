@@ -1,8 +1,8 @@
-import { styled } from 'styled-components'
-import NextLink from 'next/link'
-import { Flex, Skeleton, UserMenuItem } from '@pancakeswap/uikit'
-import { useAccount } from 'wagmi'
 import { useTranslation } from '@pancakeswap/localization'
+import { Flex, Skeleton, UserMenuItem } from '@pancakeswap/uikit'
+import NextLink from 'next/link'
+import { styled } from 'styled-components'
+import { useAccount } from 'wagmi'
 
 interface ProfileUserMenuItemProps {
   isLoading: boolean
@@ -11,7 +11,7 @@ interface ProfileUserMenuItemProps {
 }
 
 const Dot = styled.div`
-  background-color: ${({ theme }) => theme.colors.failure};
+  background-color: #0d0c0c;
   border-radius: 50%;
   height: 8px;
   width: 8px;

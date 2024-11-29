@@ -1,15 +1,15 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Flex } from '@pancakeswap/uikit'
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerGraphics,
-  BannerMain,
-  BannerTitle,
-  ButtonLinkAction,
-  GraphicDetail,
-  PancakeSwapBadge,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerGraphics,
+    BannerMain,
+    BannerTitle,
+    ButtonLinkAction,
+    GraphicDetail,
+    PancakeSwapBadge,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import styled from 'styled-components'
@@ -31,7 +31,7 @@ const bgXsVariant: GraphicDetail = {
 }
 
 const StyledButton = styled(ButtonLinkAction)`
-  background-color: #50e892;
+  background-color: #0d0c0c;
   height: 2.25rem;
   font-size: 0.875rem;
 

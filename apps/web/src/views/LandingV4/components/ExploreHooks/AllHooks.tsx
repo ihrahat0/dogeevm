@@ -62,12 +62,12 @@ const MultiSelectorStyled = styled(MultiSelector)<{ $hasOptionsPicked: boolean }
 
   > div:nth-child(2) {
     border-color: ${({ theme }) => theme.colors.cardBorder};
-    background-color: ${({ theme }) => theme.colors.backgroundAlt};
+    background-color: #0d0c0c;
 
     input {
       &:checked {
         border: 0;
-        background-color: ${({ theme }) => theme.colors.primary};
+        background-color: #0d0c0c;
       }
     }
   }
@@ -85,7 +85,7 @@ const TagStyled = styled(Tag)<{ $picked: boolean; $hideIconMobileMargin?: boolea
   border: solid 1px;
   font-weight: 500;
   color: ${({ theme, $picked }) => ($picked ? 'white' : theme.colors.text)};
-  background-color: ${({ theme, $picked }) => ($picked ? theme.colors.primary : theme.colors.backgroundAlt)};
+  background-color: #0d0c0c;
   border-color: ${({ theme, $picked }) => ($picked ? 'transparent' : theme.colors.cardBorder)};
 
   > svg {

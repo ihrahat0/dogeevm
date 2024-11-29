@@ -1,13 +1,13 @@
 import { useTranslation } from '@pancakeswap/localization'
-import { Button, Flex, Link, OpenNewIcon, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
+import { Button, Flex, OpenNewIcon, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 
+import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import useTheme from 'hooks/useTheme'
 import { memo } from 'react'
 import { styled } from 'styled-components'
-import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
-import * as S from './Styled'
 import { Countdown } from './Countdown'
+import * as S from './Styled'
 
 const { partnerCakePie, cakeLogo, partnerBnbChain, board, cakePie, cakePieMobile } = {
   partnerBnbChain: `${ASSET_CDN}/web/banners/partner/bnbchain-partner.png`,
@@ -23,7 +23,7 @@ const Image = styled.img``
 const Divider = styled.div`
   height: 22px;
   width: 1px;
-  background-color: #c8bdc8;
+  background-color: #0d0c0c;
 `
 
 const BackGroundLayer = styled.div`

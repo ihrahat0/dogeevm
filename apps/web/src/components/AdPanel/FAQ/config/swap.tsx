@@ -12,7 +12,7 @@ export const StyledFlex = styled(FlexGap)`
     width: 6px;
     margin-right: 15px;
     margin-top: 9px;
-    background-color: ${({ theme }) => theme.colors.text};
+    background-color: #0d0c0c;
     border-radius: 50%;
   }
 `

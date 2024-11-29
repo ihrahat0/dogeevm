@@ -2,7 +2,7 @@ import { useTranslation } from "@pancakeswap/localization";
 import { formatNumber } from "@pancakeswap/utils/formatBalance";
 import { useTheme } from "styled-components";
 
-import { Flex, Heading, Button, Text, AutoRenewIcon, Modal } from "@pancakeswap/uikit";
+import { AutoRenewIcon, Button, Flex, Heading, Modal, Text } from "@pancakeswap/uikit";
 import getThemeValue from "@pancakeswap/uikit/util/getThemeValue";
 
 export interface CollectModalProps {
@@ -59,7 +59,7 @@ export function CollectModal({
       >
         {pendingTx ? t("Confirming") : t("Confirm")}
       </Button>
-      <Button variant="text" onClick={onDismiss} pb="0px">
+      <Button variant="text" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }} pb="0px">
         {t("Close Window")}
       </Button>
     </Modal>

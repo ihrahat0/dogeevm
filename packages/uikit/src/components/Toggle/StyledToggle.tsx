@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { ToggleProps, HandleProps, InputProps, ScaleKeys, scales, StyleToggleProps } from "./types";
+import { HandleProps, InputProps, ScaleKeys, scales, StyleToggleProps, ToggleProps } from "./types";
 
 const scaleKeyValues = {
   sm: {
@@ -38,7 +38,7 @@ const getScale =
   };
 
 export const Handle = styled.div<HandleProps>`
-  background-color: ${({ theme }) => theme.toggle.handleBackground};
+  background-color: #0d0c0c;
   border-radius: 50%;
   cursor: pointer;
   height: ${getScale("handleHeight")};

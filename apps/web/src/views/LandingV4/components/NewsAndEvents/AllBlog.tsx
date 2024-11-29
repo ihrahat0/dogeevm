@@ -47,7 +47,7 @@ const SelectStyled = styled(Select)`
   min-width: 132px;
 
   > div {
-    background-color: ${({ theme }) => theme.colors.backgroundAlt};
+    background-color: #0d0c0c;
   }
 `
 

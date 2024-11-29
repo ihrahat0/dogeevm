@@ -43,7 +43,7 @@ const StyledCardFooter = styled(CardFooter)`
     width: calc(100% - 48px);
     top: 0px;
     left: 24px;
-    background-color: ${({ theme }) => theme.colors.cardBorder};
+    background-color: #0d0c0c;
   }
 `
 

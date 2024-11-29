@@ -1,19 +1,19 @@
 /* eslint-disable react/no-array-index-key */
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  Box,
-  Button,
-  CloseIcon,
-  Flex,
-  Heading,
-  IconButton,
-  InfoIcon,
-  ModalBody,
-  ModalHeader,
-  ModalProps,
-  ModalTitle,
-  ModalWrapper,
-  Text,
+    Box,
+    Button,
+    CloseIcon,
+    Flex,
+    Heading,
+    IconButton,
+    InfoIcon,
+    ModalBody,
+    ModalHeader,
+    ModalProps,
+    ModalTitle,
+    ModalWrapper,
+    Text,
 } from '@pancakeswap/uikit'
 import { formatBigInt } from '@pancakeswap/utils/formatBalance'
 import useTheme from 'hooks/useTheme'
@@ -70,7 +70,7 @@ const BuyTicketsModal: React.FC<React.PropsWithChildren<BuyTicketsModalProps>> =
         <ModalTitle>
           <Heading>{title}</Heading>
         </ModalTitle>
-        <IconButton variant="text" onClick={onDismiss}>
+        <IconButton variant="text" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
           <CloseIcon width="24px" color="text" />
         </IconButton>
       </ModalHeader>

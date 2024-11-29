@@ -35,7 +35,7 @@ const Radio = styled.input.attrs({ type: "radio" }).withConfig({ shouldForwardPr
   transition: background-color 0.2s ease-in-out;
   border: ${({ theme }) => (theme.isDark ? `solid 1px ${theme.colors.disabled}` : "0")};
   border-radius: 50%;
-  background-color: ${({ theme }) => theme.colors.cardBorder};
+  background-color: #0d0c0c;
   box-shadow: ${({ theme }) => theme.shadows.inset};
 
   &:after {
@@ -59,9 +59,9 @@ const Radio = styled.input.attrs({ type: "radio" }).withConfig({ shouldForwardPr
 
   &:checked {
     border: 0;
-    background-color: ${({ theme }) => theme.colors.success};
+    background-color: #0d0c0c;
     &:after {
-      background-color: ${({ theme }) => theme.radio.handleBackground};
+      background-color: #0d0c0c;
     }
   }
 

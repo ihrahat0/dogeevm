@@ -1,8 +1,8 @@
-import { styled } from 'styled-components'
-import { Text, Button, Input, InputProps, Flex, Link } from '@pancakeswap/uikit'
 import { useTranslation } from '@pancakeswap/localization'
-import { parseUnits } from 'viem'
+import { Button, Flex, Input, InputProps, Link, Text } from '@pancakeswap/uikit'
 import { formatBigInt } from '@pancakeswap/utils/formatBalance'
+import { styled } from 'styled-components'
+import { parseUnits } from 'viem'
 
 interface ModalInputProps {
   max: string
@@ -21,7 +21,7 @@ const StyledTokenInput = styled('div').withConfig({
 })<InputProps>`
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.input};
+  background-color: #0d0c0c;
   border-radius: 16px;
   box-shadow: ${({ theme, isWarning }) => (isWarning ? theme.colors.warning : theme.shadows.inset)};
   color: ${({ theme }) => theme.colors.text};

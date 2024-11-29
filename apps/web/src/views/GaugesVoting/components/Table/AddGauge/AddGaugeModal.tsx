@@ -1,18 +1,18 @@
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  AutoColumn,
-  Box,
-  Button,
-  CloseIcon,
-  ColumnCenter,
-  Flex,
-  FlexGap,
-  Grid,
-  Heading,
-  ModalV2,
-  ModalWrapper,
-  Text,
-  useMatchBreakpoints,
+    AutoColumn,
+    Box,
+    Button,
+    CloseIcon,
+    ColumnCenter,
+    Flex,
+    FlexGap,
+    Grid,
+    Heading,
+    ModalV2,
+    ModalWrapper,
+    Text,
+    useMatchBreakpoints,
 } from '@pancakeswap/uikit'
 import styled from 'styled-components'
 import { useGauges } from 'views/GaugesVoting/hooks/useGauges'
@@ -87,7 +87,7 @@ export const AddGaugeModal = ({ isOpen, onDismiss, selectRows, onGaugeAdd }) => 
                     {t('Search and add the gauge you want to vote')}
                   </Text>
                 </AutoColumn>
-                <Button variant="text" onClick={onDismiss} px={0} height="fit-content">
+                <Button variant="text" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }} px={0} height="fit-content">
                   <CloseIcon color="textSubtle" />
                 </Button>
               </FlexGap>
@@ -110,7 +110,7 @@ export const AddGaugeModal = ({ isOpen, onDismiss, selectRows, onGaugeAdd }) => 
               ) : null}
               <Box style={{ flex: 1, overflowY: 'auto', overflowX: 'hidden' }}>{gaugesTable}</Box>
             </FlexGap>
-            <BottomAction pb="32px" style={{ marginTop: 'auto' }} onClick={onDismiss}>
+            <BottomAction pb="32px" style={{ marginTop: 'auto' }} onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
               <Button width={isMobile ? '100%' : '50%'}>{t(isMobile ? 'Continue' : 'Finish')}</Button>
             </BottomAction>
           </Flex>

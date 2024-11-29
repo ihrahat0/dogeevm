@@ -1,7 +1,7 @@
-import { styled } from 'styled-components'
-import { ArrowDownIcon, ArrowUpIcon } from '@pancakeswap/uikit'
-import { BetPosition } from '@pancakeswap/prediction'
 import { useTranslation } from '@pancakeswap/localization'
+import { BetPosition } from '@pancakeswap/prediction'
+import { ArrowDownIcon, ArrowUpIcon } from '@pancakeswap/uikit'
+import { styled } from 'styled-components'
 
 interface PositionLabelProps {
   position: BetPosition
@@ -9,7 +9,7 @@ interface PositionLabelProps {
 
 const StyledPositionLabel = styled.div<{ bgColor: string }>`
   align-items: center;
-  background-color: ${({ theme, bgColor }) => theme.colors[bgColor]};
+  background-color: #0d0c0c;
   border-radius: 4px;
   display: inline-flex;
   justify-content: center;

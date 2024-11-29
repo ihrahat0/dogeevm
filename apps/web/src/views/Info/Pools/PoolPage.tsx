@@ -1,21 +1,21 @@
 /* eslint-disable no-nested-ternary */
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  Box,
-  Breadcrumbs,
-  Button,
-  ButtonMenu,
-  ButtonMenuItem,
-  Card,
-  CopyButton,
-  Flex,
-  Heading,
-  HelpIcon,
-  ScanLink,
-  Spinner,
-  Text,
-  useMatchBreakpoints,
-  useTooltip,
+    Box,
+    Breadcrumbs,
+    Button,
+    ButtonMenu,
+    ButtonMenuItem,
+    Card,
+    CopyButton,
+    Flex,
+    Heading,
+    HelpIcon,
+    ScanLink,
+    Spinner,
+    Text,
+    useMatchBreakpoints,
+    useTooltip,
 } from '@pancakeswap/uikit'
 import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 
@@ -29,14 +29,14 @@ import { NextSeo } from 'next-seo'
 import { useMemo, useState } from 'react'
 import { ChainLinkSupportChains, checkIsStableSwap, multiChainId, multiChainScan } from 'state/info/constant'
 import {
-  useChainIdByQuery,
-  useChainNameByQuery,
-  useMultiChainPath,
-  usePoolChartTvlDataQuery,
-  usePoolChartVolumeDataQuery,
-  usePoolDataQuery,
-  usePoolTransactionsQuery,
-  useStableSwapPath,
+    useChainIdByQuery,
+    useChainNameByQuery,
+    useMultiChainPath,
+    usePoolChartTvlDataQuery,
+    usePoolChartVolumeDataQuery,
+    usePoolDataQuery,
+    usePoolTransactionsQuery,
+    useStableSwapPath,
 } from 'state/info/hooks'
 import { styled } from 'styled-components'
 import { getBlockExploreLink } from 'utils'
@@ -69,7 +69,7 @@ const TokenButton = styled(Flex)`
 
 const LockedTokensContainer = styled(Flex)`
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
   padding: 16px;
   flex-direction: column;
   gap: 8px;

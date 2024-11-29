@@ -2,16 +2,16 @@ import { GAUGE_TYPE_NAMES, Gauge, GaugeType } from '@pancakeswap/gauges'
 import { useTranslation } from '@pancakeswap/localization'
 import { Percent } from '@pancakeswap/sdk'
 import {
-  Button,
-  CheckmarkCircleFillIcon,
-  ChevronDownIcon,
-  ChevronUpIcon,
-  CrossIcon,
-  ErrorIcon,
-  Flex,
-  FlexGap,
-  Tag,
-  Text,
+    Button,
+    CheckmarkCircleFillIcon,
+    ChevronDownIcon,
+    ChevronUpIcon,
+    CrossIcon,
+    ErrorIcon,
+    Flex,
+    FlexGap,
+    Tag,
+    Text,
 } from '@pancakeswap/uikit'
 import formatLocalisedCompactNumber, { getBalanceNumber } from '@pancakeswap/utils/formatBalance'
 import BN from 'bignumber.js'
@@ -29,7 +29,7 @@ import { RowData } from './types'
 
 const SelectButton = styled(Button)`
   &:disabled {
-    background-color: transparent;
+    background-color: #0d0c0c;
   }
 `
 

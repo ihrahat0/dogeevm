@@ -95,7 +95,7 @@ const CakeCanvas = styled.canvas`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: transparent;
+  background-color: #0d0c0c;
 `
 
 const StyledText = styled(Text)`

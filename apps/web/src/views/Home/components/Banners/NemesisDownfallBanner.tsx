@@ -1,17 +1,17 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Box, Flex, Image, useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerGraphics,
-  BannerMain,
-  BannerTitle,
-  ButtonLinkAction,
-  FloatingGraphic,
-  GraphicDetail,
-  LinkExternalAction,
-  PancakeSwapBadge,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerGraphics,
+    BannerMain,
+    BannerTitle,
+    ButtonLinkAction,
+    FloatingGraphic,
+    GraphicDetail,
+    LinkExternalAction,
+    PancakeSwapBadge,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import styled from 'styled-components'
@@ -35,7 +35,7 @@ const bgXsVariant: GraphicDetail = {
 }
 
 const StyledButtonLinkAction = styled(ButtonLinkAction)`
-  background-color: #812b21;
+  background-color: #0d0c0c;
 `
 
 const playNowLink =

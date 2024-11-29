@@ -1,8 +1,8 @@
-import { useTranslation } from "@pancakeswap/localization";
 import { useTheme } from "@pancakeswap/hooks";
+import { useTranslation } from "@pancakeswap/localization";
+import { AutoColumn, Box, Button, Checkbox, Flex, Link, Message, RowBetween, RowFixed, Text } from "@pancakeswap/uikit";
 import { useState } from "react";
 import { styled } from "styled-components";
-import { AutoColumn, Flex, Link, Text, Checkbox, Button, Message, Box, RowBetween, RowFixed } from "@pancakeswap/uikit";
 import { ListLogo } from "./ListLogo";
 
 interface ImportProps {
@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 const TextDot = styled.div`
   height: 3px;
   width: 3px;
-  background-color: ${({ theme }) => theme.colors.text};
+  background-color: #0d0c0c;
   border-radius: 50%;
 `;
 
@@ -36,7 +36,7 @@ const Card = styled(Box)<{
   padding: ${({ padding }) => padding ?? "1.25rem"};
   border: ${({ border }) => border};
   border-radius: ${({ borderRadius }) => borderRadius ?? "16px"};
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
 `;
 
 export function ImportList({ listURL, listLogoURI, listName, listTokenLength, onAddList, addError }: ImportProps) {

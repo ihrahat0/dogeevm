@@ -1,14 +1,14 @@
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  BarChartIcon,
-  FavoriteBorderIcon,
-  Flex,
-  Link,
-  LogoIcon,
-  OpenNewIcon,
-  Text,
-  VerifiedIcon,
-  useMatchBreakpoints,
+    BarChartIcon,
+    FavoriteBorderIcon,
+    Flex,
+    Link,
+    LogoIcon,
+    OpenNewIcon,
+    Text,
+    VerifiedIcon,
+    useMatchBreakpoints,
 } from '@pancakeswap/uikit'
 import useTheme from 'hooks/useTheme'
 import { useMemo } from 'react'
@@ -24,7 +24,7 @@ export const BlogImage = styled.div`
 export const Divider = styled.div`
   width: 1px;
   height: 16px;
-  background-color: ${({ theme }) => theme.colors.cardBorder};
+  background-color: #0d0c0c;
   border-radius: 25%;
   margin: 0 8px;
 `

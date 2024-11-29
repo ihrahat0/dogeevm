@@ -1,28 +1,28 @@
 import { ChainId } from '@pancakeswap/chains'
 import { useTranslation } from '@pancakeswap/localization'
 import {
-    ArrowUpIcon,
-    AtomBox,
-    Box,
-    Button,
-    CheckmarkCircleFillIcon,
-    Flex,
-    Heading,
-    LinkExternal,
-    LinkIcon,
-    Loading,
-    ModalBody,
-    ModalCloseButton,
-    ModalContainer,
-    ModalHeader,
-    ModalTitle,
-    ModalV2,
-    Spinner,
-    Svg,
-    SvgProps,
-    Text,
-    useMatchBreakpoints,
-    useToast,
+  ArrowUpIcon,
+  AtomBox,
+  Box,
+  Button,
+  CheckmarkCircleFillIcon,
+  Flex,
+  Heading,
+  LinkExternal,
+  LinkIcon,
+  Loading,
+  ModalBody,
+  ModalCloseButton,
+  ModalContainer,
+  ModalHeader,
+  ModalTitle,
+  ModalV2,
+  Spinner,
+  Svg,
+  SvgProps,
+  Text,
+  useMatchBreakpoints,
+  useToast,
 } from '@pancakeswap/uikit'
 import { formatNumber, getBalanceNumber } from '@pancakeswap/utils/formatBalance'
 import BigNumber from 'bignumber.js'
@@ -75,7 +75,7 @@ const LogoWrapper = styled.div`
   height: 32px;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background: #0000;
   border-radius: 8px;
 `
 
@@ -328,7 +328,7 @@ export const CrossChainVeCakeModal: React.FC<{
                 ) : (
                   <ConnectWalletButton />
                 )}
-                <Button variant="secondary" width="50%" onClick={onDismiss}>
+                <Button variant="secondary" width="50%" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
                   {t('Close')}
                 </Button>
               </Flex>

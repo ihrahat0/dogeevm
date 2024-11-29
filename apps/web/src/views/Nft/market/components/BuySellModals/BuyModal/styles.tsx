@@ -1,6 +1,6 @@
-import { styled } from 'styled-components'
-import { Modal, Grid, Flex, Text, BinanceIcon, Skeleton } from '@pancakeswap/uikit'
+import { BinanceIcon, Flex, Grid, Modal, Skeleton, Text } from '@pancakeswap/uikit'
 import { useBNBPrice } from 'hooks/useBNBPrice'
+import { styled } from 'styled-components'
 import { BuyingStage } from './types'
 
 export const StyledModal = styled(Modal)<{ stage: BuyingStage }>`
@@ -24,7 +24,7 @@ export const StyledModal = styled(Modal)<{ stage: BuyingStage }>`
 export const BorderedBox = styled(Grid)`
   margin: 16px 0;
   padding: 16px;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
   border-radius: ${({ theme }) => theme.radii.default};
   grid-template-columns: 1fr 1fr;

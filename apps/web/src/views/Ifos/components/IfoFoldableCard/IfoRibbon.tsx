@@ -1,17 +1,17 @@
-import { Box, Flex, Heading, Progress, ProgressBar } from '@pancakeswap/uikit'
-import { useTranslation } from '@pancakeswap/localization'
-import { styled } from 'styled-components'
-import { ChainId } from '@pancakeswap/sdk'
-import { ReactNode, useMemo } from 'react'
 import { useImageColor } from '@pancakeswap/hooks'
+import { useTranslation } from '@pancakeswap/localization'
+import { ChainId } from '@pancakeswap/sdk'
+import { Box, Flex, Heading, Progress, ProgressBar } from '@pancakeswap/uikit'
+import { ReactNode, useMemo } from 'react'
+import { styled } from 'styled-components'
 
-import { PublicIfoData } from '../../types'
-import LiveTimer, { SoonTimer } from './Timer'
-import { IfoChainBoard } from '../IfoChainBoard'
 import { getBannerUrl } from '../../helpers'
+import { PublicIfoData } from '../../types'
+import { IfoChainBoard } from '../IfoChainBoard'
+import LiveTimer, { SoonTimer } from './Timer'
 
 const StyledProgress = styled(Progress)`
-  background-color: #281a5b;
+  background-color: #0d0c0c;
 `
 
 const Container = styled(Box)`

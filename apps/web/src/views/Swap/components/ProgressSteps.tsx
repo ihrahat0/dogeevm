@@ -1,6 +1,6 @@
-import { styled } from 'styled-components'
 import { AutoColumn } from '@pancakeswap/uikit'
 import { RowBetween } from 'components/Layout/Row'
+import { styled } from 'styled-components'
 
 const Grouping = styled(RowBetween)`
   width: 50%;
@@ -12,7 +12,7 @@ const Circle = styled.div<{ confirmed?: boolean; disabled?: boolean }>`
   background-color: ${({ theme, confirmed, disabled }) =>
     disabled ? theme.colors.backgroundDisabled : confirmed ? theme.colors.success : theme.colors.primary};
   border-radius: 50%;
-  color: #ffffff;
+  #fff;
   display: flex;
   align-items: center;
   justify-content: center;

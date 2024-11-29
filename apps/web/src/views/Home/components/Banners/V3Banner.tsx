@@ -1,9 +1,9 @@
 import { useTranslation } from '@pancakeswap/localization'
-import { Button, Text, useMatchBreakpoints, OpenNewIcon } from '@pancakeswap/uikit'
+import { Button, OpenNewIcon, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 
 import Image from 'next/legacy/image'
-import { styled, css, keyframes } from 'styled-components'
+import { css, keyframes, styled } from 'styled-components'
 import { v3AirdropBunny, v3BgBlingBlur, v3BgBlingNormal, v3BgCoinDown, v3BgCoinUp, v3Board } from './images'
 import * as S from './Styled'
 
@@ -177,7 +177,7 @@ const Title = styled.div`
   font-weight: 600;
   font-size: 23px;
   line-height: 110%;
-  color: #ffffff;
+  #fff;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   margin-bottom: 5px;
   margin-top: 0px;

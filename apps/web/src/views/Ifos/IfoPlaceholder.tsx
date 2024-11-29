@@ -1,29 +1,29 @@
-import { bscTokens } from '@pancakeswap/tokens'
-import { useMemo } from 'react'
-import {
-  Card,
-  IfoSkeletonCardTokens,
-  IfoSkeletonCardActions,
-  IfoSkeletonCardDetails,
-  Box,
-  IfoGenericIfoCard,
-} from '@pancakeswap/uikit'
-import { useTranslation } from '@pancakeswap/localization'
-import styled from 'styled-components'
 import { PoolIds } from '@pancakeswap/ifos'
+import { useTranslation } from '@pancakeswap/localization'
+import { bscTokens } from '@pancakeswap/tokens'
+import {
+    Box,
+    Card,
+    IfoGenericIfoCard,
+    IfoSkeletonCardActions,
+    IfoSkeletonCardDetails,
+    IfoSkeletonCardTokens,
+} from '@pancakeswap/uikit'
+import { useMemo } from 'react'
+import styled from 'styled-components'
 
 import { useFetchIfo } from 'state/pools/hooks'
 
 import { CardsWrapper } from './components/IfoCardStyles'
-import { StyledCardBody } from './components/IfoFoldableCard/index'
 import IfoContainer from './components/IfoContainer'
-import IfoSteps from './components/IfoSteps'
 import { cardConfig } from './components/IfoFoldableCard/IfoPoolCard'
+import { StyledCardBody } from './components/IfoFoldableCard/index'
+import IfoSteps from './components/IfoSteps'
 
 const CurveBox = styled(Box)`
   border-bottom-left-radius: 100% 40px;
   border-bottom-right-radius: 100% 40px;
-  background-color: ${({ theme }) => theme.colors.backgroundDisabled};
+  background-color: #0d0c0c;
 `
 
 function Placeholder() {

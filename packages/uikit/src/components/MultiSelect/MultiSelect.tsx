@@ -92,13 +92,13 @@ const SelectContainer = styled.div`
       width: ${CHECKBOX_WIDTH};
       height: ${CHECKBOX_WIDTH};
       border-radius: 8px;
-      background-color: ${({ theme }) => theme.colors.input};
+      background-color: #0d0c0c;
     }
 
     &.p-highlight {
       .p-checkbox-box {
         border-color: ${({ theme }) => theme.colors.success};
-        background-color: ${({ theme }) => theme.colors.success};
+        background-color: #0d0c0c;
       }
 
       .p-checkbox-icon.p-icon {

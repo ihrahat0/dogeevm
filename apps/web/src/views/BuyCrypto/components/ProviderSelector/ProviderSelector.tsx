@@ -33,7 +33,7 @@ const OptionSelectButton = styled(Button).attrs({ variant: 'text', scale: 'sm' }
   justify-content: space-between;
   align-items: center;
   border-radius: 0px;
-  background-color: transparent !important;
+  background-color: #0d0c0c;
 `
 
 interface ProviderSelectorProps extends BoxProps {

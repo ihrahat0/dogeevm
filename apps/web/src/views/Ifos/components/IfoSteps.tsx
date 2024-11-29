@@ -1,22 +1,22 @@
 import { ChainId, Currency, CurrencyAmount } from '@pancakeswap/sdk'
 import {
-  Balance,
-  Box,
-  Button,
-  Card,
-  CardBody,
-  CheckmarkIcon,
-  Container,
-  Flex,
-  FlexGap,
-  Heading,
-  Link,
-  LogoRoundIcon,
-  Skeleton,
-  Step,
-  StepStatus,
-  Stepper,
-  Text,
+    Balance,
+    Box,
+    Button,
+    Card,
+    CardBody,
+    CheckmarkIcon,
+    Container,
+    Flex,
+    FlexGap,
+    Heading,
+    Link,
+    LogoRoundIcon,
+    Skeleton,
+    Step,
+    StepStatus,
+    Stepper,
+    Text,
 } from '@pancakeswap/uikit'
 import { Ifo, NextLinkFromReactRouter as RouterLink } from '@pancakeswap/widgets-internal'
 import every from 'lodash/every'
@@ -49,7 +49,7 @@ interface TypeProps {
 const SmallStakePoolCard = styled(Box)`
   margin-top: 16px;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
 `
 
 const Wrapper = styled(Container)`

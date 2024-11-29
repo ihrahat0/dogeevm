@@ -1,8 +1,8 @@
-import { styled } from 'styled-components'
-import { Box, Flex, Text, Heading } from '@pancakeswap/uikit'
 import { useTranslation } from '@pancakeswap/localization'
+import { Box, Flex, Heading, Text } from '@pancakeswap/uikit'
 import Divider from 'components/Divider'
 import Image from 'next/image'
+import { styled } from 'styled-components'
 
 const PrizeFundsContainer = styled(Flex)`
   width: 100%;
@@ -62,7 +62,7 @@ const AllocationColorCircle = styled.div<{ color: string }>`
   width: 20px;
   height: 20px;
   margin-right: 8px;
-  background-color: ${({ color }) => color};
+  background-color: #0d0c0c;
 `
 
 const AllocationMatch: React.FC<React.PropsWithChildren<{ color: string; text: string }>> = ({ color, text }) => {

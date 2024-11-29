@@ -54,7 +54,7 @@ const Wrapper = styled.div<{ fill: number; height?: string }>`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${({ theme, fill }) => (fill ? 'black' : theme.colors.background)};
+  background-color: #0d0c0c;
   height: 100%;
   width: 100%;
   ${(props) =>

@@ -5,7 +5,7 @@ import ButtonMenuItem from "./ButtonMenuItem";
 const Wrapper = styled.div`
   & > div {
     width: 100%;
-    background-color: ${({ theme }) => theme.colors.input};
+    background-color: #0d0c0c;
     border: 0;
   }
   & button {
@@ -13,7 +13,7 @@ const Wrapper = styled.div`
     border-bottom-right-radius: 0px;
   }
   &:hover {
-    background-color: ${({ theme }) => theme.colors.input};
+    background-color: #0d0c0c;
     border-radius: 20px 20px 0 0;
   }
 `;

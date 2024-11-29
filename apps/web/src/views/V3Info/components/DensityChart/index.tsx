@@ -32,7 +32,7 @@ const ControlsWrapper = styled.div`
 const ActionButton = styled.div<{ disabled?: boolean }>`
   width: 32x;
   border-radius: 50%;
-  background-color: black;
+  background-color: #0d0c0c;
   padding: 4px 8px;
   display: flex;
   justify-content: center;
@@ -40,7 +40,7 @@ const ActionButton = styled.div<{ disabled?: boolean }>`
   font-weight: 500;
   align-items: center;
   opacity: ${({ disabled }) => (disabled ? 0.4 : 0.9)};
-  background-color: ${({ theme, disabled }) => (disabled ? theme.colors.backgroundAlt2 : theme.colors.backgroundAlt)};
+  background-color: #0d0c0c;
   user-select: none;
 
   &:hover {

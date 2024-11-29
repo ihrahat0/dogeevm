@@ -24,13 +24,13 @@ const Wrapper = styled.div`
   grid-template-rows: auto 1fr;
 `;
 
-const StyledNav = styled.nav`
+const StyledNav = styled.nav<{ $navBackground: string }>`
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: ${MENU_HEIGHT}px;
-  background-color: ${({ theme }) => theme.nav.background};
+  background-color: #0d0c0c;
   border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
   transform: translate3d(0, 0, 0);
 
@@ -117,6 +117,9 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
   buyCakeLink,
   children,
   chainId,
+  navBackground = "default",
+  style,
+  ...props
 }) => {
   const { isMobile } = useMatchBreakpoints();
   const isMounted = useIsMounted();
@@ -179,7 +182,7 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
         <Wrapper>
           <FixedContainer showMenu={showMenu} height={totalTopMenuHeight}>
             {banner && isMounted && <TopBannerContainer height={topBannerHeight}>{banner}</TopBannerContainer>}
-            <StyledNav>
+            <StyledNav $navBackground={navBackground}>
               <Flex>
                 <Logo href="/" linkComponent={linkComponent} />
                 <AtomBox display={{ xs: "none", lg: "block" }}>

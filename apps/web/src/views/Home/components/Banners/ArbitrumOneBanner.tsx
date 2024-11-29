@@ -68,7 +68,7 @@ const Header = styled.div`
 const Divider = styled.div`
   height: 15px;
   width: 1px;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: #0d0c0c;
 `
 
 const StyledSubheading = styled.div`

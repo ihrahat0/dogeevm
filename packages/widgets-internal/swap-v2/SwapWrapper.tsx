@@ -18,7 +18,7 @@ export const InputPanelWrapper = styled(Flex)`
   justify-content: flex-start;
   padding: 1rem;
   width: 100%;
-  background-color: #2d2d2d;
+  background-color: #0d0c0c;
   border-radius: 24px;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
 `;

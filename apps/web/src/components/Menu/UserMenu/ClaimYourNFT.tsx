@@ -1,10 +1,10 @@
 import { useTranslation } from '@pancakeswap/localization'
-import { styled } from 'styled-components'
 import { Flex, UserMenuItem } from '@pancakeswap/uikit'
 import { useShowOnceAirdropModal } from 'hooks/useShowOnceAirdropModal'
+import { styled } from 'styled-components'
 
 const Dot = styled.div`
-  background-color: ${({ theme }) => theme.colors.success};
+  background-color: #0d0c0c;
   border-radius: 50%;
   height: 8px;
   width: 8px;

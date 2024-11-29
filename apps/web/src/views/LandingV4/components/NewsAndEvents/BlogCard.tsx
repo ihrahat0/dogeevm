@@ -25,7 +25,7 @@ const CircleOpenNew = styled(Flex)<{ $isHover: boolean }>`
   transform: translateY(20px);
   opacity: 0;
   border: ${({ theme }) => `solid 2px ${theme.colors.cardBorder}`};
-  background-color: ${({ theme }) => theme.colors.backgroundAlt};
+  background-color: #0d0c0c;
 
   ${({ $isHover }) =>
     $isHover

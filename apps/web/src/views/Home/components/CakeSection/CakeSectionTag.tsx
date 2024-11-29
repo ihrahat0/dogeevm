@@ -1,17 +1,17 @@
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  BulbIcon,
-  EarnIcon,
-  GovernanceIcon,
-  InsertChartOutlinedIcon,
-  NftIcon,
-  PieChartIcon,
-  PoolIcon,
-  RocketIcon,
-  StoreIcon,
-  SwapIcon,
-  Text,
-  TrophyIcon,
+    BulbIcon,
+    EarnIcon,
+    GovernanceIcon,
+    InsertChartOutlinedIcon,
+    NftIcon,
+    PieChartIcon,
+    PoolIcon,
+    RocketIcon,
+    StoreIcon,
+    SwapIcon,
+    Text,
+    TrophyIcon,
 } from '@pancakeswap/uikit'
 import useTheme from 'hooks/useTheme'
 import { cloneElement, useLayoutEffect, useMemo, useRef, useState } from 'react'
@@ -19,12 +19,12 @@ import Marquee from 'react-fast-marquee'
 import { styled } from 'styled-components'
 
 import {
-  PartnerAlpaca,
-  PartnerApolloX,
-  PartnerLedger,
-  PartnerMetaMask,
-  PartnerMobox,
-  PartnerVenus,
+    PartnerAlpaca,
+    PartnerApolloX,
+    PartnerLedger,
+    PartnerMetaMask,
+    PartnerMobox,
+    PartnerVenus,
 } from './PartnerLogos'
 
 const MARQUEE_WIDTH = 210
@@ -157,7 +157,7 @@ export const CakePartnerWrapper = styled.div<{ $bgWidth: number }>`
   justify-content: center;
   align-items: center;
   height: 40px;
-  background-color: ${({ theme }) => theme.colors.backgroundAlt};
+  background-color: #0d0c0c;
   padding: 8px 16px;
   gap: 8px;
   border-radius: 24px;

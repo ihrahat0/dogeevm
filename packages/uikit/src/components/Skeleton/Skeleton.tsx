@@ -53,7 +53,7 @@ const SkeletonWrapper = styled.div.withConfig({ shouldForwardProp })<SkeletonPro
 const Root = styled.div.withConfig({ shouldForwardProp })<SkeletonProps>`
   min-height: 20px;
   display: block;
-  background-color: ${({ theme, isDark }) => (isDark ? theme.colors.inputSecondary : theme.colors.backgroundDisabled)};
+  background-color: #0d0c0c;
   border-radius: ${({ variant, theme }) =>
     variant === VARIANT.CIRCLE
       ? theme.radii.circle

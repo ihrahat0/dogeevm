@@ -13,22 +13,22 @@ export const Card = styled(Box)<LightCardProps>`
   padding: ${({ padding }) => padding ?? "1.25rem"};
   border: ${({ border }) => border};
   border-radius: ${({ borderRadius }) => borderRadius ?? "16px"};
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
 `;
 
 export const LightCard = styled(Card)`
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  background-color: ${({ theme }) => theme.colors.backgroundAlt};
+  background-color: #0d0c0c;
 `;
 
 export const LightGreyCard = styled(Card)`
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
 `;
 
 export const CryptoCard = styled(Card)<{ isClicked: boolean; isDisabled: boolean; elementHeight: number }>`
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  background-color: ${({ theme, isClicked }) => (isClicked ? theme.colors.input : theme.colors.background)};
+  background-color: #0d0c0c;
   transition: max-height 0.3s ease-in-out, background-color 0.1s ease-in-out;
   max-height: ${({ isClicked, elementHeight }) => (isClicked ? `${elementHeight}px` : `105px`)};
   overflow: hidden;
@@ -39,15 +39,15 @@ export const CryptoCard = styled(Card)<{ isClicked: boolean; isDisabled: boolean
 `;
 
 export const GreyCard = styled(Card)`
-  background-color: ${({ theme }) => theme.colors.dropdown};
+  background-color: #0d0c0c;
 `;
 
 export const LightTertiaryCard = styled(Card)<{ active: boolean }>`
   border: 1px solid ${({ theme, active }) => (active ? "none" : theme.colors.cardBorder)};
-  background-color: ${({ theme }) => theme.colors.tertiary};
+  background-color: #0d0c0c;
 `;
 
 export const DisableCard = styled(Card)`
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  background-color: ${({ theme }) => theme.colors.disabled};
+  background-color: #0d0c0c;
 `;

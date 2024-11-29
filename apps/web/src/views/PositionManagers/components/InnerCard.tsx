@@ -1,15 +1,15 @@
-import { memo, PropsWithChildren } from 'react'
 import { Card, CardBody } from '@pancakeswap/uikit'
+import { memo, PropsWithChildren } from 'react'
 import { styled } from 'styled-components'
 
 const LightGreyCard = styled(Card)`
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
 `
 
 const InnerCardBody = styled(CardBody)`
   padding: 1em;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
 `
 
 // Card within a card container

@@ -17,7 +17,7 @@ it("renders correctly", () => {
 
     .c0 {
       position: relative;
-      background-color: var(--colors-input);
+      background-color: #0d0c0c;
       box-shadow: var(--shadows-inset);
       overflow: hidden;
       border-radius: var(--radii-32px);

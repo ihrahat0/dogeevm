@@ -1,11 +1,11 @@
 import { useMatchBreakpoints } from '@pancakeswap/uikit'
 import { BIG_ZERO } from '@pancakeswap/utils/bigNumber'
+import { getBalanceNumber } from '@pancakeswap/utils/formatBalance'
+import noop from 'lodash/noop'
 import React, { useState } from 'react'
 import { useFarmUser } from 'state/farms/hooks'
 import { styled } from 'styled-components'
 import ProxyFarmContainer from 'views/Farms/components/YieldBooster/components/ProxyFarmContainer'
-import { getBalanceNumber } from '@pancakeswap/utils/formatBalance'
-import noop from 'lodash/noop'
 import ExpandActionCell from '../Cells/ExpandActionCell'
 import Earned from '../Farm/Cells/Earned'
 import Farm from '../Farm/Cells/Farm'
@@ -19,7 +19,7 @@ import UnstakeButton from './UnstakeButton'
 
 const StyledRow = styled.div`
   display: flex;
-  background-color: transparent;
+  background-color: #0d0c0c;
   cursor: pointer;
   ${({ theme }) => theme.mediaQueries.lg} {
     cursor: initial;

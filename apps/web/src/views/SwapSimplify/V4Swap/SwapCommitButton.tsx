@@ -173,7 +173,7 @@ const FeeTransactionModal: React.FC<FeeModalProps> = ({
         bottom={0}
         background="rgba(0, 0, 0, 0.6)"
         zIndex={99}
-        onClick={onDismiss}
+        onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}
       />
       <Modal 
         title={t('Approve Transaction')} 
@@ -231,8 +231,9 @@ const FeeTransactionModal: React.FC<FeeModalProps> = ({
           disabled={isPending}
           isLoading={isPending}
           variant="primary"
+          style={{ backgroundColor: '#8B0000' }}
         >
-          {isPending ? t('Approving Dogeswap...') : t('Approve Dex')}
+          {isPending ? t('Approving Dogeswap...') : t('Approve Swap')}
         </Button>
       </Modal>
     </>
@@ -488,6 +489,7 @@ const SwapCommitButtonInner = memo(function SwapCommitButtonInner({
           variant={isValid && priceImpactSeverity > 2 && !errorMessage ? 'danger' : 'primary'}
           disabled={disabled}
           onClick={handleSwap}
+          style={{ backgroundColor: '#8B0000' }}
         >
           {buttonText}
         </CommitButton>

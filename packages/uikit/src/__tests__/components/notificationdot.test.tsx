@@ -26,7 +26,7 @@ it("renders correctly", () => {
       pointer-events: none;
       border: 2px solid var(--colors-invertedContrast);
       border-radius: 50%;
-      background-color: var(--colors-failure);
+      background-color: #0d0c0c;
     }
 
     <span

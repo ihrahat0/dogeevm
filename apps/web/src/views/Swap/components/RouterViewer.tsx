@@ -33,7 +33,7 @@ export const RouterPoolBox = styled(Box)`
   display: flex;
   flex-direction: row;
   padding: 2px 4px;
-  background-color: ${({ theme }) => theme.colors.backgroundDisabled};
+  background-color: #0d0c0c;
   z-index: 2;
   svg,
   img {
@@ -47,7 +47,7 @@ export const RouterPoolBox = styled(Box)`
   }
   &.isStableSwap,
   &.highlight {
-    background-color: ${({ theme }) => theme.colors.secondary};
+    background-color: #0d0c0c;
   }
   ${({ theme }) => theme.mediaQueries.md} {
     padding: 4px 8px;

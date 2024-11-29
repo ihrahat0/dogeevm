@@ -14,7 +14,7 @@ const StyledPrevNextNav = styled(Flex)`
 
   box-shadow: ${({ theme }) => theme.shadows.level1};
   border-radius: ${({ theme }) => theme.radii.default};
-  background-color: ${({ theme }) => theme.card.background};
+  background-color: #0d0c0c;
 
   ${({ theme }) => theme.mediaQueries.lg} {
     display: flex;

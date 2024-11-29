@@ -1,9 +1,9 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Box, Flex, LightBulbIcon, StyledLink, Text, useTooltip } from '@pancakeswap/uikit'
-import { FarmTransactionStatus, CrossChainFarmStepType } from 'state/transactions/actions'
+import NextLink from 'next/link'
+import { CrossChainFarmStepType, FarmTransactionStatus } from 'state/transactions/actions'
 import { TransactionDetails } from 'state/transactions/reducer'
 import { styled } from 'styled-components'
-import NextLink from 'next/link'
 
 const ListStyle = styled.div`
   position: relative;
@@ -16,7 +16,7 @@ const ListStyle = styled.div`
     left: 0px;
     width: 4px;
     height: 4px;
-    background-color: white;
+    background-color: #0d0c0c;
     border-radius: 50%;
   }
   &:last-child {

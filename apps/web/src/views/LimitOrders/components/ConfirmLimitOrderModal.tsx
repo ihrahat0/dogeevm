@@ -1,16 +1,16 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Currency } from '@pancakeswap/sdk'
 import {
-  ArrowDownIcon,
-  Button,
-  Flex,
-  InjectedModalProps,
-  Message,
-  MessageText,
-  Modal,
-  Spinner,
-  Text,
-  useMatchBreakpoints,
+    ArrowDownIcon,
+    Button,
+    Flex,
+    InjectedModalProps,
+    Message,
+    MessageText,
+    Modal,
+    Spinner,
+    Text,
+    useMatchBreakpoints,
 } from '@pancakeswap/uikit'
 import { TransactionErrorContent } from '@pancakeswap/widgets-internal'
 import { CurrencyLogo } from 'components/Logo'
@@ -27,7 +27,7 @@ const InfoCardWrapper = styled.div`
   padding: 16px;
   margin-top: 24px;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
 `
 
 interface ConfirmLimitOrderModalProps extends InjectedModalProps {

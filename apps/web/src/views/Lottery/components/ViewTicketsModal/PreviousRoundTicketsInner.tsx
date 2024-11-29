@@ -1,16 +1,16 @@
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  Box,
-  Button,
-  Flex,
-  InfoIcon,
-  PresentWonIcon,
-  Skeleton,
-  Text,
-  Ticket,
-  TooltipText,
-  useModal,
-  useTooltip,
+    Box,
+    Button,
+    Flex,
+    InfoIcon,
+    PresentWonIcon,
+    Skeleton,
+    Text,
+    Ticket,
+    TooltipText,
+    useModal,
+    useTooltip,
 } from '@pancakeswap/uikit'
 import { LotteryTicket, LotteryTicketClaimData } from 'config/constants/types'
 import useTheme from 'hooks/useTheme'
@@ -31,7 +31,7 @@ const TopBox = styled(Flex)`
   flex-direction: column;
   margin: -24px;
   padding: 24px;
-  background-color: ${({ theme }) => theme.colors.dropdown};
+  background-color: #0d0c0c;
   border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
 `
 

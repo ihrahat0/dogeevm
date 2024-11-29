@@ -9,7 +9,7 @@ export const PanelWrapper = styled.div`
   width: 100%;
   padding: 16px;
   border-radius: 24px;
-  background-color: ${({ theme }) => theme.colors.card};
+  background-color: #0d0c0c;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
 `
 interface ButtonAndDetailsPanelProps {

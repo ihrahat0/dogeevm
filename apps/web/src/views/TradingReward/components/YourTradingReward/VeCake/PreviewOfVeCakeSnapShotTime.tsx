@@ -21,7 +21,7 @@ const SnapShotTimeContainer = styled(Flex)<{ $isValid: boolean }>`
   padding: 16px;
   border-radius: 24px;
   border: ${({ $isValid, theme }) => ($isValid ? '2px dashed #e7e3eb' : `1px solid ${theme.colors.warning}`)};
-  background-color: ${({ theme, $isValid }) => ($isValid ? theme.colors.tertiary : 'rgba(255, 178, 55, 0.10)')};
+  background-color: #0d0c0c;
 `
 
 interface PreviewOfVeCakeSnapShotTimeProps {

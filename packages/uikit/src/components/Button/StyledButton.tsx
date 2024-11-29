@@ -1,5 +1,5 @@
-import { styled, DefaultTheme, css } from "styled-components";
-import { space, layout, variant } from "styled-system";
+import { DefaultTheme, css, styled } from "styled-components";
+import { layout, space, variant } from "styled-system";
 import { scaleVariants, styleVariants } from "./theme";
 import { BaseButtonProps } from "./types";
 
@@ -24,7 +24,7 @@ const getDisabledStyles = ({ $isLoading, theme }: TransientButtonProps) => {
   return `
     &:disabled,
     &.pancake-button--disabled {
-      background-color: ${theme.colors.backgroundDisabled};
+      background-color: #0d0c0c;
       border-color: ${theme.colors.backgroundDisabled};
       box-shadow: none;
       color: ${theme.colors.textDisabled};

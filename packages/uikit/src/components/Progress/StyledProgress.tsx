@@ -1,9 +1,9 @@
 import shouldForwardProp from "@styled-system/should-forward-prop";
 import { styled } from "styled-components";
 import { space, variant as StyledSystemVariant } from "styled-system";
-import { styleVariants, styleScales } from "./themes";
-import { ProgressProps, variants } from "./types";
 import { lightColors } from "../../tokens";
+import { styleScales, styleVariants } from "./themes";
+import { ProgressProps, variants } from "./types";
 
 interface ProgressBarProps {
   primary?: boolean;
@@ -36,7 +36,7 @@ interface StyledProgressProps {
 
 const StyledProgress = styled.div<StyledProgressProps>`
   position: relative;
-  background-color: ${({ theme, $useDark }) => ($useDark ? theme.colors.input : lightColors.input)};
+  background-color: #0d0c0c;
   box-shadow: ${({ theme }) => theme.shadows.inset};
   overflow: hidden;
 

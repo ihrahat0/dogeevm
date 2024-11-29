@@ -25,7 +25,7 @@ export const SortText = styled.button<{ $active: boolean }>`
   font-weight: 600;
   margin-right: 0.75rem !important;
   border: none;
-  background-color: transparent;
+  background-color: #0d0c0c;
   font-size: 1rem;
   padding: 0px;
   color: ${({ $active, theme }) => ($active ? theme.colors.secondary : theme.colors.textSubtle)};

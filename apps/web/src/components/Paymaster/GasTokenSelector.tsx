@@ -1,26 +1,26 @@
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  ArrowDropDownIcon,
-  ArrowForwardIcon,
-  Box,
-  Button,
-  CircleLoader,
-  Column,
-  Flex,
-  Heading,
-  ModalBody,
-  ModalCloseButton,
-  ModalContainer,
-  ModalHeader,
-  ModalTitle,
-  ModalV2,
-  QuestionHelper,
-  RowBetween,
-  RowFixed,
-  Text,
-  WarningIcon,
-  useModalV2,
-  useTooltip,
+    ArrowDropDownIcon,
+    ArrowForwardIcon,
+    Box,
+    Button,
+    CircleLoader,
+    Column,
+    Flex,
+    Heading,
+    ModalBody,
+    ModalCloseButton,
+    ModalContainer,
+    ModalHeader,
+    ModalTitle,
+    ModalV2,
+    QuestionHelper,
+    RowBetween,
+    RowFixed,
+    Text,
+    WarningIcon,
+    useModalV2,
+    useTooltip,
 } from '@pancakeswap/uikit'
 import { formatAmount } from '@pancakeswap/utils/formatFractions'
 import { CurrencyLogo, NumberDisplay } from '@pancakeswap/widgets-internal'
@@ -76,7 +76,7 @@ const FixedHeightRow = styled.div<{ $disabled: boolean }>`
   cursor: ${({ $disabled }) => !$disabled && 'pointer'};
 
   &:hover {
-    background-color: ${({ theme, $disabled }) => !$disabled && theme.colors.background};
+    background-color: #0d0c0c;
   }
 
   ${({ $disabled }) =>
@@ -99,12 +99,12 @@ const Badge = styled.span`
   user-select: none;
   border-radius: ${({ theme }) => theme.radii['32px']};
   color: ${({ theme }) => theme.colors.invertedContrast};
-  background-color: ${({ theme }) => theme.colors.success};
+  background-color: #0d0c0c;
 `
 
 const SameTokenWarningBox = styled(Box)`
   font-size: 13px;
-  background-color: #ffb2371a;
+  background-color: #0d0c0c;
   padding: 10px;
   margin: 5px 0 8px;
   color: ${({ theme }) => theme.colors.yellow};

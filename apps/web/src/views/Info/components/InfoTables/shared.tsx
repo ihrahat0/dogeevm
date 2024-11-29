@@ -1,5 +1,5 @@
+import { Flex, Text } from '@pancakeswap/uikit'
 import { styled } from 'styled-components'
-import { Text, Flex } from '@pancakeswap/uikit'
 
 export const ClickableColumnHeader = styled(Text)`
   cursor: pointer;
@@ -13,7 +13,7 @@ export const TableWrapper = styled(Flex)`
   padding-top: 16px;
   flex-direction: column;
   gap: 16px;
-  background-color: ${({ theme }) => theme.card.background};
+  background-color: #0d0c0c;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
   border-radius: ${({ theme }) => theme.radii.card};
   ${({ theme }) => theme.mediaQueries.md} {
@@ -41,6 +41,6 @@ export const Arrow = styled.div`
 
 export const Break = styled.div`
   height: 1px;
-  background-color: ${({ theme }) => theme.colors.cardBorder};
+  background-color: #0d0c0c;
   width: 100%;
 `

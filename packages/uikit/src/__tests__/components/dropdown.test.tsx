@@ -14,7 +14,7 @@ it("renders correctly", () => {
       transform: translate(-50%, 0);
       left: 50%;
       bottom: auto;
-      background-color: var(--colors-backgroundAlt);
+      background-color: #0d0c0c;
       box-shadow: var(--shadows-level1);
       padding: 16px;
       max-height: 0px;

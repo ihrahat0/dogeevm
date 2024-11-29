@@ -1,6 +1,6 @@
-import { styled } from 'styled-components'
-import { Modal, Box, Flex, Text, BinanceIcon, Input } from '@pancakeswap/uikit'
+import { BinanceIcon, Box, Flex, Input, Modal, Text } from '@pancakeswap/uikit'
 import { useBNBPrice } from 'hooks/useBNBPrice'
+import { styled } from 'styled-components'
 import { SellingStage } from './types'
 
 export const stagesWithBackButton = [
@@ -28,7 +28,7 @@ export const StyledModal = styled(Modal)<{ stage: SellingStage }>`
 `
 
 export const GreyedOutContainer = styled(Box)`
-  background-color: ${({ theme }) => theme.colors.dropdown};
+  background-color: #0d0c0c;
   padding: 16px;
 `
 

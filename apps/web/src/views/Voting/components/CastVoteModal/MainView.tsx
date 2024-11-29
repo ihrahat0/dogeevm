@@ -1,14 +1,14 @@
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  AutoRenewIcon,
-  Button,
-  ChevronRightIcon,
-  Flex,
-  IconButton,
-  Message,
-  RocketIcon,
-  Skeleton,
-  Text,
+    AutoRenewIcon,
+    Button,
+    ChevronRightIcon,
+    Flex,
+    IconButton,
+    Message,
+    RocketIcon,
+    Skeleton,
+    Text,
 } from '@pancakeswap/uikit'
 import { formatNumber } from '@pancakeswap/utils/formatBalance'
 import BigNumber from 'bignumber.js'
@@ -170,7 +170,7 @@ export const VeMainView = ({
         </Button>
       )}
       {onDismiss && (
-        <Button variant="secondary" width="100%" onClick={onDismiss}>
+        <Button variant="secondary" width="100%" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
           {t('Cancel')}
         </Button>
       )}
@@ -274,7 +274,7 @@ const MainView: React.FC<React.PropsWithChildren<MainViewProps>> = ({
       >
         {t('Confirm Vote')}
       </Button>
-      <Button variant="secondary" width="100%" onClick={onDismiss}>
+      <Button variant="secondary" width="100%" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
         {t('Cancel')}
       </Button>
     </>

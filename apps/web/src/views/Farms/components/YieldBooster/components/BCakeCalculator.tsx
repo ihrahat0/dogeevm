@@ -1,16 +1,16 @@
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  BalanceInput,
-  Box,
-  Button,
-  CalculatorMode,
-  EditingCurrency,
-  Flex,
-  HelpIcon,
-  Text,
-  Toggle,
-  useRoiCalculatorReducer,
-  useTooltip,
+    BalanceInput,
+    Box,
+    Button,
+    CalculatorMode,
+    EditingCurrency,
+    Flex,
+    HelpIcon,
+    Text,
+    Toggle,
+    useRoiCalculatorReducer,
+    useTooltip,
 } from '@pancakeswap/uikit'
 import { getBalanceNumber } from '@pancakeswap/utils/formatBalance'
 import BigNumber from 'bignumber.js'
@@ -26,7 +26,7 @@ import { useGetCalculatorMultiplier } from '../hooks/useGetBoostedAPR'
 import LockDurationField from './BCakeLockedDuration'
 
 const BCakeBlock = styled.div`
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
   width: 100%;
   padding: 16px;
   box-sizing: border-box;

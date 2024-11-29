@@ -1,14 +1,14 @@
 import {
-  Box,
-  BscScanIcon,
-  Button,
-  ChevronRightIcon,
-  Flex,
-  InjectedModalProps,
-  Modal,
-  Tag,
-  Text,
-  useMatchBreakpoints,
+    Box,
+    BscScanIcon,
+    Button,
+    ChevronRightIcon,
+    Flex,
+    InjectedModalProps,
+    Modal,
+    Tag,
+    Text,
+    useMatchBreakpoints,
 } from '@pancakeswap/uikit'
 import { ConfirmationPendingContent, TransactionErrorContent } from '@pancakeswap/widgets-internal'
 
@@ -30,7 +30,7 @@ const InfoCardWrapper = styled.div`
   padding: 16px;
   margin-top: 24px;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
 `
 
 interface DetailLimitOrderModalProps extends InjectedModalProps {

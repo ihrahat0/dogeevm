@@ -1,15 +1,15 @@
-import { styled } from "styled-components";
-import { useMemo } from "react";
-import dayjs from "dayjs";
 import { useTranslation } from "@pancakeswap/localization";
+import dayjs from "dayjs";
+import { useMemo } from "react";
+import { styled } from "styled-components";
 import { Flex } from "../../components/Box";
-import { Text } from "../../components/Text";
 import { Skeleton } from "../../components/Skeleton";
+import { Text } from "../../components/Text";
 
 const StyledIfoVestingFooter = styled(Flex)`
   padding: 16px;
   margin: 0 -12px -12px;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
 `;
 
 export interface FooterEntryProps {

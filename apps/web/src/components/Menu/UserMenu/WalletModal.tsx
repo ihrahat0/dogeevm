@@ -1,15 +1,15 @@
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  ButtonMenu,
-  ButtonMenuItem,
-  CloseIcon,
-  Heading,
-  IconButton,
-  InjectedModalProps,
-  ModalBody,
-  ModalTitle,
-  ModalWrapper,
-  ModalHeader as UIKitModalHeader,
+    ButtonMenu,
+    ButtonMenuItem,
+    CloseIcon,
+    Heading,
+    IconButton,
+    InjectedModalProps,
+    ModalBody,
+    ModalTitle,
+    ModalWrapper,
+    ModalHeader as UIKitModalHeader,
 } from '@pancakeswap/uikit'
 import { useCallback, useState } from 'react'
 import { styled } from 'styled-components'
@@ -36,7 +36,7 @@ const ModalHeader = styled(UIKitModalHeader)`
 `
 
 const Tabs = styled.div`
-  background-color: ${({ theme }) => theme.colors.dropdown};
+  background-color: #0d0c0c;
   border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
   padding: 16px 24px;
 `
@@ -79,7 +79,7 @@ const WalletModal: React.FC<React.PropsWithChildren<WalletModalProps>> = ({
         <ModalTitle>
           <Heading>{t('Your Wallet')}</Heading>
         </ModalTitle>
-        <IconButton variant="text" onClick={onDismiss}>
+        <IconButton variant="text" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
           <CloseIcon width="24px" color="text" />
         </IconButton>
       </ModalHeader>

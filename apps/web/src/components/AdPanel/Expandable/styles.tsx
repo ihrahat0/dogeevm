@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const Divider = styled(Box)`
   width: 100%;
-  background-color: ${({ theme }) => theme.colors.cardBorder};
+  background-color: #0d0c0c;
   height: 1px;
 `
 

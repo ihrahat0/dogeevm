@@ -40,7 +40,7 @@ const StyledHeading = styled(Heading)`
 `
 
 const StyledButton = styled(Button)`
-  background-color: ${({ theme }) => theme.colors.tertiary};
+  background-color: #0d0c0c;
   color: ${({ theme }) => theme.colors.primary};
   padding: 4px 13px;
   height: auto;

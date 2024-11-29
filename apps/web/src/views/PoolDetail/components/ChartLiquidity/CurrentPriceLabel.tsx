@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   color: white;
   width: fit-content;
   font-size: 14px;
-  background-color: ${({ theme }) => theme.colors.backgroundAlt};
+  background-color: #0d0c0c;
 `
 
 interface CurrentPriceLabelProps {

@@ -8,7 +8,7 @@ import { CurrencyLogo } from 'views/Info/components/CurrencyLogo'
 
 const StyledPoolTokens = styled(Flex)`
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
   padding: 16px;
   flex-direction: column;
   gap: 8px;

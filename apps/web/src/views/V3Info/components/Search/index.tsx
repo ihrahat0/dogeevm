@@ -63,7 +63,7 @@ const Blackout = styled.div`
   min-height: 100vh;
   width: 100vw;
   z-index: 104;
-  background-color: black;
+  background-color: #0d0c0c;
   opacity: 0.7;
   left: 0;
   top: 0;
@@ -82,7 +82,7 @@ const ResponsiveGrid = styled.div`
 
 const Break = styled.div`
   height: 1px;
-  background-color: ${({ theme }) => theme.colors.cardBorder};
+  background-color: #0d0c0c;
   width: 100%;
   margin: 16px 0;
 `
@@ -114,7 +114,7 @@ const OptionButton = styled.div<{ enabled: boolean }>`
   margin-right: 10px;
   justify-content: center;
   align-items: center;
-  background-color: ${({ theme, enabled }) => (enabled ? theme.colors.primary : 'transparent')};
+  background-color: #0d0c0c;
   color: ${({ theme, enabled }) => (enabled ? theme.card.background : theme.colors.secondary)};
   &:hover {
     opacity: 0.6;

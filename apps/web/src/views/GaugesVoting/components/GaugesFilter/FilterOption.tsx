@@ -34,7 +34,7 @@ const Label = styled.label`
   transition: background-color 200ms ease-in-out;
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.dropdown};
+    background-color: #0d0c0c;
   }
 `
 

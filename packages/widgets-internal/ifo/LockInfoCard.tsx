@@ -1,5 +1,5 @@
 import { useTranslation } from "@pancakeswap/localization";
-import { RowBetween, AutoColumn, Text, Card, CardBody } from "@pancakeswap/uikit";
+import { AutoColumn, Card, CardBody, RowBetween, Text } from "@pancakeswap/uikit";
 import { formatUnixTimestamp } from "@pancakeswap/utils/formatTimestamp";
 import BigNumber from "bignumber.js";
 import dayjs from "dayjs";
@@ -21,12 +21,12 @@ type Props = {
 } & SpaceProps;
 
 const StyledCard = styled(Card)`
-  background-color: ${({ theme }) => theme.colors.tertiary};
+  background-color: #0d0c0c;
 `;
 
 const StyledCardBody = styled(CardBody)`
   padding: 1rem;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
 `;
 
 export function LockInfoCard({ amount = 0, usdPrice = 0, unlockAt = 0, ...props }: Props) {

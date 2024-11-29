@@ -63,7 +63,7 @@ const Wrapper = styled.div`
 
 export const StepNumber = styled.div<StatusProps>`
   box-shadow: 0px 1px 4px rgba(25, 19, 38, 0.15);
-  background-color: ${({ theme, status }) => theme.colors[status === "current" ? "secondary" : "invertedContrast"]};
+  background-color: #0d0c0c;
   border: 2px solid ${({ theme, status }) => (status === "past" ? theme.colors.success : "transparent")};
   border-radius: ${({ theme }) => theme.radii.circle};
   color: ${getStepNumberFontColor};

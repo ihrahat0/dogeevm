@@ -9,7 +9,7 @@ it("renders correctly", () => {
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c3 {
-      background-color: var(--colors-backgroundAlt);
+      background-color: #0d0c0c;
       border-radius: 50%;
       cursor: pointer;
       height: 26px;
@@ -44,7 +44,7 @@ it("renders correctly", () => {
 
     .c0 {
       align-items: center;
-      background-color: var(--colors-success);
+      background-color: #0d0c0c;
       border-radius: 24px;
       box-shadow: var(--shadows-inset);
       cursor: pointer;
@@ -78,7 +78,7 @@ it("renders correctly scale sm", () => {
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c3 {
-      background-color: var(--colors-backgroundAlt);
+      background-color: #0d0c0c;
       border-radius: 50%;
       cursor: pointer;
       height: 16px;
@@ -113,7 +113,7 @@ it("renders correctly scale sm", () => {
 
     .c0 {
       align-items: center;
-      background-color: var(--colors-success);
+      background-color: #0d0c0c;
       border-radius: 24px;
       box-shadow: var(--shadows-inset);
       cursor: pointer;

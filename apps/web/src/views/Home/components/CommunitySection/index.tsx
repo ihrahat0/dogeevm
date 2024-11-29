@@ -40,7 +40,7 @@ const StyledSwiper = styled(Swiper)`
       width: 50%;
       margin: 0 !important;
       border-radius: 24px;
-      background-color: rgba(122, 110, 170, 0.7);
+      background-color: #0d0c0c;
       &:first-child {
         border-radius: 4px 0px 0px 4px;
       }
@@ -48,7 +48,7 @@ const StyledSwiper = styled(Swiper)`
         border-radius: 0px 4px 4px 0px;
       }
       &.swiper-pagination-bullet-active {
-        background-color: #7645d9;
+        background-color: #0d0c0c;
       }
     }
   }

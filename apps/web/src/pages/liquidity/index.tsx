@@ -2,20 +2,20 @@ import { PositionDetails } from '@pancakeswap/farms'
 import { useTranslation } from '@pancakeswap/localization'
 import { isStableSwapSupported } from '@pancakeswap/stable-swap-sdk'
 import {
-  AddIcon,
-  Button,
-  ButtonMenu,
-  ButtonMenuItem,
-  CardBody,
-  CardFooter,
-  Checkbox,
-  Dots,
-  Flex,
-  HistoryIcon,
-  IconButton,
-  Tag,
-  Text,
-  useModal,
+    AddIcon,
+    Button,
+    ButtonMenu,
+    ButtonMenuItem,
+    CardBody,
+    CardFooter,
+    Checkbox,
+    Dots,
+    Flex,
+    HistoryIcon,
+    IconButton,
+    Tag,
+    Text,
+    useModal,
 } from '@pancakeswap/uikit'
 import { Liquidity, NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 import { AppBody, AppHeader } from 'components/App'
@@ -38,13 +38,13 @@ import { V2PairCard } from 'views/AddLiquidityV3/components/V2PairCard'
 import PositionListItem from 'views/AddLiquidityV3/formViews/V3FormView/components/PoolListItem'
 import Page from 'views/Page'
 import useStableConfig, {
-  LPStablePair,
-  StableConfigContext,
-  useLPTokensWithBalanceByAccount,
+    LPStablePair,
+    StableConfigContext,
+    useLPTokensWithBalanceByAccount,
 } from 'views/Swap/hooks/useStableConfig'
 
 const Body = styled(CardBody)`
-  background-color: ${({ theme }) => theme.colors.dropdownDeep};
+  background-color: #0d0c0c;
 `
 
 export const StableContextProvider = (props: { pair: LPStablePair; account: string | undefined }) => {

@@ -22,7 +22,7 @@ it("renders correctly", () => {
       transition: background-color 0.2s ease-in-out;
       border: 0;
       border-radius: 8px;
-      background-color: var(--colors-cardBorder);
+      background-color: #0d0c0c;
       box-shadow: var(--shadows-inset);
     }
 
@@ -67,7 +67,7 @@ it("renders correctly", () => {
 
     .c0:checked {
       border: 0;
-      background-color: var(--colors-success);
+      background-color: #0d0c0c;
     }
 
     .c0:checked:after {

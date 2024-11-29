@@ -13,7 +13,7 @@ const Container = styled(Flex).withConfig({ shouldForwardProp: (prop) => !['$bac
   padding: 12px;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: #0000;
 
   ${({ theme }) => theme.mediaQueries.md} {
     padding: 0px;
@@ -52,7 +52,7 @@ const SpeechBubble = styled(Flex)`
     width: 800px;
     padding: 8px;
     margin-left: 8px;
-    background: #fff;
+    background: #0000;
 
     &:before {
       content: '';

@@ -12,9 +12,9 @@ import { useProfile } from 'state/profile/hooks'
 import { getPancakeProfileAddress } from 'utils/addressHelpers'
 import { getErc721Contract } from 'utils/contractHelpers'
 import { Address } from 'viem'
+import { useUserProfileCreationNfts } from 'views/Nft/market/hooks/useUserProfileCreationNfts'
 import SelectionCard from 'views/ProfileCreation/SelectionCard'
 import { useWalletClient } from 'wagmi'
-import { useUserProfileCreationNfts } from 'views/Nft/market/hooks/useUserProfileCreationNfts'
 
 interface ChangeProfilePicPageProps extends InjectedModalProps {
   onSuccess?: () => void
@@ -137,7 +137,7 @@ const ChangeProfilePicPage: React.FC<React.PropsWithChildren<ChangeProfilePicPag
         onApprove={handleApprove}
         onConfirm={handleConfirm}
       />
-      <Button mt="8px" variant="text" width="100%" onClick={onDismiss} disabled={isApproving || isConfirming}>
+      <Button mt="8px" variant="text" width="100%" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }} disabled={isApproving || isConfirming}>
         {t('Close Window')}
       </Button>
     </>

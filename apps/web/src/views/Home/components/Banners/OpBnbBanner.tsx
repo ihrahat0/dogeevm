@@ -1,11 +1,11 @@
 import { useTranslation } from '@pancakeswap/localization'
-import { Flex, Link, OpenNewIcon, Text, useMatchBreakpoints, Button, Svg, SvgProps } from '@pancakeswap/uikit'
+import { Button, Flex, Link, OpenNewIcon, Svg, SvgProps, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import Image from 'next/legacy/image'
 import { memo } from 'react'
 import { styled } from 'styled-components'
 import * as S from './Styled'
-import { opbnbBunny, opbnbBg, opbnbBgMobile } from './images'
+import { opbnbBg, opbnbBgMobile, opbnbBunny } from './images'
 
 const pancakeSwapLogo = `${ASSET_CDN}/web/banners/ethXpancakeswap.png`
 
@@ -91,7 +91,7 @@ const Header = styled.div`
   }
 `
 const SubTitle = styled.div`
-  color: #ffffff;
+  #fff;
   font-feature-settings: 'liga' off;
   font-family: Kanit;
   font-size: 19.847px;
@@ -107,7 +107,7 @@ const SubTitle = styled.div`
 const Divider = styled.div`
   height: 15px;
   width: 1px;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: #0d0c0c;
 `
 
 export const OpBnbBanner = memo(() => {

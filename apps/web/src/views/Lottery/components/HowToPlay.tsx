@@ -1,11 +1,11 @@
-import { styled } from 'styled-components'
-import { Box, Flex, Text, Heading, Link, Image, useMatchBreakpoints } from '@pancakeswap/uikit'
 import { useTranslation } from '@pancakeswap/localization'
+import { Box, Flex, Heading, Image, Link, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import useTheme from 'hooks/useTheme'
+import { styled } from 'styled-components'
 import { BallWithNumber, MatchExampleA, MatchExampleB, PoolAllocationChart } from '../svgs'
 
 const Divider = styled.div`
-  background-color: ${({ theme }) => theme.colors.cardBorder};
+  background-color: #0d0c0c;
   height: 1px;
   margin: 40px 0;
   width: 100%;
@@ -151,7 +151,7 @@ const AllocationColorCircle = styled.div<{ color: string }>`
   width: 20px;
   height: 20px;
   margin-right: 8px;
-  background-color: ${({ color }) => color};
+  background-color: #0d0c0c;
 `
 
 const AllocationMatch: React.FC<React.PropsWithChildren<{ color: string; text: string }>> = ({ color, text }) => {

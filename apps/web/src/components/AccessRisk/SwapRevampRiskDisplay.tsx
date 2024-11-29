@@ -29,7 +29,7 @@ const RiskDetailsPanelWrapper = styled(FlexGap)`
   opacity: 0;
   border-radius: 20px;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  background-color: ${({ theme }) => theme.colors.card};
+  background-color: #0d0c0c;
   padding: 12px;
   animation: ${appearAni} 0.25s ease-in-out 0.5s forwards;
 `
@@ -39,7 +39,7 @@ const RiskModalDetailCardWrapper = styled.div`
   gap: 8px;
   border-radius: 16px;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
   padding: 16px;
 `
 

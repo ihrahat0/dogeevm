@@ -1,23 +1,23 @@
-import {
-  NoProfileAvatarIcon,
-  Flex,
-  Heading,
-  Skeleton,
-  Text,
-  Box,
-  useMatchBreakpoints,
-  VisibilityOff,
-  VisibilityOn,
-  ProfileAvatar,
-} from '@pancakeswap/uikit'
-import { useAccount } from 'wagmi'
-import { styled } from 'styled-components'
-import { useProfile } from 'state/profile/hooks'
-import ProfileAvatarWithTeam from 'components/ProfileAvatarWithTeam'
 import { useTranslation } from '@pancakeswap/localization'
+import {
+    Box,
+    Flex,
+    Heading,
+    NoProfileAvatarIcon,
+    ProfileAvatar,
+    Skeleton,
+    Text,
+    useMatchBreakpoints,
+    VisibilityOff,
+    VisibilityOn,
+} from '@pancakeswap/uikit'
 import truncateHash from '@pancakeswap/utils/truncateHash'
-import useGetUsernameWithVisibility from 'hooks/useUsernameWithVisibility'
+import ProfileAvatarWithTeam from 'components/ProfileAvatarWithTeam'
 import { useDomainNameForAddress } from 'hooks/useDomain'
+import useGetUsernameWithVisibility from 'hooks/useUsernameWithVisibility'
+import { useProfile } from 'state/profile/hooks'
+import { styled } from 'styled-components'
+import { useAccount } from 'wagmi'
 
 const Desktop = styled(Flex)`
   align-items: center;
@@ -36,7 +36,7 @@ const Mobile = styled(Flex)`
 const Sticker = styled(Flex)`
   height: 120px;
   width: 120px;
-  background-color: ${({ theme }) => theme.colors.invertedContrast};
+  background-color: #0d0c0c;
   border: 3px solid ${({ theme }) => theme.colors.invertedContrast};
   border-radius: ${({ theme }) => theme.radii.circle};
   box-shadow: ${({ theme }) => theme.card.boxShadow};

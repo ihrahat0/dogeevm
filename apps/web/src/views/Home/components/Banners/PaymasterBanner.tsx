@@ -31,7 +31,7 @@ const bgXsVariant: GraphicDetail = {
 }
 
 const VerticalDivider = styled.span`
-  background: #fff000;
+  background: #0000000;
   width: 1px;
   height: 1rem;
   margin: auto 8px;

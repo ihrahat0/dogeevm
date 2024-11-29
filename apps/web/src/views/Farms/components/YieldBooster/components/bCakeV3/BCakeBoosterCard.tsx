@@ -1,18 +1,18 @@
 import { ChainId } from '@pancakeswap/chains'
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  Box,
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  Flex,
-  HelpIcon,
-  Link,
-  RocketIcon,
-  Text,
-  useMatchBreakpoints,
-  useTooltip,
+    Box,
+    Button,
+    Card,
+    CardBody,
+    CardFooter,
+    Flex,
+    HelpIcon,
+    Link,
+    RocketIcon,
+    Text,
+    useMatchBreakpoints,
+    useTooltip,
 } from '@pancakeswap/uikit'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 import { CrossChainVeCakeModal } from 'components/CrossChainVeCakeModal'
@@ -62,7 +62,7 @@ const StyledCardFooter = styled(CardFooter)`
     width: calc(100% - 48px);
     top: 0px;
     left: 24px;
-    background-color: ${({ theme }) => theme.colors.cardBorder};
+    background-color: #0d0c0c;
   }
 `
 

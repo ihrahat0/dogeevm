@@ -1,16 +1,16 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { PredictionStatus, REWARD_RATE } from '@pancakeswap/prediction'
 import {
-  Box,
-  ChevronDownIcon,
-  ChevronUpIcon,
-  Flex,
-  IconButton,
-  InfoIcon,
-  PlayCircleOutlineIcon,
-  Text,
-  WaitIcon,
-  useTooltip,
+    Box,
+    ChevronDownIcon,
+    ChevronUpIcon,
+    Flex,
+    IconButton,
+    InfoIcon,
+    PlayCircleOutlineIcon,
+    Text,
+    WaitIcon,
+    useTooltip,
 } from '@pancakeswap/uikit'
 import useLocalDispatch from 'contexts/LocalRedux/useLocalDispatch'
 import { useActiveChainId } from 'hooks/useActiveChainId'
@@ -33,7 +33,7 @@ interface BetProps {
 }
 
 const StyledBet = styled(Flex).attrs({ alignItems: 'center', p: '16px' })`
-  background-color: ${({ theme }) => theme.card.background};
+  background-color: #0d0c0c;
   border-bottom: 2px solid ${({ theme }) => theme.colors.cardBorder};
   cursor: pointer;
 `

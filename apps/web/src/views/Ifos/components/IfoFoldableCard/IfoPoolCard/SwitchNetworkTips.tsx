@@ -1,8 +1,8 @@
-import { Box, Message, MessageText, Flex } from '@pancakeswap/uikit'
-import { ChainLogo } from '@pancakeswap/widgets-internal'
 import { useTranslation } from '@pancakeswap/localization'
 import { ChainId } from '@pancakeswap/sdk'
-import { useCallback, MouseEvent } from 'react'
+import { Box, Flex, Message, MessageText } from '@pancakeswap/uikit'
+import { ChainLogo } from '@pancakeswap/widgets-internal'
+import { MouseEvent, useCallback } from 'react'
 import styled from 'styled-components'
 
 import { useActiveChainId } from 'hooks/useActiveChainId'
@@ -14,7 +14,7 @@ import { MessageTextLink } from '../../IfoCardStyles'
 const StyledMessage = styled(Message)`
   padding: 1rem;
   border-color: ${({ theme }) => theme.colors.cardBorder};
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
 `
 
 type Props = {

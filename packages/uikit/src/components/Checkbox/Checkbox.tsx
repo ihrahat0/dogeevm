@@ -35,7 +35,7 @@ const Checkbox = styled.input.attrs({ type: "checkbox" })<CheckboxProps>`
       ? `solid 1px ${theme.colors.disabled}`
       : "0"};
   border-radius: 8px;
-  background-color: ${({ theme, colors }) => theme.colors[colors?.background ?? "cardBorder"]};
+  background-color: #0d0c0c;
   box-shadow: ${({ theme }) => theme.shadows.inset};
 
   &:before {
@@ -72,7 +72,7 @@ const Checkbox = styled.input.attrs({ type: "checkbox" })<CheckboxProps>`
     indeterminate &&
     `
     border: 0;
-    background-color: ${theme.colors[colors?.checkedBackground ?? "success"]};
+    background-color: #0d0c0c;
     &:before {
       border-color: ${theme.colors.backgroundAlt};
     }
@@ -89,7 +89,7 @@ const Checkbox = styled.input.attrs({ type: "checkbox" })<CheckboxProps>`
 
   &:checked {
     border: 0;
-    background-color: ${({ theme, colors }) => theme.colors[colors?.checkedBackground ?? "success"]};
+    background-color: #0d0c0c;
     &:after {
       border-color: ${({ theme, colors }) => (colors?.checkedColor ? theme.colors[colors?.checkedColor] : "white")};
     }

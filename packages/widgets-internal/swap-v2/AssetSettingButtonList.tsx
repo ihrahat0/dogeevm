@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 
 const Divider = styled.div`
   width: 1px;
-  background-color: ${({ theme }) => theme.colors.cardBorder};
+  background-color: #0d0c0c;
   height: 16px;
 `;
 

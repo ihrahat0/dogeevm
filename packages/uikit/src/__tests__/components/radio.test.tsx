@@ -18,7 +18,7 @@ it("renders correctly", () => {
       transition: background-color 0.2s ease-in-out;
       border: 0;
       border-radius: 50%;
-      background-color: var(--colors-cardBorder);
+      background-color: #0d0c0c;
       box-shadow: var(--shadows-inset);
       margin: 0;
     }
@@ -44,11 +44,11 @@ it("renders correctly", () => {
 
     .c0:checked {
       border: 0;
-      background-color: var(--colors-success);
+      background-color: #0d0c0c;
     }
 
     .c0:checked:after {
-      background-color: var(--colors-backgroundAlt);
+      background-color: #0d0c0c;
     }
 
     .c0:disabled {

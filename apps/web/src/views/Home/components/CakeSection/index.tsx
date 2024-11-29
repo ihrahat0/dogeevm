@@ -12,14 +12,14 @@ import { checkIsIOS } from '../../hooks/useIsIOS'
 import { useObserverOnce } from '../../hooks/useObserver'
 
 import {
-  CakePartnerTag,
-  CakeSectionTag,
-  EcoSystemTagOuterWrapper,
-  FeatureTagsWrapper,
-  PartnerTagOuterWrapper,
-  PartnerTagsWrapper,
-  useEcosystemTagData,
-  usePartnerData,
+    CakePartnerTag,
+    CakeSectionTag,
+    EcoSystemTagOuterWrapper,
+    FeatureTagsWrapper,
+    PartnerTagOuterWrapper,
+    PartnerTagsWrapper,
+    useEcosystemTagData,
+    usePartnerData,
 } from './CakeSectionTag'
 
 const LINE_TRANSITION_TIMES = 0.35
@@ -299,7 +299,7 @@ const CakeCanvas = styled.canvas`
   ${({ theme }) => theme.mediaQueries.lg} {
     transform: translate(-50%, -52%) scale(0.75);
   }
-  background-color: transparent;
+  background-color: #0d0c0c;
 `
 
 const bottomBorderCardAnim = keyframes`

@@ -9,7 +9,7 @@ const switchAnimation = keyframes`
   `;
 
 const SwitchIconButtonV2 = styled(IconButton)`
-  background-color: ${({ theme }) => theme.colors.card};
+  background-color: #0d0c0c;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
   width: 40px;
   height: 40px;

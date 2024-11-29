@@ -10,7 +10,7 @@ const BaseCard = styled(Box)<{ $isExpanded?: boolean }>`
   height: 164px;
   padding: 16px;
 
-  background-color: ${({ theme }) => theme.colors.card};
+  background-color: #0d0c0c;
   border-radius: ${({ theme }) => theme.radii.default};
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
 
@@ -65,7 +65,7 @@ const CloseButtonContainer = styled(Box)<{ $isMobile?: boolean }>`
   right: ${({ $isMobile }) => ($isMobile ? '8px' : '0')};
   top: ${({ $isMobile }) => ($isMobile ? '8px' : '-28px')};
 
-  ${({ theme, $isMobile }) => $isMobile && `background-color: ${theme.colors.card};`}
+  ${({ theme, $isMobile }) => $isMobile && `background-color: #0d0c0c;`}
 `
 
 const StyledIconButton = styled(IconButton).attrs({ variant: 'text' })`
@@ -77,7 +77,7 @@ const StyledIconButton = styled(IconButton).attrs({ variant: 'text' })`
 
   &:hover {
     color: white;
-    background-color: ${({ theme }) => theme.colors.textSubtle};
+    background-color: #0d0c0c;
   }
 `
 

@@ -8,7 +8,7 @@ export const DataBox = styled(AutoRow)<{ $hideStyle?: boolean }>`
   padding: 12px;
   border-radius: ${({ theme }) => theme.radii.default};
   border: 1px solid ${({ theme, $hideStyle }) => ($hideStyle ? 'initial' : theme.colors.cardBorder)};
-  background-color: ${({ theme, $hideStyle }) => ($hideStyle ? 'initial' : theme.colors.background)};
+  background-color: #0d0c0c;
 `
 
 export const DataRow: React.FC<{

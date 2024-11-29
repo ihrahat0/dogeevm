@@ -25,7 +25,7 @@ it("renders correctly", () => {
       transition: background-color 0.2s,opacity 0.2s;
       height: 48px;
       padding: 0 24px;
-      background-color: var(--colors-primary);
+      background-color: #0d0c0c;
       color: var(--colors-invertedContrast);
     }
 
@@ -42,7 +42,7 @@ it("renders correctly", () => {
 
     .c0:disabled,
     .c0.pancake-button--disabled {
-      background-color: var(--colors-backgroundDisabled);
+      background-color: #0d0c0c;
       border-color: var(--colors-backgroundDisabled);
       box-shadow: none;
       color: var(--colors-textDisabled);

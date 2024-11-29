@@ -62,7 +62,7 @@ export const lightColors: Colors = {
   secondary: "#7645D9",
   background: "#FAF9FA",
   backgroundDisabled: "#E9EAEB",
-  backgroundAlt: "#FFFFFF",
+  backgroundAlt: "#000",
   backgroundAlt2: "rgba(255, 255, 255, 0.7)",
   cardBorder: "#E7E3EB",
   contrast: "#191326",

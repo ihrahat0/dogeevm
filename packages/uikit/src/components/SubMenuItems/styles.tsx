@@ -17,7 +17,7 @@ const StyledSubMenuItems = styled(Flex)`
   white-space: nowrap;
   scroll-behavior: smooth;
   flex-grow: 1;
-  background-color: ${({ theme }) => `${theme.colors.backgroundAlt2}`};
+  background-color: #0d0c0c;
   box-shadow: inset 0px -2px 0px -8px rgba(133, 133, 133, 0.1);
   overflow-x: scroll;
   scrollbar-width: none;
@@ -53,7 +53,7 @@ export const LeftMaskLayer = styled.div`
   background: ${({ theme }) =>
     theme.isDark
       ? `linear-gradient(90deg, #27262c 29.76%, rgba(39,38,44, 0) 100%)`
-      : `linear-gradient(90deg, #ffffff 29.76%, rgba(255, 255, 255, 0) 100%)`};
+      : `linear-gradient(90deg, #000 29.76%, rgba(255, 255, 255, 0) 100%)`};
 `;
 export const RightMaskLayer = styled.div`
   ${maskSharedStyle}
@@ -61,7 +61,7 @@ export const RightMaskLayer = styled.div`
   background: ${({ theme }) =>
     theme.isDark
       ? `linear-gradient(270deg, #27262c 0%, rgba(39,38,44, 0) 87.5%)`
-      : `linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 87.5%)`};
+      : `linear-gradient(270deg, #000 0%, rgba(255, 255, 255, 0) 87.5%)`};
 `;
 
 export const StyledSubMenuItemWrapper = styled(Box)`

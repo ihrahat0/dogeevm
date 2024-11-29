@@ -1,7 +1,7 @@
-import { styled } from 'styled-components'
+import { useTranslation } from '@pancakeswap/localization'
 import { Flex, TrophyGoldIcon } from '@pancakeswap/uikit'
 import { useGetIsClaimable } from 'state/predictions/hooks'
-import { useTranslation } from '@pancakeswap/localization'
+import { styled } from 'styled-components'
 import CollectWinningsButton from '../CollectWinningsButton'
 
 interface CollectWinningsOverlayProps {
@@ -10,7 +10,7 @@ interface CollectWinningsOverlayProps {
 }
 
 const Wrapper = styled(Flex)<{ isBottom: CollectWinningsOverlayProps['isBottom'] }>`
-  background-color: ${({ theme }) => theme.colors.secondary};
+  background-color: #0d0c0c;
   left: 0;
   position: absolute;
   width: 100%;

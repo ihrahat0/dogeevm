@@ -23,7 +23,7 @@ export const DrawerContainer = styled.div`
   width: 100%;
   max-width: 100vw;
   height: 80vh;
-  background-color: ${({ theme }) => theme.colors.backgroundAlt};
+  background-color: #0d0c0c;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
   padding-bottom: env(safe-area-inset-bottom);

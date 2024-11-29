@@ -4,7 +4,7 @@ import { styled } from 'styled-components'
 const StyledTable = styled.div`
   border-radius: 0px 0px 16px 16px;
 
-  background-color: ${({ theme }) => theme.card.background};
+  background-color: #0d0c0c;
   > div:not(:last-child) {
     border-bottom: 2px solid ${({ theme }) => theme.colors.disabled};
   }

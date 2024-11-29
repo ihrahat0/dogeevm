@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-import { Card, CardBody, CardFooter, AtomBox, AtomBoxProps } from "@pancakeswap/uikit";
+import { AtomBox, AtomBoxProps, Card, CardBody, CardFooter } from "@pancakeswap/uikit";
 import LiquidityCardHeader from "./LiquidityCardHeader";
 
 type LiquidityCardProps = AtomBoxProps;
@@ -21,7 +21,7 @@ export const LiquidityCard = ({ children, ...props }: LiquidityCardProps) => (
 );
 
 const ListBody = styled(CardBody)`
-  background-color: ${({ theme }) => theme.colors.dropdownDeep};
+  background-color: #0d0c0c;
 `;
 
 LiquidityCard.ListBody = ListBody;

@@ -1,6 +1,6 @@
-import { styled } from 'styled-components'
-import { Box, Flex, Text } from '@pancakeswap/uikit'
 import { useTranslation } from '@pancakeswap/localization'
+import { Box, Flex, Text } from '@pancakeswap/uikit'
+import { styled } from 'styled-components'
 
 const Dot = styled(Box)`
   width: 8px;
@@ -24,7 +24,7 @@ const NavButton = styled(Text)`
     left: 0;
     width: 100%;
     height: 4px;
-    background-color: initial;
+    background-color: #0d0c0c;
   }
 `
 
@@ -41,7 +41,7 @@ const Container = styled(Flex)<{ activeIndex: number }>`
     color: ${({ theme }) => theme.colors.secondary};
     font-weight: 600;
     &:before {
-      background-color: ${({ theme }) => theme.colors.primary};
+      background-color: #0d0c0c;
     }
   }
 `

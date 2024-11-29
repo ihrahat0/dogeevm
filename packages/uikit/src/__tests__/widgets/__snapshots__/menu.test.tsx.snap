@@ -75,7 +75,7 @@ exports[`renders correctly 1`] = `
   height: 20px;
   font-size: 12px;
   padding: 0 8px;
-  background-color: transparent;
+  background-color: #0d0c0c;
   color: var(--colors-primary);
   box-shadow: none;
 }
@@ -93,7 +93,7 @@ exports[`renders correctly 1`] = `
 
 .c32:disabled,
 .c32.pancake-button--disabled {
-  background-color: var(--colors-backgroundDisabled);
+  background-color: #0d0c0c;
   border-color: var(--colors-backgroundDisabled);
   box-shadow: none;
   color: var(--colors-textDisabled);
@@ -119,7 +119,7 @@ exports[`renders correctly 1`] = `
   transition: background-color 0.2s,opacity 0.2s;
   height: 48px;
   padding: 0 24px;
-  background-color: transparent;
+  background-color: #0d0c0c;
   color: var(--colors-primary);
   box-shadow: none;
   width: sm;
@@ -139,7 +139,7 @@ exports[`renders correctly 1`] = `
 
 .c36:disabled,
 .c36.pancake-button--disabled {
-  background-color: var(--colors-backgroundDisabled);
+  background-color: #0d0c0c;
   border-color: var(--colors-backgroundDisabled);
   box-shadow: none;
   color: var(--colors-textDisabled);
@@ -243,7 +243,7 @@ exports[`renders correctly 1`] = `
 }
 
 .c14:hover:not(:disabled) {
-  background-color: var(--colors-tertiary);
+  background-color: #0d0c0c;
 }
 
 .c14:active:not(:disabled) {
@@ -269,7 +269,7 @@ exports[`renders correctly 1`] = `
 }
 
 .c11 {
-  background-color: var(--colors-backgroundAlt);
+  background-color: #0d0c0c;
   border: 1px solid var(--colors-cardBorder);
   border-radius: 16px;
   padding-bottom: 4px;
@@ -324,7 +324,7 @@ exports[`renders correctly 1`] = `
   transform: translate(-50%, 0);
   left: 50%;
   bottom: auto;
-  background-color: var(--colors-backgroundAlt);
+  background-color: #0d0c0c;
   box-shadow: var(--shadows-level1);
   padding: 16px;
   max-height: 0px;
@@ -470,7 +470,7 @@ exports[`renders correctly 1`] = `
   white-space: nowrap;
   scroll-behavior: smooth;
   flex-grow: 1;
-  background-color: var(--colors-backgroundAlt2);
+  background-color: #0d0c0c;
   box-shadow: inset 0px -2px 0px -8px rgba(133, 133, 133, 0.1);
   overflow-x: scroll;
   scrollbar-width: none;
@@ -568,7 +568,7 @@ exports[`renders correctly 1`] = `
   align-items: center;
   width: 100%;
   height: 56px;
-  background-color: var(--colors-backgroundAlt);
+  background-color: #0d0c0c;
   border-bottom: 1px solid var(--colors-cardBorder);
   transform: translate3d(0, 0, 0);
   padding-left: 16px;
@@ -1681,7 +1681,7 @@ exports[`renders correctly 1`] = `
   transition: background-color 0.2s,opacity 0.2s;
   height: 48px;
   padding: 0 24px;
-  background-color: transparent;
+  background-color: #0d0c0c;
   color: var(--colors-primary);
   box-shadow: none;
   width: sm;
@@ -1701,7 +1701,7 @@ exports[`renders correctly 1`] = `
 
 .c44:disabled,
 .c44.pancake-button--disabled {
-  background-color: var(--colors-backgroundDisabled);
+  background-color: #0d0c0c;
   border-color: var(--colors-backgroundDisabled);
   box-shadow: none;
   color: var(--colors-textDisabled);
@@ -1727,7 +1727,7 @@ exports[`renders correctly 1`] = `
   transition: background-color 0.2s,opacity 0.2s;
   height: 48px;
   padding: 0 24px;
-  background-color: transparent;
+  background-color: #0d0c0c;
   color: var(--colors-primary);
   box-shadow: none;
 }
@@ -1745,7 +1745,7 @@ exports[`renders correctly 1`] = `
 
 .c41:disabled,
 .c41.pancake-button--disabled {
-  background-color: var(--colors-backgroundDisabled);
+  background-color: #0d0c0c;
   border-color: var(--colors-backgroundDisabled);
   box-shadow: none;
   color: var(--colors-textDisabled);
@@ -1771,7 +1771,7 @@ exports[`renders correctly 1`] = `
   transition: background-color 0.2s,opacity 0.2s;
   height: 32px;
   padding: 0 16px;
-  background-color: var(--colors-primary);
+  background-color: #0d0c0c;
   color: var(--colors-invertedContrast);
 }
 
@@ -1788,7 +1788,7 @@ exports[`renders correctly 1`] = `
 
 .c52:disabled,
 .c52.pancake-button--disabled {
-  background-color: var(--colors-backgroundDisabled);
+  background-color: #0d0c0c;
   border-color: var(--colors-backgroundDisabled);
   box-shadow: none;
   color: var(--colors-textDisabled);
@@ -1926,7 +1926,7 @@ exports[`renders correctly 1`] = `
   transform: translate(-50%, 0);
   left: 50%;
   bottom: 100%;
-  background-color: var(--colors-backgroundAlt);
+  background-color: #0d0c0c;
   box-shadow: var(--shadows-level1);
   padding: 16px;
   max-height: 0px;
@@ -1947,7 +1947,7 @@ exports[`renders correctly 1`] = `
   transform: translate(-50%, 0);
   left: 100%;
   bottom: 100%;
-  background-color: var(--colors-backgroundAlt);
+  background-color: #0d0c0c;
   box-shadow: var(--shadows-level1);
   padding: 16px;
   max-height: 0px;
@@ -2022,7 +2022,7 @@ exports[`renders correctly 1`] = `
 }
 
 .c34 {
-  background-color: var(--colors-backgroundAlt);
+  background-color: #0d0c0c;
   border-radius: 50%;
   cursor: pointer;
   height: 26px;
@@ -2057,7 +2057,7 @@ exports[`renders correctly 1`] = `
 
 .c31 {
   align-items: center;
-  background-color: var(--colors-textDisabled);
+  background-color: #0d0c0c;
   border-radius: 24px;
   box-shadow: var(--shadows-inset);
   cursor: pointer;
@@ -3462,7 +3462,7 @@ html[data-useragent*="TokenPocket_iOS"] .c1 {
 }
 
 .c16:hover:not(:disabled) {
-  background-color: var(--colors-tertiary);
+  background-color: #0d0c0c;
 }
 
 .c16:active:not(:disabled) {
@@ -3488,7 +3488,7 @@ html[data-useragent*="TokenPocket_iOS"] .c1 {
 }
 
 .c13 {
-  background-color: var(--colors-backgroundAlt);
+  background-color: #0d0c0c;
   border: 1px solid var(--colors-cardBorder);
   border-radius: 16px;
   padding-bottom: 4px;
@@ -3538,7 +3538,7 @@ html[data-useragent*="TokenPocket_iOS"] .c1 {
   pointer-events: none;
   border: 2px solid var(--colors-invertedContrast);
   border-radius: 50%;
-  background-color: var(--colors-failure);
+  background-color: #0d0c0c;
 }
 
 .c19 {
@@ -3551,7 +3551,7 @@ html[data-useragent*="TokenPocket_iOS"] .c1 {
   pointer-events: none;
   border: 2px solid var(--colors-invertedContrast);
   border-radius: 50%;
-  background-color: var(--colors-failure);
+  background-color: #0d0c0c;
 }
 
 .c23 {
@@ -3564,7 +3564,7 @@ html[data-useragent*="TokenPocket_iOS"] .c1 {
   pointer-events: none;
   border: 2px solid var(--colors-invertedContrast);
   border-radius: 50%;
-  background-color: var(--colors-warning);
+  background-color: #0d0c0c;
 }
 
 @supports (-webkit-text-size-adjust: none) and (not (-ms-accelerator: true)) and (not (-moz-appearance: none)) {

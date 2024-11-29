@@ -1,10 +1,10 @@
 import {
-  GaugeALMConfig,
-  GaugeConfig,
-  GaugeStableSwapConfig,
-  GaugeType,
-  GaugeV2Config,
-  GaugeV3Config,
+    GaugeALMConfig,
+    GaugeConfig,
+    GaugeStableSwapConfig,
+    GaugeType,
+    GaugeV2Config,
+    GaugeV3Config,
 } from '@pancakeswap/gauges'
 import { Token } from '@pancakeswap/swap-sdk-core'
 import { useMatchBreakpoints } from '@pancakeswap/uikit'
@@ -40,7 +40,7 @@ const Wrapper = styled.div`
 
 const FronterLogo = styled.div`
   border: 1.2px solid var(--colors-backgroundAlt);
-  background-color: var(--colors-background);
+  background-color: #0d0c0c;
   border-radius: 50%;
   margin-top: auto;
   height: 28.4px;

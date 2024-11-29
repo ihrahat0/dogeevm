@@ -40,7 +40,7 @@ const AllowanceIconCircle = styled(FadePresence)<{ width: number; height: number
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  background-color: ${({ showSpinner, theme }) => (showSpinner ? "transparent" : theme.colors.primary)};
+  background-color: #0d0c0c;
   z-index: 5;
 `;
 const PermitIcon = () => {

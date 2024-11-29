@@ -33,7 +33,7 @@ it("renders correctly", () => {
     }
 
     .c2 {
-      background-color: var(--colors-secondary);
+      background-color: #0d0c0c;
       border-radius: 16px 0 0 16px;
       color: var(--colors-backgroundAlt);
       padding: 12px;
@@ -49,7 +49,7 @@ it("renders correctly", () => {
 
     .c1 {
       position: relative;
-      background-color: var(--colors-backgroundAlt);
+      background-color: #0d0c0c;
       border-radius: 16px;
       box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1),0px 1px 1px rgba(0, 0, 0, 0.05);
     }

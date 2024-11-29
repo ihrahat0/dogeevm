@@ -34,12 +34,12 @@ const SwapModalFooterContainer = styled(AutoColumn)`
   padding: 16px;
   border-radius: ${({ theme }) => theme.radii.default};
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
 `
 
 const SameTokenWarningBox = styled(Box)`
   font-size: 13px;
-  background-color: #ffb2371a;
+  background-color: #0d0c0c;
   padding: 10px;
   margin-top: 12px;
   color: ${({ theme }) => theme.colors.yellow};
@@ -57,7 +57,7 @@ const Badge = styled.span`
   user-select: none;
   border-radius: ${({ theme }) => theme.radii['32px']};
   color: ${({ theme }) => theme.colors.invertedContrast};
-  background-color: ${({ theme }) => theme.colors.success};
+  background-color: #0d0c0c;
 `
 
 export const SwapModalFooter = memo(function SwapModalFooter({
@@ -275,6 +275,7 @@ export const SwapModalFooter = memo(function SwapModalFooter({
           mt="12px"
           id="confirm-swap-or-send"
           width="100%"
+          style={{ backgroundColor: '#8B0000' }}
         >
           {severity > 2 || (tradeType === TradeType.EXACT_OUTPUT && !isEnoughInputBalance)
             ? t('Swap Anyway')

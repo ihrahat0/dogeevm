@@ -2,13 +2,13 @@ import { useTranslation } from '@pancakeswap/localization'
 import { PM_V2_SS_BOOSTER_SUPPORT_CHAINS } from '@pancakeswap/position-managers'
 import { Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerGraphics,
-  BannerMain,
-  ButtonLinkAction,
-  GraphicDetail,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerGraphics,
+    BannerMain,
+    ButtonLinkAction,
+    GraphicDetail,
 } from '@pancakeswap/widgets-internal'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import useTheme from 'hooks/useTheme'
@@ -31,7 +31,7 @@ const bgXsVariant: GraphicDetail = {
 const StyledButtonLinkAction = styled(ButtonLinkAction)`
   height: 33px;
   border-radius: 12px;
-  background-color: ${({ theme }) => theme.colors.secondary};
+  background-color: #0d0c0c;
 
   ${({ theme }) => theme.mediaQueries.sm} {
     height: 48px;

@@ -39,7 +39,7 @@ export const MobilePredictionTokenSelector: React.FC<React.PropsWithChildren<Des
               galetoOracleAddress={config?.galetoOracleAddress}
             />
           </Flex>
-          <Button variant="text" onClick={onDismiss} px={0} height="fit-content">
+          <Button variant="text" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }} px={0} height="fit-content">
             <CloseIcon color="primary" />
           </Button>
         </FlexGap>

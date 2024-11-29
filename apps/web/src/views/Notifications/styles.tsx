@@ -1,10 +1,10 @@
-import { Colors, Flex } from '@pancakeswap/uikit'
-import Link from 'next/link'
-import styled, { keyframes } from 'styled-components'
+import { Colors, Flex } from '@pancakeswap/uikit';
+import Link from 'next/link';
+import styled, { keyframes } from 'styled-components';
 
 // Notification View styles
 export const Menu = styled.div<{ $isOpen: boolean; $overrideHeight: boolean }>`
-  background-color: ${({ theme }) => theme.card.background};
+  background-color: #0d0c0c;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
   border-radius: 24px;
   // padding-bottom: 4px;
@@ -142,12 +142,12 @@ export const StyledNotificationWrapper = styled.div`
   animation: ${() => openRight} 0.65s;
 
   transition: transform 0.3s;
-  background-color: transparent;
+  background-color: #0d0c0c;
   width: 100%;
 
   &:hover {
     cursor: pointer;
-    background-color: ${({ theme }) => (theme.isDark ? '#372F46' : theme.colors.background)};
+    background-color: #0d0c0c;
   }
 
   transition: background-color 0.15s ease;
@@ -230,5 +230,5 @@ export const Dot = styled('span').withConfig({
   height: 8px;
   pointer-events: none;
   border-radius: 50%;
-  background-color: ${({ theme, color }) => theme.colors[color]};
+  background-color: #0d0c0c;
 `

@@ -11,7 +11,7 @@ const Circle = styled.div`
   height: 24px;
   line-height: 24px;
   font-size: 16px;
-  color: #ffffff;
+  #fff;
   border-radius: 50%;
   background: linear-gradient(180deg, #8051d6 0%, #492286 100%);
   z-index: 1;
@@ -45,7 +45,7 @@ const StyledStep = styled.div<{
     left: 11px;
     z-index: 0;
     pointer-events: none;
-    background-color: ${({ theme, confirmed }) => (confirmed ? theme.colors.secondary : theme.colors.textDisabled)};
+    background-color: #0d0c0c;
   }
 
   &:hover {

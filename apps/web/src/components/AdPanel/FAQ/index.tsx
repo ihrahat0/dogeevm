@@ -8,14 +8,14 @@ import { ConfigType } from './types'
 export const Divider = styled.div`
   width: 100%;
   height: 1px;
-  background-color: ${({ theme }) => theme.colors.cardBorder};
+  background-color: #0d0c0c;
 `
 
 export const FAQWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding-bottom: 0;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
   border-radius: 16px;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
 `

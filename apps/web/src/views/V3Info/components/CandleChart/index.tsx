@@ -14,7 +14,7 @@ const Wrapper = styled(Card)`
   width: 100%;
   padding: 1rem;
   display: flex;
-  background-color: transparent;
+  background-color: #0d0c0c;
   flex-direction: column;
   > * {
     font-size: 1rem;

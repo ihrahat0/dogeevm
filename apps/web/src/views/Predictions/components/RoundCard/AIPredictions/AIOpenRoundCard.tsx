@@ -40,7 +40,7 @@ const StyledPositionBox = styled(Box)`
   padding: 12px 24px;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
   border-radius: ${({ theme }) => theme.radii['20px']};
-  background-color: ${({ theme }) => theme.colors.tertiary};
+  background-color: #0d0c0c;
 `
 
 const StyledCardBody = styled(CardBody)`

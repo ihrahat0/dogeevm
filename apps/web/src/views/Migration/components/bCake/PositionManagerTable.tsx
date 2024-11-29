@@ -17,7 +17,7 @@ const Container = styled.div`
   overflow: hidden;
   margin-bottom: 32px;
   border-radius: 24px 24px 16px 16px;
-  background-color: ${({ theme }) => theme.colors.disabled};
+  background-color: #0d0c0c;
   padding: 1px 1px 3px 1px;
 `
 

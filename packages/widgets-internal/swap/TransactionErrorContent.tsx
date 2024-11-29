@@ -1,7 +1,7 @@
-import { ReactElement } from "react";
 import { useTranslation } from "@pancakeswap/localization";
+import { AutoColumn, Button, ErrorIcon, Flex, Text } from "@pancakeswap/uikit";
+import { ReactElement } from "react";
 import { styled } from "styled-components";
-import { AutoColumn, ErrorIcon, Text, Flex, Button } from "@pancakeswap/uikit";
 import { StepTitleAnimationContainer } from "./ApproveModalContent";
 import { FadePresence } from "./Logos";
 
@@ -33,7 +33,7 @@ export function TransactionErrorContent({
       {onDismiss ? (
         <StepTitleAnimationContainer>
           <Flex justifyContent="center" pt="24px">
-            <Button onClick={onDismiss}>{t("Dismiss")}</Button>
+            <Button onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}>{t("Dismiss")}</Button>
           </Flex>
         </StepTitleAnimationContainer>
       ) : null}

@@ -1,13 +1,13 @@
-import { Button, Flex, Text, useMatchBreakpoints, OpenNewIcon } from '@pancakeswap/uikit'
+import { Button, Flex, OpenNewIcon, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
 
 import { useTranslation } from '@pancakeswap/localization'
 import Image from 'next/legacy/image'
-import { styled, css } from 'styled-components'
+import { css, styled } from 'styled-components'
 
 import { ASSET_CDN } from 'config/constants/endpoints'
 
-import { zkSyncBg, zkSyncBunny, zkSyncBgMobile, eraLogo } from './images'
+import { eraLogo, zkSyncBg, zkSyncBgMobile, zkSyncBunny } from './images'
 import * as S from './Styled'
 
 const pancakeSwapLogo = `${ASSET_CDN}/web/banners/ethXpancakeswap.png`
@@ -74,7 +74,7 @@ const sharedStyle = css`
 const Divider = styled.div`
   height: 15px;
   width: 1px;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: #0d0c0c;
 `
 
 const StyledButtonLeft = styled(Button)`

@@ -33,7 +33,7 @@ export interface FooterEntryProps {
 const StyledIfoCardDetails = styled(Flex)`
   padding: 16px;
   margin: 0 -12px -12px;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
 `
 
 const FooterEntry: React.FC<React.PropsWithChildren<FooterEntryProps>> = ({ label, value, tooltipContent }) => {

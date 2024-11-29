@@ -15,7 +15,7 @@ it("renders correctly", () => {
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c0 {
-      background-color: var(--colors-tertiary);
+      background-color: #0d0c0c;
       border: 1px solid var(--colors-disabled);
       border-radius: 16px;
       display: inline-flex;
@@ -57,7 +57,7 @@ it("renders correctly", () => {
       transition: background-color 0.2s,opacity 0.2s;
       height: 48px;
       padding: 0 24px;
-      background-color: var(--colors-primary);
+      background-color: #0d0c0c;
       color: var(--colors-invertedContrast);
     }
 
@@ -74,7 +74,7 @@ it("renders correctly", () => {
 
     .c1:disabled,
     .c1.pancake-button--disabled {
-      background-color: var(--colors-backgroundDisabled);
+      background-color: #0d0c0c;
       border-color: var(--colors-backgroundDisabled);
       box-shadow: none;
       color: var(--colors-textDisabled);
@@ -82,12 +82,12 @@ it("renders correctly", () => {
     }
 
     .c2 {
-      background-color: transparent;
+      background-color: #0d0c0c;
       color: var(--colors-primary);
     }
 
     .c2:hover:not(:disabled):not(:active) {
-      background-color: transparent;
+      background-color: #0d0c0c;
     }
 
     @media (hover: hover) {

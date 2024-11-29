@@ -56,7 +56,7 @@ const StyledTableViewFlex = styled(Flex)`
 
   ${({ theme }) => theme.mediaQueries.sm} {
     border-radius: 16px;
-    background-color: ${({ theme }) => theme.colors.backgroundAlt};
+    background-color: #0d0c0c;
     box-shadow: 0px 2px 0px 0px ${({ theme }) => theme.colors.cardBorder};
     border: 1px solid ${({ theme }) => theme.colors.tertiary};
   }
@@ -84,7 +84,7 @@ const StyledMiniFlex = styled(Flex)`
 `
 
 const Divider = styled.div`
-  background-color: ${({ theme }) => theme.colors.cardBorder};
+  background-color: #0d0c0c;
   width: 100%;
   height: 1px;
   margin: 8px 0;
@@ -97,7 +97,7 @@ const VerticalDivider = styled.div`
 
   ${({ theme }) => theme.mediaQueries.sm} {
     opacity: 1;
-    background-color: ${({ theme }) => theme.colors.cardBorder};
+    background-color: #0d0c0c;
   }
 `
 

@@ -1,18 +1,18 @@
+import { Ifo } from '@pancakeswap/ifos'
+import { useTranslation } from '@pancakeswap/localization'
+import { Box, Flex, ReleasedChart, Text } from '@pancakeswap/uikit'
+import { formatNumber, getBalanceNumber } from '@pancakeswap/utils/formatBalance'
+import isUndefinedOrNull from '@pancakeswap/utils/isUndefinedOrNull'
+import BigNumber from 'bignumber.js'
 import { useMemo } from 'react'
 import { styled } from 'styled-components'
-import { Flex, Box, Text, ReleasedChart } from '@pancakeswap/uikit'
-import { useTranslation } from '@pancakeswap/localization'
-import BigNumber from 'bignumber.js'
-import { Ifo } from '@pancakeswap/ifos'
-import { getBalanceNumber, formatNumber } from '@pancakeswap/utils/formatBalance'
-import isUndefinedOrNull from '@pancakeswap/utils/isUndefinedOrNull'
 
 const Dot = styled.div<{ isActive?: boolean }>`
   width: 8px;
   height: 8px;
   border-radius: 50%;
   align-self: center;
-  background-color: ${({ theme, isActive }) => (isActive ? theme.colors.secondary : '#d7caec')};
+  background-color: #0d0c0c;
 `
 
 interface ReleasedTokenInfoProps {

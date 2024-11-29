@@ -14,7 +14,7 @@ const SwitchIconButton = styled(IconButton)`
     display: none;
   }
   &:hover {
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: #0d0c0c;
     .icon-down {
       display: none;
       fill: white;

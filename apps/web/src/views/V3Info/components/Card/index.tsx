@@ -1,5 +1,5 @@
-import { Box } from '@pancakeswap/uikit'
-import { styled } from 'styled-components'
+import { Box } from '@pancakeswap/uikit';
+import { styled } from 'styled-components';
 
 const Card = styled(Box)<{ width?: string; padding?: string; border?: string; borderRadius?: string }>`
   width: ${({ width }) => width ?? '100%'};
@@ -13,19 +13,19 @@ export default Card
 
 export const LightCard = styled(Card)`
   border: 1px solid ${({ theme }) => theme.colors.background};
-  background-color: ${({ theme }) => theme.colors.backgroundAlt};
+  background-color: #0d0c0c;
 `
 
 export const LightGreyCard = styled(Card)`
-  background-color: ${({ theme }) => theme.colors.backgroundDisabled};
+  background-color: #0d0c0c;
 `
 
 export const GreyCard = styled(Card)`
-  background-color: ${({ theme }) => theme.colors.backgroundAlt2};
+  background-color: #0d0c0c;
 `
 
 export const DarkGreyCard = styled(Card)`
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
 `
 
 export const OutlineCard = styled(Card)`
@@ -33,19 +33,19 @@ export const OutlineCard = styled(Card)`
 `
 
 export const YellowCard = styled(Card)`
-  background-color: rgba(243, 132, 30, 0.05);
+  background-color: #0d0c0c;
   color: ${({ theme }) => theme.colors.gradientGold};
   font-weight: 500;
 `
 
 export const PinkCard = styled(Card)`
-  background-color: rgba(255, 0, 122, 0.03);
+  background-color: #0d0c0c;
   color: ${({ theme }) => theme.colors.primary};
   font-weight: 500;
 `
 
 export const BlueCard = styled(Card)`
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: #0d0c0c;
   color: ${({ theme }) => theme.colors.gradientBlue};
   border-radius: 12px;
   width: fit-content;

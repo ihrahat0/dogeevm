@@ -4,20 +4,20 @@ import { Currency, Token } from '@pancakeswap/sdk'
 import { TokenList, WrappedTokenInfo } from '@pancakeswap/token-lists'
 import { enableList, removeList, useFetchListCallback } from '@pancakeswap/token-lists/react'
 import {
-  Button,
-  CopyButton,
-  FlexGap,
-  Heading,
-  InjectedModalProps,
-  MODAL_SWIPE_TO_CLOSE_VELOCITY,
-  ModalBackButton,
-  ModalBody,
-  ModalCloseButton,
-  ModalContainer,
-  ModalHeader,
-  ModalTitle,
-  Text,
-  useMatchBreakpoints,
+    Button,
+    CopyButton,
+    FlexGap,
+    Heading,
+    InjectedModalProps,
+    MODAL_SWIPE_TO_CLOSE_VELOCITY,
+    ModalBackButton,
+    ModalBody,
+    ModalCloseButton,
+    ModalContainer,
+    ModalHeader,
+    ModalTitle,
+    Text,
+    useMatchBreakpoints,
 } from '@pancakeswap/uikit'
 import { CurrencyLogo, ImportList } from '@pancakeswap/widgets-internal'
 import AddToWalletButton from 'components/AddToWallet/AddToWalletButton'
@@ -33,7 +33,7 @@ import { CurrencyModalView } from './types'
 
 const Footer = styled.div`
   width: 100%;
-  background-color: #2d2d2d;
+  background-color: #0d0c0c;
   text-align: center;
 `
 const StyledModalContainer = styled(ModalContainer)`

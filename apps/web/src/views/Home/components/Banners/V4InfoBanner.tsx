@@ -1,17 +1,17 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerGraphics,
-  BannerMain,
-  BannerTitle,
-  ButtonLinkAction,
-  FloatingGraphic,
-  GraphicDetail,
-  LinkExternalAction,
-  PancakeSwapBadge,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerGraphics,
+    BannerMain,
+    BannerTitle,
+    ButtonLinkAction,
+    FloatingGraphic,
+    GraphicDetail,
+    LinkExternalAction,
+    PancakeSwapBadge,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import styled from 'styled-components'
@@ -35,7 +35,7 @@ const bgXsVariant: GraphicDetail = {
 const StyledButtonLinkAction = styled(ButtonLinkAction)`
   height: 33px;
   border-radius: 12px;
-  background-color: ${({ theme }) => theme.colors.secondary};
+  background-color: #0d0c0c;
 
   ${({ theme }) => theme.mediaQueries.sm} {
     height: 48px;

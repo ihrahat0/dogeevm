@@ -24,7 +24,7 @@ const StyledButtonMenu = styled.div.withConfig({
       return "";
     }
     return `
-    background-color: ${getBackgroundColor(props)};
+    background-color: #0d0c0c;
     border: 1px solid ${getBorderColor(props)};
     `;
   }}

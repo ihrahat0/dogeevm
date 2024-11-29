@@ -6,10 +6,10 @@ import React, { useMemo, useState } from 'react'
 import { styled } from 'styled-components'
 import { Address } from 'viem'
 import {
-  useEarningTokenPriceInfo,
-  usePositionInfo,
-  useTotalAssetInUsd,
-  useTotalStakedInUsd,
+    useEarningTokenPriceInfo,
+    usePositionInfo,
+    useTotalAssetInUsd,
+    useTotalStakedInUsd,
 } from 'views/PositionManagers/hooks/'
 import ExpandActionCell from '../Cells/ExpandActionCell'
 import Earned from './Earned'
@@ -22,7 +22,7 @@ import UnStakeButton from './UnstakeButton'
 
 const StyledRow = styled.div`
   display: flex;
-  background-color: transparent;
+  background-color: #0d0c0c;
   cursor: pointer;
   ${({ theme }) => theme.mediaQueries.lg} {
     cursor: initial;

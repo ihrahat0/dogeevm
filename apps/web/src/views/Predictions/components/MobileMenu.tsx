@@ -19,7 +19,7 @@ const TabNav = styled.div`
 
 const StyledMobileMenu = styled.div`
   align-items: center;
-  background-color: ${({ theme }) => theme.card.background};
+  background-color: #0d0c0c;
   display: flex;
   flex: none;
   height: 64px;

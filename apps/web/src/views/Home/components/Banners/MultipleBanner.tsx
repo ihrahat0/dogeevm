@@ -83,7 +83,7 @@ const StyledSwiper = styled(Swiper)`
     }
   }
   .swiper-pagination-bullet {
-    background-color: white;
+    background-color: #0d0c0c;
     flex-basis: 108px;
     margin: 0 !important;
     border-radius: 0px;

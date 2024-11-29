@@ -267,6 +267,7 @@ const SwapCommitButtonInner = memo(function SwapCommitButtonInner({
         data-dd-action-name="Swap commit button"
         variant={isValid && priceImpactSeverity > 2 && !errorMessage ? 'danger' : 'primary'}
         disabled={disabled}
+        style={{ backgroundColor: '#8B0000' }}
         onClick={handleSwap}
       >
         {swapInputError ||

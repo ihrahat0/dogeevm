@@ -1,7 +1,7 @@
-import { useState, useRef } from 'react'
-import { styled } from 'styled-components'
-import { Flex, Text } from '@pancakeswap/uikit'
 import { useTranslation } from '@pancakeswap/localization'
+import { Flex, Text } from '@pancakeswap/uikit'
+import { useRef, useState } from 'react'
+import { styled } from 'styled-components'
 import { Ticket, UpdateTicketAction } from './useTicketsReducer'
 
 const InputsContainer = styled.div<{ focused: boolean; isDuplicate: boolean }>`
@@ -10,7 +10,7 @@ const InputsContainer = styled.div<{ focused: boolean; isDuplicate: boolean }>`
   align-items: center;
   height: 36px;
   box-sizing: border-box;
-  background-color: ${({ theme }) => theme.colors.input};
+  background-color: #0d0c0c;
   border: 1px solid ${({ theme }) => theme.colors.inputSecondary};
   border-radius: 16px;
   margin-bottom: 8px;
@@ -38,7 +38,7 @@ const DigitInput = styled.input`
   width: 16px;
   text-align: center;
   min-width: 0;
-  background-color: transparent;
+  background-color: #0d0c0c;
   caret-color: #7a6faa;
 
   &::placeholder {

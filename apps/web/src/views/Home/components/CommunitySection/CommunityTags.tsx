@@ -13,7 +13,7 @@ const CommunityTag = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 32px;
-  background-color: ${({ theme }) => theme.colors.backgroundAlt};
+  background-color: #0d0c0c;
   width: 32px;
   height: 32px;
   transition: background-color 0.25s ease-in-out;
@@ -22,9 +22,9 @@ const CommunityTag = styled.div`
     transition: fill 0.25s ease-in-out;
   }
   &:hover {
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: #0d0c0c;
     svg path {
-      fill: ${({ theme }) => (theme.isDark ? '#fff000' : '#ffffff')};
+      fill: ${({ theme }) => (theme.isDark ? '#fff000' : '#000')};
     }
   }
   ${({ theme }) => theme.mediaQueries.sm} {

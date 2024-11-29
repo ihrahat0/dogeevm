@@ -9,14 +9,14 @@ it("renders correctly", () => {
       .c0 {
       align-items: center;
       border-radius: 16px;
-      color: #ffffff;
+      #fff;
       display: inline-flex;
       font-weight: 400;
       white-space: nowrap;
       height: 28px;
       padding: 0 8px;
       font-size: 14px;
-      background-color: var(--colors-primary);
+      background-color: #0d0c0c;
     }
 
     .c0>svg {

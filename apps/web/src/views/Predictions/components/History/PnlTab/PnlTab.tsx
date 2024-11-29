@@ -31,7 +31,7 @@ interface PnlSummary {
 }
 
 const Divider = styled.div`
-  background-color: ${({ theme }) => theme.colors.backgroundDisabled};
+  background-color: #0d0c0c;
   height: 1px;
   margin: 24px auto;
   width: 100%;

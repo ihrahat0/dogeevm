@@ -16,7 +16,7 @@ export const CollectionAvatar = styled(ProfileAvatar)`
   position: absolute;
   top: -32px;
   border: 4px white solid;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
 `
 
 const StyledCollectionCard = styled(Card)<{ disabled?: boolean }>`

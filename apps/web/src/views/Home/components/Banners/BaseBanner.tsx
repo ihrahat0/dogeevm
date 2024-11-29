@@ -99,7 +99,7 @@ const Header = styled.div`
   }
 `
 const SubTitle = styled.div`
-  color: #ffffff;
+  #fff;
   font-feature-settings: 'liga' off;
   font-family: Kanit;
   font-size: 19.847px;
@@ -115,7 +115,7 @@ const SubTitle = styled.div`
 const Divider = styled.div`
   height: 15px;
   width: 1px;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: #0d0c0c;
 `
 
 const BaseBanner = () => {

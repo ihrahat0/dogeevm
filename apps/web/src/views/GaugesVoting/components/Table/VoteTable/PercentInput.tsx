@@ -12,7 +12,7 @@ const StyledInput = styled(UIKitStyledInput)`
   width: 35px;
 
   &:disabled {
-    background-color: transparent;
+    background-color: #0d0c0c;
   }
 `
 
@@ -33,7 +33,7 @@ const MaxButton = styled(Button)`
     css`
       border-radius: 8px !important;
       border: 2px solid #bdc2c4 !important;
-      background-color: transparent !important;
+      background-color: #0d0c0c;
     `}
 `
 

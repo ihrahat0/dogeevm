@@ -1,12 +1,12 @@
-import { styled } from "styled-components";
-import { useTranslation } from "@pancakeswap/localization";
 import { PositionDetails } from "@pancakeswap/farms";
-import { PreTitle, Text, Button, Flex, Box, Heading, Balance } from "@pancakeswap/uikit";
+import { useTranslation } from "@pancakeswap/localization";
+import { Balance, Box, Button, Flex, Heading, PreTitle, Text } from "@pancakeswap/uikit";
+import { styled } from "styled-components";
 
 const LightGreyCard = styled("div")`
   padding: 0;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  background-color: ${({ theme }) => theme.colors.dropdown};
+  background-color: #0d0c0c;
   border-radius: ${({ theme }) => theme.radii.card};
 `;
 

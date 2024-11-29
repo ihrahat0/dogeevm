@@ -1,19 +1,19 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Currency } from '@pancakeswap/sdk'
 import {
-  Box,
-  Button,
-  Heading,
-  InjectedModalProps,
-  MODAL_SWIPE_TO_CLOSE_VELOCITY,
-  ModalBody,
-  ModalCloseButton,
-  ModalContainer,
-  ModalHeader,
-  ModalTitle,
-  RowBetween,
-  Text,
-  useMatchBreakpoints,
+    Box,
+    Button,
+    Heading,
+    InjectedModalProps,
+    MODAL_SWIPE_TO_CLOSE_VELOCITY,
+    ModalBody,
+    ModalCloseButton,
+    ModalContainer,
+    ModalHeader,
+    ModalTitle,
+    RowBetween,
+    Text,
+    useMatchBreakpoints,
 } from '@pancakeswap/uikit'
 import { ChainLogo } from '@pancakeswap/widgets-internal'
 import isArray from 'lodash/isArray'
@@ -31,7 +31,7 @@ import OnRampCurrencySearch from './OnRampCurrencySearch'
 
 const Footer = styled.div`
   width: 100%;
-  background-color: ${({ theme }) => theme.colors.backgroundAlt};
+  background-color: #0d0c0c;
   text-align: center;
 `
 
@@ -61,7 +61,7 @@ const NetworkItem = styled(RowBetween)<{ selected: boolean }>`
   display: flex;
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.background};
+    background-color: #0d0c0c;
     cursor: pointer;
   }
   opacity: ${({ selected }) => (!selected ? 0.8 : 1)};

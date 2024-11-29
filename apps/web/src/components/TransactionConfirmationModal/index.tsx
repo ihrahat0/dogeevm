@@ -3,16 +3,16 @@ import { useTranslation } from '@pancakeswap/localization'
 import { Currency, Token } from '@pancakeswap/sdk'
 import { WrappedTokenInfo } from '@pancakeswap/token-lists'
 import {
-  ArrowUpIcon,
-  AutoColumn,
-  BscScanIcon,
-  Button,
-  ColumnCenter,
-  InjectedModalProps,
-  Link,
-  Modal,
-  ModalProps,
-  Text,
+    ArrowUpIcon,
+    AutoColumn,
+    BscScanIcon,
+    Button,
+    ColumnCenter,
+    InjectedModalProps,
+    Link,
+    Modal,
+    ModalProps,
+    Text,
 } from '@pancakeswap/uikit'
 import { ConfirmationPendingContent, TransactionErrorContent } from '@pancakeswap/widgets-internal'
 import { useActiveChainId } from 'hooks/useActiveChainId'
@@ -84,7 +84,7 @@ export function TransactionSubmittedContent({
               tokenLogo={token instanceof WrappedTokenInfo ? token.logoURI : undefined}
             />
           )}
-          <Button onClick={onDismiss} mt="20px">
+          <Button onclick={onDismiss} style={{ backgroundColor: '#8B0000' }} mt="20px">
             {t('Close')}
           </Button>
         </AutoColumn>

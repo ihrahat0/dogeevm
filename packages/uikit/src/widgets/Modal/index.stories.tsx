@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "styled-components";
 import { Modal, useModal } from ".";
-import { ModalProps } from "./types";
 import Button from "../../components/Button/Button";
 import Heading from "../../components/Heading/Heading";
+import { ModalProps } from "./types";
 
 export default {
   title: "Widgets/Modal",
@@ -50,7 +50,7 @@ export const WithBackButton: React.FC<React.PropsWithChildren> = () => {
 
     return (
       <Modal title={title} onDismiss={onDismiss} onBack={handleOnBack} hideCloseButton>
-        <Button onClick={onDismiss} variant="text">
+        <Button onclick={onDismiss} style={{ backgroundColor: '#8B0000' }} variant="text">
           Consumer can still close it.
         </Button>
       </Modal>
@@ -112,7 +112,7 @@ export const ReactingToOutsideChanges: React.FC<React.PropsWithChildren> = () =>
     return (
       <Modal title={title} onDismiss={onDismiss}>
         <h2>Counter: {count}</h2>
-        <Button mt="8px" onClick={onDismiss}>
+        <Button mt="8px" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }}>
           Close
         </Button>
       </Modal>

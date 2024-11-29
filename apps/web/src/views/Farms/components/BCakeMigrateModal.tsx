@@ -1,15 +1,15 @@
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  AutoRenewIcon,
-  Box,
-  Button,
-  CheckmarkIcon,
-  HelpIcon,
-  LogoIcon,
-  Modal,
-  Text,
-  useToast,
-  useTooltip,
+    AutoRenewIcon,
+    Box,
+    Button,
+    CheckmarkIcon,
+    HelpIcon,
+    LogoIcon,
+    Modal,
+    Text,
+    useToast,
+    useTooltip,
 } from '@pancakeswap/uikit'
 import { getFullDisplayBalance } from '@pancakeswap/utils/formatBalance'
 import BigNumber from 'bignumber.js'
@@ -66,7 +66,7 @@ export const StepperWrapper = styled.div<{ finished: boolean; active: boolean }>
       left: 30px;
       transition: 0.3s background-color ease-in-out;
       will-change: background-color;
-      background-color: ${({ theme, finished }) => (finished ? theme.colors.textSubtle : theme.colors.disabled)};
+      background-color: #0d0c0c;
     }
     ${({ theme }) => theme.mediaQueries.md} {
       &::before {
@@ -94,7 +94,7 @@ export const FooterBox = styled.div`
     width: 100%;
     top: 0px;
     left: 0px;
-    background-color: ${({ theme }) => theme.colors.cardBorder};
+    background-color: #0d0c0c;
   }
 `
 

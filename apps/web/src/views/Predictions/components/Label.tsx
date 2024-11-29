@@ -117,7 +117,7 @@ export const Tooltip = styled.div`
 const Label = styled(Flex)<{ dir: 'left' | 'right'; backgroundOpacity?: boolean }>`
   position: relative;
   z-index: 1;
-  background-color: ${({ theme }) => theme.card.background};
+  background-color: #0d0c0c;
   box-shadow: ${({ theme }) => theme.shadows.level1};
   align-items: ${({ dir }) => (dir === 'right' ? 'flex-end' : 'flex-start')};
   border-radius: ${({ dir }) => (dir === 'right' ? '8px 8px 8px 24px' : '8px 8px 24px 8px')};
@@ -126,7 +126,7 @@ const Label = styled(Flex)<{ dir: 'left' | 'right'; backgroundOpacity?: boolean 
   padding: ${({ dir }) => (dir === 'right' ? '0 28px 0 8px' : '0 8px 0 24px')};
 
   ${({ theme }) => theme.mediaQueries.lg} {
-    background-color: ${({ theme, backgroundOpacity }) => (backgroundOpacity ? 'transparent' : theme.card.background)};
+    background-color: #0d0c0c;
     align-items: center;
     border-radius: ${({ theme }) => theme.radii.card};
     flex-direction: row;

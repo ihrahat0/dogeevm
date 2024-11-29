@@ -1,24 +1,24 @@
 import { useTranslation } from "@pancakeswap/localization";
 import {
-  AutoRenewIcon,
-  Box,
-  Button,
-  CalculateIcon,
-  ErrorIcon,
-  Flex,
-  IconButton,
-  LinkExternal,
-  Message,
-  MessageText,
-  Modal,
-  ModalActions,
-  ModalBody,
-  ModalInput,
-  ModalV2,
-  RoiCalculatorModal,
-  Skeleton,
-  Text,
-  WarningIcon,
+    AutoRenewIcon,
+    Box,
+    Button,
+    CalculateIcon,
+    ErrorIcon,
+    Flex,
+    IconButton,
+    LinkExternal,
+    Message,
+    MessageText,
+    Modal,
+    ModalActions,
+    ModalBody,
+    ModalInput,
+    ModalV2,
+    RoiCalculatorModal,
+    Skeleton,
+    Text,
+    WarningIcon,
 } from "@pancakeswap/uikit";
 import { BIG_ZERO } from "@pancakeswap/utils/bigNumber";
 import { getInterestBreakdown } from "@pancakeswap/utils/compoundApyHelpers";
@@ -271,7 +271,7 @@ const DepositModal: React.FC<React.PropsWithChildren<DepositModalProps>> = ({
           </Box>
         )}
         <ModalActions>
-          <Button variant="secondary" onClick={onDismiss} width="100%" disabled={pendingTx}>
+          <Button variant="secondary" onclick={onDismiss} style={{ backgroundColor: '#8B0000' }} width="100%" disabled={pendingTx}>
             {t("Cancel")}
           </Button>
           {needEnable ? (

@@ -1,24 +1,24 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { TokenList, Version } from '@pancakeswap/token-lists'
 import {
-  acceptListUpdate,
-  disableList,
-  enableList,
-  removeList,
-  useFetchListCallback,
+    acceptListUpdate,
+    disableList,
+    enableList,
+    removeList,
+    useFetchListCallback,
 } from '@pancakeswap/token-lists/react'
 import {
-  AutoColumn,
-  Button,
-  CheckmarkIcon,
-  CogIcon,
-  Column,
-  Input,
-  LinkExternal,
-  Text,
-  Toggle,
-  useConfirm,
-  useTooltip,
+    AutoColumn,
+    Button,
+    CheckmarkIcon,
+    CogIcon,
+    Column,
+    Input,
+    LinkExternal,
+    Text,
+    Toggle,
+    useConfirm,
+    useTooltip,
 } from '@pancakeswap/uikit'
 import { ListLogo } from '@pancakeswap/widgets-internal'
 
@@ -46,7 +46,7 @@ const Wrapper = styled(Column)`
 `
 
 const RowWrapper = styled(Row)<{ active: boolean; hasActiveTokens: boolean }>`
-  background-color: ${({ active, theme }) => (active ? `${theme.colors.success19}` : 'transparent')};
+  background-color: #0d0c0c;
   border: solid 1px;
   border-color: ${({ active, theme }) => (active ? theme.colors.success : theme.colors.tertiary)};
   transition: 200ms;

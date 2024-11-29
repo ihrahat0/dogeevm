@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { Box, Flex } from "../Box";
 
 export const InlineMenuContainer = styled(Box)`
-  background-color: ${({ theme }) => theme.colors.backgroundAlt};
+  background-color: #0d0c0c;
   border-radius: ${({ theme }) => theme.radii.card};
   box-shadow: ${({ theme }) => theme.shadows.tooltip};
 `;
@@ -33,7 +33,7 @@ export const SubMenuItem = styled.button`
   text-align: left;
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.inputSecondary};
+    background-color: #0d0c0c;
     text-decoration: none;
   }
 `;

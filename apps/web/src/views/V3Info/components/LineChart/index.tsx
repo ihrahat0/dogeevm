@@ -12,7 +12,7 @@ import { RowBetween } from '../Row'
 const Wrapper = styled(Card)`
   width: 100%;
   display: flex;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: #0d0c0c;
   flex-direction: column;
   > * {
     font-size: 1rem;

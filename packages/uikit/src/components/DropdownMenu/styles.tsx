@@ -38,7 +38,7 @@ export const DropdownMenuItem = styled("button").withConfig({
   }
 
   &:hover:not(:disabled) {
-    background-color: ${({ theme }) => theme.colors.tertiary};
+    background-color: #0d0c0c;
   }
 
   &:active:not(:disabled) {
@@ -67,7 +67,7 @@ export const DropdownMenuDivider = styled.hr`
 `;
 
 export const StyledDropdownMenu = styled.div<{ $isOpen: boolean; $isBottomNav: boolean }>`
-  background-color: ${({ theme }) => theme.card.background};
+  background-color: #0d0c0c;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
   border-radius: 16px;
   padding-bottom: 4px;

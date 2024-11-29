@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
   }
   body {
-    background-color: ${({ theme }) => theme.colors.gradientBubblegum};
+    background-color: #0d0c0c;
 
     img {
       height: auto;

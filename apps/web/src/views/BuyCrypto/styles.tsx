@@ -14,7 +14,7 @@ export const Wrapper = styled(Flex)`
   position: relative;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0px 0.6rem 0.6rem 0.6rem;
+padding: 0px 0.6rem 0.6rem 0.6rem;
 
   ${({ theme }) => theme.mediaQueries.sm} {
     padding: 0px 1rem 1rem 1rem;
@@ -94,7 +94,7 @@ export const NetworkFilterOverlay = styled(Flex)<{ showPopOver: boolean }>`
   width: 100%;
   z-index: 9999;
 
-  background-color: #e2d2ff;
+  background-color: #0d0c0c;
   height: 100%;
   transition: opacity 0.2s ease-in-out;
   opacity: ${({ showPopOver }) => (!showPopOver ? '0' : '0.8')};
@@ -235,7 +235,7 @@ export const OnRampIconCircleWrapper = styled(Box)<{ border: boolean }>`
 const InputExtended = styled('input').withConfig({
   shouldForwardProp: (props) => !['scale', 'isSuccess', 'isWarning'].includes(props),
 })<InputProps & { height: string }>`
-  background-color: ${({ theme }) => theme.colors.input};
+  background-color: #0d0c0c;
   border-radius: 16px;
   box-shadow: ${getBoxShadow};
   color: ${({ theme }) => theme.colors.text};
@@ -252,7 +252,7 @@ const InputExtended = styled('input').withConfig({
   }
 
   &:disabled {
-    background-color: ${({ theme }) => theme.colors.backgroundDisabled};
+    background-color: #0d0c0c;
     box-shadow: none;
     color: ${({ theme }) => theme.colors.textDisabled};
     cursor: not-allowed;
