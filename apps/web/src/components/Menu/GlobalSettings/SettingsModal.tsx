@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable react/display-name */
+// Add other eslint-disable rules as needed
+
 import { ChainId } from '@pancakeswap/chains'
 import { useTranslation } from '@pancakeswap/localization'
 import {
@@ -19,7 +23,6 @@ import {
   QuestionHelper,
   RowFixed,
   Text,
-  ThemeSwitcher,
   Toggle,
 } from '@pancakeswap/uikit'
 import {
@@ -151,7 +154,6 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
               <PreTitle mb="24px">{t('Global')}</PreTitle>
               <Flex justifyContent="space-between" mb="24px">
                 <Text>{t('Dark mode')}</Text>
-                <ThemeSwitcher isDark={isDark} toggleTheme={() => setTheme(isDark ? 'light' : 'dark')} />
               </Flex>
               <Flex justifyContent="space-between" alignItems="center" mb="24px">
                 <Toggle

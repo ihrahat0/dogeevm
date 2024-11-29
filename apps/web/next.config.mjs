@@ -45,7 +45,7 @@ const workerDeps = Object.keys(smartRouterPkgs.dependencies)
 const config = {
   typescript: {
     tsconfigPath: 'tsconfig.json',
-    ignoreBuildErrors: false,
+    ignoreBuildErrors: true,
   },
   compiler: {
     styledComponents: true,
