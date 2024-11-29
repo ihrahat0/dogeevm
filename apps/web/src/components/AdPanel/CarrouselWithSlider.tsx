@@ -16,6 +16,7 @@ export const StyledSwiper = styled(Swiper)<{ $showPagination?: boolean }>`
   opacity: 0;
   margin: 0;
   animation: ${appearAnimation} 0.2s ease-in-out 0.1s forwards;
+  display: none;
 
   .swiper-pagination {
     position: absolute;

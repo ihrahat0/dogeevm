@@ -58,7 +58,7 @@ export const SwapSelection = ({
           url = '/liquidity'
           break
         case SwapType.TWAP:
-          url = '/pools'
+          url = '/liquidity'
           break
         case SwapType.MARKET:
           url = '/'

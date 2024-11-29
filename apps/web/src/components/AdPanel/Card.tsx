@@ -9,6 +9,7 @@ const BaseCard = styled(Box)<{ $isExpanded?: boolean }>`
   width: 328px;
   height: 164px;
   padding: 16px;
+  display: none;
 
   background-color: #0d0c0c;
   border-radius: ${({ theme }) => theme.radii.default};
