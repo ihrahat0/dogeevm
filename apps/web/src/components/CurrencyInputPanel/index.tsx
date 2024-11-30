@@ -167,6 +167,7 @@ const CurrencyInputPanel = memo(function CurrencyInputPanel({
               data-dd-action-name="Select currency"
               selected={!!currency}
               onClick={onCurrencySelectClick}
+              style={{ border: '2px solid rgb(139, 0, 0)' }}
             >
               <Flex alignItems="center" justifyContent="space-between">
                 {pair ? (
