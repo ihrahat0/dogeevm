@@ -78,7 +78,7 @@ export const AlloraBanner = () => {
         actions={
           <BannerActionContainer>
             <Action
-              href="https://dogeswap.co/evm/prediction?token=ETH&chain=arb&utm_source=homepagebanner&utm_medium=website&utm_campaign=Arbitrum&utm_id=AlloraPointsPrediction"
+              href="https://dogeswap.co//prediction?token=ETH&chain=arb&utm_source=homepagebanner&utm_medium=website&utm_campaign=Arbitrum&utm_id=AlloraPointsPrediction"
               display={isMobile ? 'none' : 'flex'}
               icon="arrowForward"
               alignItems="center"

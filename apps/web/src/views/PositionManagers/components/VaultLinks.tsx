@@ -57,7 +57,7 @@ export const VaultLinks = memo(function VaultLinks({
 
   return (
     <LinkContainer flexDirection={layout} {...props}>
-      {/* <StyledScanLink href={`https://dogeswap.co/evm/info/v3/pairs/${lpAddress}`}>{t('Pair Info')}</StyledScanLink> */}
+      {/* <StyledScanLink href={`https://dogeswap.co//info/v3/pairs/${lpAddress}`}>{t('Pair Info')}</StyledScanLink> */}
       <StyledScanLink href={managerInfoUrl}>{t('Manager Info')}</StyledScanLink>
       <StyledScanLink href={strategyInfoUrl}>{t('Strategy Info')}</StyledScanLink>
       <StyledScanLink

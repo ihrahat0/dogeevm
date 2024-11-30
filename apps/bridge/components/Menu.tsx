@@ -101,7 +101,7 @@ export function Menu() {
               )}
             </Flex>
           ))}
-          <a href="https://dogeswap.co/evm/swap" target="_blank" rel="noreferrer noopener">
+          <a href="https://dogeswap.co//swap" target="_blank" rel="noreferrer noopener">
             <StyledMenuItem>Swap</StyledMenuItem>
           </a>
         </Flex>

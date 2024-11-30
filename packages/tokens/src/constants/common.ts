@@ -7,7 +7,7 @@ export const CAKE_MAINNET = new ERC20Token(
   18,
   'CAKE',
   'PancakeSwap Token',
-  'https://dogeswap.co/evm//',
+  'https://dogeswap.co///',
 )
 
 export const CAKE_TESTNET = new ERC20Token(
@@ -16,7 +16,7 @@ export const CAKE_TESTNET = new ERC20Token(
   18,
   'CAKE',
   'PancakeSwap Token',
-  'https://dogeswap.co/evm//',
+  'https://dogeswap.co///',
 )
 
 export const USDC_BSC = new ERC20Token(
@@ -130,7 +130,7 @@ export const CAKE = {
     18,
     'CAKE',
     'PancakeSwap Token',
-    'https://dogeswap.co/evm//',
+    'https://dogeswap.co///',
   ),
   [ChainId.GOERLI]: new ERC20Token(
     ChainId.GOERLI,
@@ -138,7 +138,7 @@ export const CAKE = {
     18,
     'CAKE',
     'PancakeSwap Token',
-    'https://dogeswap.co/evm//',
+    'https://dogeswap.co///',
   ),
   [ChainId.BSC]: CAKE_MAINNET,
   [ChainId.BSC_TESTNET]: CAKE_TESTNET,
@@ -148,7 +148,7 @@ export const CAKE = {
     18,
     'CAKE',
     'PancakeSwap Token',
-    'https://dogeswap.co/evm//',
+    'https://dogeswap.co///',
   ),
   [ChainId.POLYGON_ZKEVM_TESTNET]: new ERC20Token(
     ChainId.POLYGON_ZKEVM_TESTNET,
@@ -156,7 +156,7 @@ export const CAKE = {
     18,
     'CAKE',
     'PancakeSwap Token',
-    'https://dogeswap.co/evm//',
+    'https://dogeswap.co///',
   ),
   [ChainId.ZKSYNC_TESTNET]: new ERC20Token(
     ChainId.ZKSYNC_TESTNET,
@@ -164,7 +164,7 @@ export const CAKE = {
     18,
     'CAKE',
     'PancakeSwap Token',
-    'https://dogeswap.co/evm//',
+    'https://dogeswap.co///',
   ),
   [ChainId.ZKSYNC]: new ERC20Token(
     ChainId.ZKSYNC,
@@ -172,7 +172,7 @@ export const CAKE = {
     18,
     'CAKE',
     'PancakeSwap Token',
-    'https://dogeswap.co/evm//',
+    'https://dogeswap.co///',
   ),
   [ChainId.ARBITRUM_ONE]: new ERC20Token(
     ChainId.ARBITRUM_ONE,
@@ -180,7 +180,7 @@ export const CAKE = {
     18,
     'CAKE',
     'PancakeSwap Token',
-    'https://dogeswap.co/evm//',
+    'https://dogeswap.co///',
   ),
   [ChainId.ARBITRUM_GOERLI]: new ERC20Token(
     ChainId.ARBITRUM_GOERLI,
@@ -188,7 +188,7 @@ export const CAKE = {
     18,
     'CAKE',
     'PancakeSwap Token',
-    'https://dogeswap.co/evm//',
+    'https://dogeswap.co///',
   ),
   [ChainId.LINEA]: new ERC20Token(
     ChainId.LINEA,
@@ -196,7 +196,7 @@ export const CAKE = {
     18,
     'CAKE',
     'PancakeSwap Token',
-    'https://dogeswap.co/evm//',
+    'https://dogeswap.co///',
   ),
   [ChainId.BASE]: new ERC20Token(
     ChainId.BASE,
@@ -204,7 +204,7 @@ export const CAKE = {
     18,
     'CAKE',
     'PancakeSwap Token',
-    'https://dogeswap.co/evm//',
+    'https://dogeswap.co///',
   ),
   [ChainId.BASE_TESTNET]: new ERC20Token(
     ChainId.BASE_TESTNET,
@@ -212,7 +212,7 @@ export const CAKE = {
     18,
     'CAKE',
     'PancakeSwap Token',
-    'https://dogeswap.co/evm//',
+    'https://dogeswap.co///',
   ),
   [ChainId.LINEA_TESTNET]: new ERC20Token(
     ChainId.LINEA_TESTNET,
@@ -220,7 +220,7 @@ export const CAKE = {
     18,
     'CAKE',
     'PancakeSwap Token',
-    'https://dogeswap.co/evm//',
+    'https://dogeswap.co///',
   ),
   [ChainId.OPBNB]: new ERC20Token(
     ChainId.OPBNB,
@@ -228,7 +228,7 @@ export const CAKE = {
     18,
     'CAKE',
     'PancakeSwap Token',
-    'https://dogeswap.co/evm//',
+    'https://dogeswap.co///',
   ),
   [ChainId.OPBNB_TESTNET]: new ERC20Token(
     ChainId.OPBNB_TESTNET,
@@ -236,7 +236,7 @@ export const CAKE = {
     18,
     'CAKE',
     'PancakeSwap Token',
-    'https://dogeswap.co/evm//',
+    'https://dogeswap.co///',
   ),
 }
 

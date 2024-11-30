@@ -1,16 +1,16 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Box, Flex, useMatchBreakpoints } from '@pancakeswap/uikit'
 import {
-  BackgroundGraphic,
-  BannerActionContainer,
-  BannerContainer,
-  BannerGraphics,
-  BannerMain,
-  BannerTitle,
-  FloatingGraphic,
-  LinkExternalAction,
-  PancakeSwapBadge,
-  type GraphicDetail,
+    BackgroundGraphic,
+    BannerActionContainer,
+    BannerContainer,
+    BannerGraphics,
+    BannerMain,
+    BannerTitle,
+    FloatingGraphic,
+    LinkExternalAction,
+    PancakeSwapBadge,
+    type GraphicDetail,
 } from '@pancakeswap/widgets-internal'
 import { ASSET_CDN } from 'config/constants/endpoints'
 import styled from 'styled-components'
@@ -91,7 +91,7 @@ export const TopperCampaignBanner = () => {
         actions={
           <BannerActionContainer>
             <Action
-              href="https://dogeswap.co/evm/buy-crypto"
+              href="https://dogeswap.co//buy-crypto"
               display="flex"
               icon="arrowForward"
               alignItems="center"

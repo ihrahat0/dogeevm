@@ -35,8 +35,8 @@ class MyDocument extends Document {
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&amp;display=swap" rel="stylesheet" />
-          <link rel="shortcut icon" href="https://dogeswap.co/evm/favicon.ico" />
-          <link rel="apple-touch-icon" href="https://dogeswap.co/evm/logo.png" />
+          <link rel="shortcut icon" href="https://dogeswap.co//favicon.ico" />
+          <link rel="apple-touch-icon" href="https://dogeswap.co//logo.png" />
         </Head>
         <body>
           <noscript>

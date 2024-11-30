@@ -16,7 +16,7 @@ export const PoolTvlWarning = ({ poolInfo }: { poolInfo: PoolInfo }) => {
 
   const version = `${protocol === Protocol.V3 ? '/v3/' : ''}`
   const stableSwap = `${protocol === Protocol.STABLE ? '?type=stableSwap' : ''}`
-  const link = `https://dogeswap.co/evm/info/${version}${chain}/pairs/${id}${stableSwap}`
+  const link = `https://dogeswap.co//info/${version}${chain}/pairs/${id}${stableSwap}`
   if (tvlUsd < ONE_BILLION) {
     return null
   }

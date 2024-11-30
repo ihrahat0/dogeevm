@@ -1,13 +1,13 @@
 import noop from "lodash/noop";
 import {
-  DropdownMenuItems,
-  EarnFillIcon,
-  EarnIcon,
-  MoreIcon,
-  SwapFillIcon,
-  SwapIcon,
-  TrophyFillIcon,
-  TrophyIcon,
+    DropdownMenuItems,
+    EarnFillIcon,
+    EarnIcon,
+    MoreIcon,
+    SwapFillIcon,
+    SwapIcon,
+    TrophyFillIcon,
+    TrophyIcon,
 } from "../../components";
 import { DropdownMenuItemType } from "../../components/DropdownMenu/types";
 import { MenuItemsType } from "../../components/MenuItems/types";
@@ -162,7 +162,7 @@ export const userMenulinks: DropdownMenuItems[] = [
   },
   {
     type: DropdownMenuItemType.EXTERNAL_LINK,
-    href: "https://dogeswap.co/evm",
+    href: "https://dogeswap.co/",
     label: "Link",
   },
   {

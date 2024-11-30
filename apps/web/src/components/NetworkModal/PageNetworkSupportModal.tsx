@@ -76,6 +76,7 @@ export function PageNetworkSupportModal() {
                 push('/')
               })
             }
+            style={{ backgroundColor: 'rgb(139, 0, 0)'}}
           >
             {t('Disconnect Wallet')}
           </Button>

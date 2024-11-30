@@ -8,7 +8,7 @@ export const cakeToken = new ERC20Token(
   18,
   "CAKE",
   "PancakeSwap Token",
-  "https://dogeswap.co/evm//"
+  "https://dogeswap.co///"
 );
 
 export const bscToken = new ERC20Token(

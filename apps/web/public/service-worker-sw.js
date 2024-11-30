@@ -8,8 +8,8 @@ self.addEventListener('push', function onPush(event) {
     // eslint-disable-next-line no-restricted-globals
     self.registration.showNotification(data.title, {
       body: data.body,
-      icon: 'https://dogeswap.co/evm/logo.png',
-      image: 'https://dogeswap.co/evm/logo.png',
+      icon: 'https://dogeswap.co//logo.png',
+      image: 'https://dogeswap.co//logo.png',
     }),
   )
 })

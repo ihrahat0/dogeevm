@@ -47,7 +47,7 @@ it("renders correctly", () => {
         activeItem="Trade"
         activeSubItem="Exchange"
         buyCakeLabel="Buy CAKE"
-        buyCakeLink="https://dogeswap.co/evm/swap?outputCurrency=0xbA2aE424d960c26247Dd6c32edC70B295c744C43&chainId=56"
+        buyCakeLink="https://dogeswap.co//swap?outputCurrency=0xbA2aE424d960c26247Dd6c32edC70B295c744C43&chainId=56"
       >
         body
       </Menu>

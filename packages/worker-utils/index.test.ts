@@ -3,11 +3,11 @@ import { CORS_ALLOW, isOriginAllowed } from './index'
 
 describe('worker-utils', () => {
   it.each([
-    ['https://dogeswap.co/evm', true],
+    ['https://dogeswap.co/', true],
     ['https://pancakeswap.com', true],
     ['https://aptospancakeswap.finance', false],
     ['https://aptos.pancakeswap.finance', true],
-    ['https://dogeswap.co/evm.com', false],
+    ['https://dogeswap.co/.com', false],
     ['http://pancakeswap.finance', false],
     ['https://pancake.run', false],
     ['https://test.pancake.run', true],

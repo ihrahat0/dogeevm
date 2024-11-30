@@ -122,7 +122,7 @@ const UserMenu = () => {
 
   return (
     <ConnectWalletButton scale="sm">
-      <Box display={['none', null, null, 'block']}>
+      <Box display={['none', null, null, 'block']} style={{ color: 'rgb(139, 0, 0)'}}>
         <Trans>Connect Wallet</Trans>
       </Box>
       <Box display={['block', null, null, 'none']}>

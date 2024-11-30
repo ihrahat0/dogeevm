@@ -10,7 +10,7 @@ export const OFFERING_TOKEN = new ERC20Token(
   18,
   'MOC',
   'MOCK OC Token',
-  'https://dogeswap.co/evm//',
+  'https://dogeswap.co///',
 )
 
 export const ifos: BaseIfoConfig[] = [
@@ -29,7 +29,7 @@ export const ifos: BaseIfoConfig[] = [
     currency: goerliTestnetTokens.cake,
     token: OFFERING_TOKEN,
     campaignId: '512200000',
-    articleUrl: 'https://dogeswap.co/evm/voting/',
+    articleUrl: 'https://dogeswap.co//voting/',
     tokenOfferingPrice: 0.5782,
     version: 7,
     twitterUrl: 'https://twitter.com/dogeswap_',

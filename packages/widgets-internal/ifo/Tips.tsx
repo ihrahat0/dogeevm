@@ -60,7 +60,7 @@ export function MigrateVeCakeTips(props: SpaceProps) {
             {t("To participate, you need to migrate your fixed-term CAKE staking position to veCAKE.")}
           </MessageText>
           <LinkMessageText bold>
-            <Link href="https://dogeswap.co/evm">
+            <Link href="https://dogeswap.co/">
               {t("Learn more")} {">>"}
             </Link>
           </LinkMessageText>

@@ -1,30 +1,30 @@
 import { useDebounce } from '@pancakeswap/hooks'
 import { useTranslation } from '@pancakeswap/localization'
 import {
-  AutoColumn,
-  AutoRow,
-  Box,
-  CloseIcon,
-  Flex,
-  IconButton,
-  Link,
-  Row,
-  Text,
-  useMatchBreakpoints,
+    AutoColumn,
+    AutoRow,
+    Box,
+    CloseIcon,
+    Flex,
+    IconButton,
+    Link,
+    Row,
+    Text,
+    useMatchBreakpoints,
 } from '@pancakeswap/uikit'
 import { Swap as SwapUI } from '@pancakeswap/widgets-internal'
 import { FiatOnRampModalButton } from 'components/FiatOnRampModal/FiatOnRampModal'
 import {
-  Suspense,
-  lazy,
-  useCallback,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-  type ChangeEvent,
-  type Dispatch,
-  type SetStateAction,
+    Suspense,
+    lazy,
+    useCallback,
+    useEffect,
+    useMemo,
+    useRef,
+    useState,
+    type ChangeEvent,
+    type Dispatch,
+    type SetStateAction,
 } from 'react'
 import { useBuyCryptoActionHandlers } from 'state/buyCrypto/hooks'
 import { useBuyCryptoFormState } from 'state/buyCrypto/reducer'
@@ -263,7 +263,7 @@ export function BuyCryptoForm({ providerAvailabilities }: { providerAvailabiliti
               style={{ color: `${theme.colors.primary}` }}
               display="flex"
               fontSize="14px"
-              href="https://dogeswap.co/evm/terms-of-service"
+              href="https://dogeswap.co//terms-of-service"
               external
             >
               {t('terms of service')}

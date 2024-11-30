@@ -32,8 +32,8 @@ const ConnectWalletButton = ({ children, withIcon, ...props }: ConnectWalletButt
   return (
     <>
       <Button onClick={() => setOpen(true)} {...props}>
-        <FlexGap gap="8px" justifyContent="center" alignItems="center">
-          {children || <Trans>Connect Wallet</Trans>} {withIcon && <WalletFilledV2Icon color="invertedContrast" />}
+        <FlexGap gap="8px" justifyContent="center" alignItems="center" style={{ color: 'rgb(139, 0, 0)'}}>
+          {children || <Trans>Connect Wallet</Trans>} {withIcon && <WalletFilledV2Icon color="black" />}
         </FlexGap>
       </Button>
       <style jsx global>{`

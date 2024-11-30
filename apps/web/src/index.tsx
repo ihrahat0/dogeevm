@@ -53,7 +53,7 @@ export function Blocklist() {
             <Text style={{ wordBreak: 'break-word' }}>{address}</Text>
             <Text>
               {t('We have detected that this address is associated with a Prohibited Activity')}{' '}
-              <Link style={{ display: 'inline-block' }} href="https://dogeswap.co/evm/terms-of-service" external>
+              <Link style={{ display: 'inline-block' }} href="https://dogeswap.co//terms-of-service" external>
                 {t('Learn more')}
               </Link>
             </Text>

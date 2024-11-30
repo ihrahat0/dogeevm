@@ -1,8 +1,8 @@
 # 🥞 Pancake Frontend
 
 <p align="center">
-  <a href="https://dogeswap.co/evm">
-      <img src="https://dogeswap.co/evm/logo.png" height="128">
+  <a href="https://dogeswap.co/">
+      <img src="https://dogeswap.co//logo.png" height="128">
   </a>
 </p>
 

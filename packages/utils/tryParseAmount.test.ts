@@ -20,7 +20,7 @@ describe('utils/tryParseAmount', () => {
           18,
           'CAKE',
           'PancakeSwap Token',
-          'https://dogeswap.co/evm//',
+          'https://dogeswap.co///',
         ),
       ),
     ).toBeTruthy()

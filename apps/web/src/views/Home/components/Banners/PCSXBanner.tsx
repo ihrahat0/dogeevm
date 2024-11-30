@@ -93,7 +93,7 @@ export const PCSXBanner = () => {
 
   const PlayNowAction = (
     <LinkExternalAction
-      href="https://dogeswap.co/evm/swap?utm_source=Website&utm_medium=homepage&utm_campaign=PCSX&utm_id=PCSX"
+      href="https://dogeswap.co//swap?utm_source=Website&utm_medium=homepage&utm_campaign=PCSX&utm_id=PCSX"
       color="#fff"
       externalIcon="arrowForward"
     >

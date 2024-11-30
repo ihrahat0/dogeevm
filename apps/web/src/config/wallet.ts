@@ -87,9 +87,9 @@ const walletsConfig = <config extends Config = Config, context = unknown>({
         // && metaMaskConnector.ready
       },
       connectorId: ConnectorNames.MetaMask,
-      deepLink: 'https://metamask.app.link/dapp/dogeswap.co/evm/',
+      deepLink: 'https://metamask.app.link/dapp/dogeswap.co//',
       qrCode,
-      downloadLink: 'https://metamask.app.link/dapp/dogeswap.co/evm/',
+      downloadLink: 'https://metamask.app.link/dapp/dogeswap.co//',
     },
     {
       id: 'trust',
@@ -99,7 +99,7 @@ const walletsConfig = <config extends Config = Config, context = unknown>({
       get installed() {
         return !!getTrustWalletProvider()
       },
-      deepLink: 'https://link.trustwallet.com/open_url?coin_id=20000714&url=https://dogeswap.co/evm/',
+      deepLink: 'https://link.trustwallet.com/open_url?coin_id=20000714&url=https://dogeswap.co//',
       downloadLink: 'https://chrome.google.com/webstore/detail/trust-wallet/egjidjbpglichdcondbcbdnbeeppgdph',
       guide: {
         desktop: 'https://trustwallet.com/browser-extension',

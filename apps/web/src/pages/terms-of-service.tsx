@@ -39,8 +39,8 @@ const TermsOfService = () => {
         <Text as="span">
           These Terms of Service (the “Agreement”) explains the terms and conditions by which you may access and use
         </Text>
-        <Link m="0 4px" display="inline !important" href="https://dogeswap.co/evm">
-          https://dogeswap.co/evm
+        <Link m="0 4px" display="inline !important" href="https://dogeswap.co/">
+          https://dogeswap.co/
         </Link>
         <Text as="span">
           and any subdomains associated with the Website. You must read this Agreement carefully as it governs your use
@@ -79,8 +79,8 @@ const TermsOfService = () => {
           material modifications, we will notify you by updating the date at the top of the Agreement and by maintaining
           a current version of the Agreement at
         </Text>
-        <Link m="0 4px" display="inline !important" href="https://dogeswap.co/evm/terms-of-service">
-          https://dogeswap.co/evm/terms-of-service.
+        <Link m="0 4px" display="inline !important" href="https://dogeswap.co//terms-of-service">
+          https://dogeswap.co//terms-of-service.
         </Link>
         <Text as="span">
           All modifications will be effective when they are posted, and your continued accessing or use of the Website

@@ -30,7 +30,7 @@ const FeeTooltips: React.FC<FeeTierTooltipProps> = ({ type, dynamic, percent }) 
             <>
               {t("Dynamic fee: ↕️ %p%% Fee may vary based on several conditions", { p })}
               {/* @todo @ChefJerry */}
-              <LinkExternal href="https://dogeswap.co/evm/#todo">{t("Learn more")}</LinkExternal>
+              <LinkExternal href="https://dogeswap.co//#todo">{t("Learn more")}</LinkExternal>
             </>
           ) : (
             t("Static Fee: %p%%", { p })
