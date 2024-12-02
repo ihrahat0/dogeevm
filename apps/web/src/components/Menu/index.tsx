@@ -24,10 +24,6 @@ const Menu = (props) => {
         label: t('Trade'),
         href: '/swap',
       },
-      {
-        label: t('Pools'),
-        href: '/pools',
-      },
     ],
     [t],
   )
