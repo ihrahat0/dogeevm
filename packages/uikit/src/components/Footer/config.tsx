@@ -112,7 +112,7 @@ export const socials = [
         height={24}
       />
     ),
-    href: "https://tiktok.com/@dogeswap",
+    href: "https://tiktok.com/@dogeswap_",
   },
   // {
   //   label: "Github",

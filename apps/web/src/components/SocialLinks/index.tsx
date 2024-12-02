@@ -58,7 +58,7 @@ const SocialLinks = () => {
     {
       name: 'TikTok',
       icon: '/images/socials/tiktok.webp',
-      url: 'https://tiktok.com/@yourprofile',
+      url: 'https://tiktok.com/@dogeswap_',
     },
   ]
 

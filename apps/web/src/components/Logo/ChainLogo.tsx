@@ -1,5 +1,5 @@
+import { getChainLogoUrl } from '@pancakeswap/chains'
 import { HelpIcon } from '@pancakeswap/uikit'
-import { ASSET_CDN } from 'config/constants/endpoints'
 import Image from 'next/image'
 import { memo } from 'react'
 import { isChainSupported } from 'utils/wagmi'
@@ -11,7 +11,7 @@ export const ChainLogo = memo(
         <Image
           alt={`chain-${chainId}`}
           style={{ maxHeight: `${height}px` }}
-          src={`${ASSET_CDN}/web/chains/${chainId}.png`}
+          src={getChainLogoUrl(chainId)}
           width={width}
           height={height}
           unoptimized

@@ -1,4 +1,4 @@
-import { ChainId } from "@pancakeswap/chains";
+import { ChainId, getChainLogoUrl } from "@pancakeswap/chains";
 import { useHttpLocations } from "@pancakeswap/hooks";
 import { BinanceIcon, TokenLogo } from "@pancakeswap/uikit";
 import { useMemo } from "react";
@@ -54,7 +54,7 @@ export function CurrencyLogo({
     return (
       <StyledLogo
         size={size}
-        srcs={[`https://assets.pancakeswap.finance/web/native/${currency.chainId}.png`]}
+        srcs={[getChainLogoUrl(currency.chainId)]}
         width={size}
         imageRef={imageRef}
         style={style}
