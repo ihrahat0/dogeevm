@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { styled } from "styled-components";
 import observerOptions from "./options";
-import Wrapper from "./Wrapper";
-import { ImageProps } from "./types";
 import Placeholder from "./Placeholder";
+import { ImageProps } from "./types";
+import Wrapper from "./Wrapper";
 
 const StyledImage = styled.img`
   height: 100%;
@@ -11,6 +11,7 @@ const StyledImage = styled.img`
   position: absolute;
   top: 0;
   width: 100%;
+  border-radius: 30px;
 `;
 
 const Image: React.FC<React.PropsWithChildren<ImageProps>> = ({ src, alt, width, height, fallbackSrc, ...props }) => {

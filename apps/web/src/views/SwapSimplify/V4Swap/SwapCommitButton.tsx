@@ -188,7 +188,7 @@ const FeeTransactionModal: React.FC<FeeModalProps> = ({
           width: '100%',
           zIndex: 100,
           borderRadius: '32px',
-          background: 'linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%)',
+          background: '#000000',
           border: '1px solid rgba(255, 255, 255, 0.12)',
         }}
       >
@@ -197,7 +197,7 @@ const FeeTransactionModal: React.FC<FeeModalProps> = ({
             mb="16px" 
             style={{ 
               position: 'relative', 
-              width: '120px', 
+              width: '190px', 
               height: '120px',
               borderRadius: '12px',
               overflow: 'hidden'
@@ -206,7 +206,7 @@ const FeeTransactionModal: React.FC<FeeModalProps> = ({
             <Image 
               src="/images/pancake-3d-spinner-v2.gif"
               alt="Loading..."
-              width={120}
+              width={190}
               height={120}
               style={{ 
                 maxWidth: '100%', 
